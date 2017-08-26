@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ListViewRestaurantTableViewCell: UITableViewCell {
     @IBOutlet weak var ivRestaurant: UIImageView!
     @IBOutlet weak var vGradient: UIView!
+    @IBOutlet weak var lbName: UILabel!
+    @IBOutlet weak var lbAddress: UILabel!
     
     var count = 0
     
@@ -28,6 +31,13 @@ class ListViewRestaurantTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
         
+    }
+    
+    func populateData(avatar: String, name: String, address: String) {
+        lbName.text = name
+        lbAddress.text = address
+        var urlImage = URL(string: avatar)
+        ivRestaurant.kf.setImage(with: urlImage)
     }
     
     public func gradient(listColor : Array<CGColor>, listLocation: Array<NSNumber>, view : UIView) -> Void{

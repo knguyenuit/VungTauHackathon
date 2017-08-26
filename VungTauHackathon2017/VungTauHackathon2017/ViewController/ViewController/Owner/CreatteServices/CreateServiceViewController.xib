@@ -1,12 +1,21 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateServiceViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateServiceViewController" customModule="VungTauHackathon2017" customModuleProvider="target">
             <connections>
+                <outlet property="btnChooseImage" destination="dCU-f7-0tO" id="elf-Ac-GsX"/>
+                <outlet property="btnChooseServices" destination="tLu-ri-xCK" id="Izh-xG-Omy"/>
+                <outlet property="ivAvatar" destination="GN5-ZH-5lr" id="wXw-FZ-IE9"/>
+                <outlet property="tfAddress" destination="Etu-7H-oHX" id="KAM-jO-1Q8"/>
+                <outlet property="tfName" destination="Xlr-Pb-uJ3" id="DT8-7e-oQC"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +23,128 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tII-Ro-ZRc">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fev-XQ-go2">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Services" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFw-RV-xHX">
+                                    <rect key="frame" x="122" y="32" width="131" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="131" id="HJm-1M-c8A"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAp-Xq-6WE">
+                                    <rect key="frame" x="8" y="32" width="64" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <state key="normal" title="  Back" image="icBack">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnBackClick:" destination="-1" eventType="touchUpInside" id="JZZ-GE-zxt"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.20392156859999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="65" id="3Wi-3Q-8wR"/>
+                                <constraint firstAttribute="bottom" secondItem="wAp-Xq-6WE" secondAttribute="bottom" constant="12" id="5Jh-Wk-uaF"/>
+                                <constraint firstItem="wAp-Xq-6WE" firstAttribute="top" secondItem="fev-XQ-go2" secondAttribute="top" constant="31.5" id="QZL-2h-Vui"/>
+                                <constraint firstItem="wAp-Xq-6WE" firstAttribute="leading" secondItem="fev-XQ-go2" secondAttribute="leading" constant="8.5" id="aDn-ij-2uI"/>
+                                <constraint firstItem="sFw-RV-xHX" firstAttribute="top" secondItem="fev-XQ-go2" secondAttribute="top" constant="32" id="lk5-yk-asF"/>
+                                <constraint firstItem="sFw-RV-xHX" firstAttribute="centerX" secondItem="fev-XQ-go2" secondAttribute="centerX" id="t4s-um-yJo"/>
+                                <constraint firstItem="sFw-RV-xHX" firstAttribute="leading" secondItem="wAp-Xq-6WE" secondAttribute="trailing" constant="50" id="wpp-Wp-tTb"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tio-gE-jKF">
+                            <rect key="frame" x="0.0" y="65" width="375" height="602"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loại:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oma-XY-EBb">
+                                    <rect key="frame" x="25" y="35" width="42" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLu-ri-xCK" customClass="DropMenuButton" customModule="VungTauHackathon2017" customModuleProvider="target">
+                                    <rect key="frame" x="133" y="31" width="141" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Button"/>
+                                </button>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tên " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xlr-Pb-uJ3">
+                                    <rect key="frame" x="53" y="83" width="254" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Địa chỉ" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Etu-7H-oHX">
+                                    <rect key="frame" x="53" y="139" width="254" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCU-f7-0tO">
+                                    <rect key="frame" x="53" y="205" width="254" height="168"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Button"/>
+                                    <connections>
+                                        <action selector="btnChooseImageClick:" destination="-1" eventType="touchUpInside" id="Rqz-KT-lhD"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nru-JQ-tTO">
+                                    <rect key="frame" x="39" y="475" width="46" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="OK"/>
+                                    <connections>
+                                        <action selector="btnCreateClick:" destination="-1" eventType="touchUpInside" id="2ft-8W-djM"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMC-fq-f1O">
+                                    <rect key="frame" x="253" y="475" width="70" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Cancel"/>
+                                    <connections>
+                                        <action selector="btnCancelClick:" destination="-1" eventType="touchUpInside" id="qao-qf-ed1"/>
+                                    </connections>
+                                </button>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GN5-ZH-5lr">
+                                    <rect key="frame" x="60" y="237" width="240" height="128"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Tio-gE-jKF" secondAttribute="trailing" id="9CZ-k2-Vno"/>
+                        <constraint firstItem="Tio-gE-jKF" firstAttribute="leading" secondItem="tII-Ro-ZRc" secondAttribute="leading" id="DpW-Um-Fh8"/>
+                        <constraint firstItem="fev-XQ-go2" firstAttribute="leading" secondItem="tII-Ro-ZRc" secondAttribute="leading" id="Ll2-oA-tCv"/>
+                        <constraint firstItem="Tio-gE-jKF" firstAttribute="top" secondItem="fev-XQ-go2" secondAttribute="bottom" id="Whg-xx-DeH"/>
+                        <constraint firstAttribute="bottom" secondItem="Tio-gE-jKF" secondAttribute="bottom" id="aOb-K1-Ja0"/>
+                        <constraint firstItem="fev-XQ-go2" firstAttribute="top" secondItem="tII-Ro-ZRc" secondAttribute="top" id="jgx-IZ-lwb"/>
+                        <constraint firstAttribute="trailing" secondItem="fev-XQ-go2" secondAttribute="trailing" id="wIO-Ea-KxN"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="tII-Ro-ZRc" secondAttribute="bottom" id="Zvc-tf-iRG"/>
+                <constraint firstItem="tII-Ro-ZRc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="nEd-W4-Bgu"/>
+                <constraint firstAttribute="trailing" secondItem="tII-Ro-ZRc" secondAttribute="trailing" id="qGd-To-XIL"/>
+                <constraint firstItem="tII-Ro-ZRc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zS7-jj-fjf"/>
+            </constraints>
+            <point key="canvasLocation" x="107.5" y="102.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="icBack" width="13" height="22"/>
+    </resources>
 </document>
