@@ -30,7 +30,7 @@ class AuthenticationRestService : PAuthenticationService, PBaseRestService {
     }
     
     
-    func login(_ loginRequest: APILoginRequest!, showLoading: Bool = true) -> Task<SignInReponse> {
+    func login(_ loginRequest: APILoginRequest!, showLoading: Bool = true) -> Task<User> {
         return doRequest(request: AuthenticationRouter.Login(loginRequest), showLoading: true)
     }
     

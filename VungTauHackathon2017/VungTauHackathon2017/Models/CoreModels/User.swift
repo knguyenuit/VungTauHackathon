@@ -14,7 +14,7 @@ class User: FAAutoCode, Mappable {
     
     var id: String?
     var userName: String?
-    var email: String?
+    var passWord: String?
     var phoneNumber: String?
     var avatar: String?
     public var refreshToken : String?
@@ -32,25 +32,24 @@ class User: FAAutoCode, Mappable {
     }
     
     func mapping(map: Map) {
-        id <- map["id"]
-        email <- map["email"]
-        userName <- map["username"]
-        avatar <- map["avatar"]
-        phoneNumber <- map["phone_number"]
-        accessToken <- map["access_token"]
-        refreshToken <- map["refresh_token"]
+        id <- map["userID"]
+        userName <- map["userName"]
+        passWord <- map["userPassword"]
+        phoneNumber <- map["userPhone"]
+//        accessToken <- map["access_token"]
+//        refreshToken <- map["refresh_token"]
         
     }
     
-    init(id: String?, email: String?) {
-        self.id = id
-        self.email = email
-        super.init()
-    }
+//    init(id: String?, email: String?) {
+//        self.id = id
+//        //self.email = email
+//        super.init()
+//    }
     
     init(id: String?, email: String?, userName: String?, phoneNumber: String?, avatar: String, access_token: String?, refresh_token: String?) {
         self.id = id
-        self.email = email
+        //self.email = email
         self.userName = userName
         self.phoneNumber = phoneNumber
         self.avatar = avatar

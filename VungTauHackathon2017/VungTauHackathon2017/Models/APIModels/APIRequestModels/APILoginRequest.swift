@@ -12,8 +12,8 @@ import FAParser
 
 class APILoginRequest : FAAutoCode, Mappable {
     
-    var email: String?
-    var passWord: String?
+    var userName: String?
+    var userPassword: String?
     
     
 
@@ -26,8 +26,8 @@ class APILoginRequest : FAAutoCode, Mappable {
     
     init(email: String!, passWord: String!) {
         super.init()
-        self.email = email
-        self.passWord = passWord
+        self.userName = email
+        self.userPassword = passWord
     }
     
     required init(coder aDecoder: NSCoder) {
@@ -35,7 +35,7 @@ class APILoginRequest : FAAutoCode, Mappable {
     }
     
     func mapping(map: Map) {
-        email <- map["email"]
-        passWord <- map["password"]
+        userName <- map["userName"]
+        userPassword <- map["userPassword"]
     }
 }

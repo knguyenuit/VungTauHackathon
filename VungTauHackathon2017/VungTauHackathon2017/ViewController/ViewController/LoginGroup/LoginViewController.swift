@@ -24,6 +24,14 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func btnLoginClick(_ sender: Any) {
+        var loginRequest = APILoginRequest(email: tfUserName.text!, passWord: tfPassword.text!)
+        ApplicationAssembler.sharedInstance.resolver.resolve(PAuthenticationService.self)?.login(loginRequest, showLoading: true).continueWith(continuation: { (task) -> Void in
+            if task.error != nil {
+                print("Error")
+            } else {
+                print("Login success")
+            }
+        })
     }
 
     @IBAction func btnCancelClick(_ sender: Any) {

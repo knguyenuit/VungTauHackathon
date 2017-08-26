@@ -22,7 +22,7 @@ protocol PAuthenticationService {
 //    func loginWithFacebook(_ loginRequest: APIRegisterWithFacebook!, showLoading: Bool) -> Task<SignInReponse>
     
     ///Login
-    func login(_ loginRequest: APILoginRequest!, showLoading: Bool) -> Task<SignInReponse>
+    func login(_ loginRequest: APILoginRequest!, showLoading: Bool) -> Task<User>
     
     ///Logout
     func logout() -> Task<String>
