@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Cosmos.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FAParser.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -67,12 +72,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3D39F5E1DBA58B6428411E2819690338</key>
+		<key>3EDFE4052B5DE7D509935AC0774CB135</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3EDFE4052B5DE7D509935AC0774CB135</key>
+		<key>4FDC533A4360A68ABDCE852F04B30927</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,17 +87,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>64D86EB7EFCFBE5DDBCE2CC0202A9AF4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>6BA0F44570A6F7C23C1B83110739FAB0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<key>75775D976836DB3429386BEFE8B6FF4A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CCA00B98A83B627EED1DD346B48FC7AC</key>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -107,12 +117,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DB92DB99458BA1D7480861A89DE5EC01</key>
+		<key>D5EC6D87F82F71B0964A52D6D3775E0F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FC90F7F1ADF35837D7CEB4A542D75990</key>
+		<key>E903987A86D4B06E6DB11917DA7C4F05</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -20,5 +20,5 @@ pod ‘Alamofire’
     pod 'Kingfisher'
     pod 'GoogleMaps'
     pod 'GooglePlaces'
-
+    pod 'Cosmos'
 end

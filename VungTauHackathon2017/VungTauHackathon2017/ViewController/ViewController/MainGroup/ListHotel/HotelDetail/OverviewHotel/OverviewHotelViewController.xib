@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -125,8 +125,8 @@
                             </attributes>
                         </fragment>
                         <fragment>
-                            <mutableString key="content"> với các phòng riêng lộng lẫy và phòng tắm xa hoa. Trong khu nghỉ dưỡng còn có cả spa và nhà hàng, nghĩa là bạn sẽ chẳng phải đi đâu ra khỏi khu nghỉ dưỡng này cả nếu bạn không muốn. Một điều đáng yêu nữa là bánh và các bữa ăn giữa chiều. 
-   Khu Villas có diện tích rộng lớn và tôi nghĩ đó là </mutableString>
+                            <string key="content"> với các phòng riêng lộng lẫy và phòng tắm xa hoa. Trong khu nghỉ dưỡng còn có cả spa và nhà hàng, nghĩa là bạn sẽ chẳng phải đi đâu ra khỏi khu nghỉ dưỡng này cả nếu bạn không muốn. Một điều đáng yêu nữa là bánh và các bữa ăn giữa chiều. 
+   Khu Villas có diện tích rộng lớn và tôi nghĩ đó là </string>
                             <attributes>
                                 <font key="NSFont" metaFont="system" size="17"/>
                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>

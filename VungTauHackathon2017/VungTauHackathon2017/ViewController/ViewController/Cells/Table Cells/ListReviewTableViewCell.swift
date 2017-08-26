@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Cosmos
 class ListReviewTableViewCell: UITableViewCell {
 
     @IBOutlet weak var lbContent: UILabel!

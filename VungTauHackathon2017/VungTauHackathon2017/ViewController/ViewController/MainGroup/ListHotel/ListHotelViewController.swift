@@ -32,7 +32,10 @@ class ListHotelViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        readJSON()
+        if listCurrentHotel.count == 0 {
+            readJSON()
+        }
+        
         tbListHotel.reloadData()
     }
     

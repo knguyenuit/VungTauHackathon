@@ -8,6 +8,7 @@
 
 import UIKit
 import Kingfisher
+import Cosmos
 
 class DetailHotelViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource{
 
@@ -103,6 +104,7 @@ class DetailHotelViewController: UIViewController, UICollectionViewDelegate, UIC
             vContent.addSubview(vc.view)
         } else if indexPath.item == 1 {
             let vc = ReviewViewController()
+            self.addChildViewController(vc)
             vc.view.frame = vContent.bounds
             vContent.addSubview(vc.view)
         }

@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '75775D976836DB3429386BEFE8B6FF4A'
-               BlueprintName = 'TPKeyboardAvoiding'
+               BlueprintIdentifier = '4FDC533A4360A68ABDCE852F04B30927'
+               BlueprintName = 'Cosmos'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'TPKeyboardAvoiding.framework'>
+               BuildableName = 'Cosmos.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
