@@ -6,6 +6,19 @@ target 'VungTauHackathon2017' do
   use_frameworks!
 
   # Pods for VungTauHackathon2017
-	pod ‘Alamofire’
+	
+pod ‘Alamofire’
+    
+    pod 'AlamofireActivityLogger'
+    pod ‘ObjectMapper’
+    pod 'NVActivityIndicatorView'
+    pod 'Bolts-Swift'
+    pod 'Validator'
+    pod 'Swinject'
+    pod 'FAParser'
+    pod 'TPKeyboardAvoiding'
+    pod 'Kingfisher'
+    pod 'GoogleMaps'
+    pod 'GooglePlaces'
 
 end

@@ -1,12 +1,53 @@
 PODS:
   - Alamofire (4.5.0)
+  - AlamofireActivityLogger (2.3.0):
+    - Alamofire (~> 4.2)
+  - Bolts-Swift (1.3.0)
+  - FAParser (0.1.5)
+  - GoogleMaps (2.4.0):
+    - GoogleMaps/Maps (= 2.4.0)
+  - GoogleMaps/Base (2.4.0)
+  - GoogleMaps/Maps (2.4.0):
+    - GoogleMaps/Base
+  - GooglePlaces (2.4.0):
+    - GoogleMaps/Base (= 2.4.0)
+  - Kingfisher (3.11.0)
+  - NVActivityIndicatorView (3.7.0):
+    - NVActivityIndicatorView/Presenter (= 3.7.0)
+  - NVActivityIndicatorView/Presenter (3.7.0)
+  - ObjectMapper (2.2.8)
+  - Swinject (2.1.1)
+  - TPKeyboardAvoiding (1.3.1)
+  - Validator (2.1.1)
 
 DEPENDENCIES:
   - Alamofire
+  - AlamofireActivityLogger
+  - Bolts-Swift
+  - FAParser
+  - GoogleMaps
+  - GooglePlaces
+  - Kingfisher
+  - NVActivityIndicatorView
+  - ObjectMapper
+  - Swinject
+  - TPKeyboardAvoiding
+  - Validator
 
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  AlamofireActivityLogger: a4a4b897a179c515e083a01f93b1a834f79d7091
+  Bolts-Swift: fa98d1b59fc1acea9b21a21306dcdca1c85e3737
+  FAParser: e2d213275dbb94738354a65984479ace17147fba
+  GoogleMaps: 8436ab5d1c25e36915b2f7416d0c8e3fa2e76c61
+  GooglePlaces: aafe5990fa7951e98e078761bbdaaf236d7e0c65
+  Kingfisher: c8911a7672c6217dec8c0520fb6e76ec4b7e0780
+  NVActivityIndicatorView: d3738df7e2e476aca0ba6bf32a8c9fbcfc33d64b
+  ObjectMapper: 3d571bb5af471c779e1160828cd9ad5c4ef90958
+  Swinject: afea49fd95f392b41171669f165842879c48fad6
+  TPKeyboardAvoiding: 0d6af20e95e2850f4c621841225b59ec7d8dd852
+  Validator: b1793fbfd0046097551d0edd18e2c30792d69ef5
 
-PODFILE CHECKSUM: a9039cf4ad631f2dc6450e1817c93658a93f580f
+PODFILE CHECKSUM: c5dfdd29f7a5761fe7f9721185bd1336d2a3cc3b
 
 COCOAPODS: 1.2.0

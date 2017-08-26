@@ -90,9 +90,27 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/AlamofireActivityLogger/AlamofireActivityLogger.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Bolts-Swift/BoltsSwift.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/FAParser/FAParser.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Kingfisher/Kingfisher.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/NVActivityIndicatorView/NVActivityIndicatorView.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ObjectMapper/ObjectMapper.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Swinject/Swinject.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/TPKeyboardAvoiding/TPKeyboardAvoiding.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Validator/Validator.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/AlamofireActivityLogger/AlamofireActivityLogger.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Bolts-Swift/BoltsSwift.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/FAParser/FAParser.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Kingfisher/Kingfisher.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/NVActivityIndicatorView/NVActivityIndicatorView.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ObjectMapper/ObjectMapper.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Swinject/Swinject.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/TPKeyboardAvoiding/TPKeyboardAvoiding.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Validator/Validator.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

@@ -9,7 +9,52 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>AlamofireActivityLogger.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Bolts-Swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FAParser.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Kingfisher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>NVActivityIndicatorView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ObjectMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-VungTauHackathon2017.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Swinject.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TPKeyboardAvoiding.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Validator.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +62,57 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>40641F1B0B4B2D9237ACD229C0585A2F</key>
+		<key>2F0C0F810568D3E82219429D9D870F04</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3D39F5E1DBA58B6428411E2819690338</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3EDFE4052B5DE7D509935AC0774CB135</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5084D067E50B808BD4A3327847716383</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6BA0F44570A6F7C23C1B83110739FAB0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CCA00B98A83B627EED1DD346B48FC7AC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD6C9FB6B052E1CF663F8A56041EA163</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D19B48CA399A7DEF6381AD8475D635B3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DB92DB99458BA1D7480861A89DE5EC01</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FC90F7F1ADF35837D7CEB4A542D75990</key>
 		<dict>
 			<key>primary</key>
 			<true/>

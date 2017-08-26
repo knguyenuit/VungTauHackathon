@@ -22,6 +22,29 @@
 		8BDBAF621F512AF400A41C85 /* ListHotelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDBAF601F512AF400A41C85 /* ListHotelViewController.xib */; };
 		8BDBAF681F512CA300A41C85 /* HotelDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF661F512CA300A41C85 /* HotelDetailViewController.swift */; };
 		8BDBAF691F512CA300A41C85 /* HotelDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDBAF671F512CA300A41C85 /* HotelDetailViewController.xib */; };
+		8BDBAF6B1F512F3C00A41C85 /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF6A1F512F3C00A41C85 /* ApplicationAssembly.swift */; };
+		8BDBAF6D1F512F9100A41C85 /* BaseRestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF6C1F512F9100A41C85 /* BaseRestService.swift */; };
+		8BDBAF6F1F512FA200A41C85 /* PAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF6E1F512FA200A41C85 /* PAuthenticationService.swift */; };
+		8BDBAF711F512FAC00A41C85 /* PCacheProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF701F512FAC00A41C85 /* PCacheProvider.swift */; };
+		8BDBAF731F512FBE00A41C85 /* PBaseRestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF721F512FBE00A41C85 /* PBaseRestService.swift */; };
+		8BDBAF761F512FE300A41C85 /* AuthenticationRestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF751F512FE300A41C85 /* AuthenticationRestService.swift */; };
+		8BDBAF781F51301300A41C85 /* AuthenticationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF771F51301300A41C85 /* AuthenticationRouter.swift */; };
+		8BDBAF7A1F51305800A41C85 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF791F51305800A41C85 /* User.swift */; };
+		8BDBAF7C1F51307900A41C85 /* APIRegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF7B1F51307900A41C85 /* APIRegisterRequest.swift */; };
+		8BDBAF851F51309A00A41C85 /* APILogoutReponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF7D1F51309A00A41C85 /* APILogoutReponse.swift */; };
+		8BDBAF861F51309A00A41C85 /* APIPagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF7E1F51309A00A41C85 /* APIPagination.swift */; };
+		8BDBAF871F51309A00A41C85 /* BaseAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF7F1F51309A00A41C85 /* BaseAPIError.swift */; };
+		8BDBAF881F51309A00A41C85 /* BaseAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF801F51309A00A41C85 /* BaseAPIResponse.swift */; };
+		8BDBAF891F51309A00A41C85 /* BoolResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF811F51309A00A41C85 /* BoolResponse.swift */; };
+		8BDBAF8A1F51309A00A41C85 /* SignInReponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF821F51309A00A41C85 /* SignInReponse.swift */; };
+		8BDBAF8B1F51309A00A41C85 /* TextResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF831F51309A00A41C85 /* TextResponse.swift */; };
+		8BDBAF8F1F5130D900A41C85 /* APILoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF8D1F5130D900A41C85 /* APILoginRequest.swift */; };
+		8BDBAF901F5130D900A41C85 /* APILogoutRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF8E1F5130D900A41C85 /* APILogoutRequest.swift */; };
+		8BDBAF921F51311300A41C85 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF911F51311300A41C85 /* AppConstants.swift */; };
+		8BDBAF971F51353400A41C85 /* ListHotelMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF951F51353400A41C85 /* ListHotelMapViewController.swift */; };
+		8BDBAF981F51353400A41C85 /* ListHotelMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDBAF961F51353400A41C85 /* ListHotelMapViewController.xib */; };
+		8BDBAF9C1F51381000A41C85 /* HotelInfoMakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF9A1F51381000A41C85 /* HotelInfoMakerViewController.swift */; };
+		8BDBAF9D1F51381000A41C85 /* HotelInfoMakerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDBAF9B1F51381000A41C85 /* HotelInfoMakerViewController.xib */; };
 		91FFE7E66E754C14F1293DCF /* Pods_VungTauHackathon2017.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179092E1A7721E4051A9B2D0 /* Pods_VungTauHackathon2017.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +68,29 @@
 		8BDBAF601F512AF400A41C85 /* ListHotelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListHotelViewController.xib; sourceTree = "<group>"; };
 		8BDBAF661F512CA300A41C85 /* HotelDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelDetailViewController.swift; sourceTree = "<group>"; };
 		8BDBAF671F512CA300A41C85 /* HotelDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotelDetailViewController.xib; sourceTree = "<group>"; };
+		8BDBAF6A1F512F3C00A41C85 /* ApplicationAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
+		8BDBAF6C1F512F9100A41C85 /* BaseRestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRestService.swift; sourceTree = "<group>"; };
+		8BDBAF6E1F512FA200A41C85 /* PAuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAuthenticationService.swift; sourceTree = "<group>"; };
+		8BDBAF701F512FAC00A41C85 /* PCacheProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCacheProvider.swift; sourceTree = "<group>"; };
+		8BDBAF721F512FBE00A41C85 /* PBaseRestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBaseRestService.swift; sourceTree = "<group>"; };
+		8BDBAF751F512FE300A41C85 /* AuthenticationRestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationRestService.swift; sourceTree = "<group>"; };
+		8BDBAF771F51301300A41C85 /* AuthenticationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationRouter.swift; sourceTree = "<group>"; };
+		8BDBAF791F51305800A41C85 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8BDBAF7B1F51307900A41C85 /* APIRegisterRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRegisterRequest.swift; sourceTree = "<group>"; };
+		8BDBAF7D1F51309A00A41C85 /* APILogoutReponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APILogoutReponse.swift; sourceTree = "<group>"; };
+		8BDBAF7E1F51309A00A41C85 /* APIPagination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIPagination.swift; sourceTree = "<group>"; };
+		8BDBAF7F1F51309A00A41C85 /* BaseAPIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAPIError.swift; sourceTree = "<group>"; };
+		8BDBAF801F51309A00A41C85 /* BaseAPIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAPIResponse.swift; sourceTree = "<group>"; };
+		8BDBAF811F51309A00A41C85 /* BoolResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoolResponse.swift; sourceTree = "<group>"; };
+		8BDBAF821F51309A00A41C85 /* SignInReponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInReponse.swift; sourceTree = "<group>"; };
+		8BDBAF831F51309A00A41C85 /* TextResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextResponse.swift; sourceTree = "<group>"; };
+		8BDBAF8D1F5130D900A41C85 /* APILoginRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APILoginRequest.swift; sourceTree = "<group>"; };
+		8BDBAF8E1F5130D900A41C85 /* APILogoutRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APILogoutRequest.swift; sourceTree = "<group>"; };
+		8BDBAF911F51311300A41C85 /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppConstants.swift; path = ViewController/ViewController/AppConstants.swift; sourceTree = "<group>"; };
+		8BDBAF951F51353400A41C85 /* ListHotelMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListHotelMapViewController.swift; sourceTree = "<group>"; };
+		8BDBAF961F51353400A41C85 /* ListHotelMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListHotelMapViewController.xib; sourceTree = "<group>"; };
+		8BDBAF9A1F51381000A41C85 /* HotelInfoMakerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelInfoMakerViewController.swift; sourceTree = "<group>"; };
+		8BDBAF9B1F51381000A41C85 /* HotelInfoMakerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotelInfoMakerViewController.xib; sourceTree = "<group>"; };
 		DE31194C497F375D1EE5C7FB /* Pods-VungTauHackathon2017.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VungTauHackathon2017.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VungTauHackathon2017/Pods-VungTauHackathon2017.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +151,7 @@
 				8BDBAF421F51268B00A41C85 /* ViewController */,
 				8BDBAF301F51244E00A41C85 /* AppDelegate.swift */,
 				8BDBAF321F51244E00A41C85 /* ViewController.swift */,
+				8BDBAF911F51311300A41C85 /* AppConstants.swift */,
 				8BDBAF341F51244E00A41C85 /* Main.storyboard */,
 				8BDBAF371F51244E00A41C85 /* Assets.xcassets */,
 				8BDBAF391F51244E00A41C85 /* LaunchScreen.storyboard */,
@@ -127,6 +174,7 @@
 		8BDBAF431F51272500A41C85 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				8BDBAF741F512FC900A41C85 /* Router */,
 				8BDBAF451F51275800A41C85 /* RestServices */,
 				8BDBAF441F51274800A41C85 /* Services */,
 			);
@@ -136,6 +184,9 @@
 		8BDBAF441F51274800A41C85 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				8BDBAF6E1F512FA200A41C85 /* PAuthenticationService.swift */,
+				8BDBAF701F512FAC00A41C85 /* PCacheProvider.swift */,
+				8BDBAF721F512FBE00A41C85 /* PBaseRestService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -143,6 +194,8 @@
 		8BDBAF451F51275800A41C85 /* RestServices */ = {
 			isa = PBXGroup;
 			children = (
+				8BDBAF751F512FE300A41C85 /* AuthenticationRestService.swift */,
+				8BDBAF6C1F512F9100A41C85 /* BaseRestService.swift */,
 			);
 			path = RestServices;
 			sourceTree = "<group>";
@@ -159,6 +212,7 @@
 		8BDBAF471F51279100A41C85 /* CoreModels */ = {
 			isa = PBXGroup;
 			children = (
+				8BDBAF791F51305800A41C85 /* User.swift */,
 			);
 			path = CoreModels;
 			sourceTree = "<group>";
@@ -175,6 +229,9 @@
 		8BDBAF491F5127DC00A41C85 /* APIRequestModels */ = {
 			isa = PBXGroup;
 			children = (
+				8BDBAF8D1F5130D900A41C85 /* APILoginRequest.swift */,
+				8BDBAF8E1F5130D900A41C85 /* APILogoutRequest.swift */,
+				8BDBAF7B1F51307900A41C85 /* APIRegisterRequest.swift */,
 			);
 			path = APIRequestModels;
 			sourceTree = "<group>";
@@ -182,6 +239,13 @@
 		8BDBAF4A1F5127FD00A41C85 /* APIResponseModels */ = {
 			isa = PBXGroup;
 			children = (
+				8BDBAF7D1F51309A00A41C85 /* APILogoutReponse.swift */,
+				8BDBAF7E1F51309A00A41C85 /* APIPagination.swift */,
+				8BDBAF7F1F51309A00A41C85 /* BaseAPIError.swift */,
+				8BDBAF801F51309A00A41C85 /* BaseAPIResponse.swift */,
+				8BDBAF811F51309A00A41C85 /* BoolResponse.swift */,
+				8BDBAF821F51309A00A41C85 /* SignInReponse.swift */,
+				8BDBAF831F51309A00A41C85 /* TextResponse.swift */,
 			);
 			path = APIResponseModels;
 			sourceTree = "<group>";
@@ -205,6 +269,7 @@
 		8BDBAF4D1F5128EB00A41C85 /* ApplicationAssembly */ = {
 			isa = PBXGroup;
 			children = (
+				8BDBAF6A1F512F3C00A41C85 /* ApplicationAssembly.swift */,
 			);
 			path = ApplicationAssembly;
 			sourceTree = "<group>";
@@ -231,6 +296,8 @@
 		8BDBAF5E1F512A9C00A41C85 /* ListHotel */ = {
 			isa = PBXGroup;
 			children = (
+				8BDBAF991F5137C300A41C85 /* ViewInfoMaker */,
+				8BDBAF931F51350D00A41C85 /* ListHotelMap */,
 				8BDBAF631F512C3600A41C85 /* HotelDetail */,
 				8BDBAF5F1F512AF400A41C85 /* ListHotelViewController.swift */,
 				8BDBAF601F512AF400A41C85 /* ListHotelViewController.xib */,
@@ -245,6 +312,32 @@
 				8BDBAF671F512CA300A41C85 /* HotelDetailViewController.xib */,
 			);
 			path = HotelDetail;
+			sourceTree = "<group>";
+		};
+		8BDBAF741F512FC900A41C85 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8BDBAF771F51301300A41C85 /* AuthenticationRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		8BDBAF931F51350D00A41C85 /* ListHotelMap */ = {
+			isa = PBXGroup;
+			children = (
+				8BDBAF951F51353400A41C85 /* ListHotelMapViewController.swift */,
+				8BDBAF961F51353400A41C85 /* ListHotelMapViewController.xib */,
+			);
+			path = ListHotelMap;
+			sourceTree = "<group>";
+		};
+		8BDBAF991F5137C300A41C85 /* ViewInfoMaker */ = {
+			isa = PBXGroup;
+			children = (
+				8BDBAF9A1F51381000A41C85 /* HotelInfoMakerViewController.swift */,
+				8BDBAF9B1F51381000A41C85 /* HotelInfoMakerViewController.xib */,
+			);
+			path = ViewInfoMaker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +402,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BDBAF9D1F51381000A41C85 /* HotelInfoMakerViewController.xib in Resources */,
+				8BDBAF981F51353400A41C85 /* ListHotelMapViewController.xib in Resources */,
 				8BDBAF571F51295200A41C85 /* LoginViewController.xib in Resources */,
 				8BDBAF621F512AF400A41C85 /* ListHotelViewController.xib in Resources */,
 				8BDBAF3B1F51244E00A41C85 /* LaunchScreen.storyboard in Resources */,
@@ -375,13 +470,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BDBAF881F51309A00A41C85 /* BaseAPIResponse.swift in Sources */,
+				8BDBAF6B1F512F3C00A41C85 /* ApplicationAssembly.swift in Sources */,
+				8BDBAF761F512FE300A41C85 /* AuthenticationRestService.swift in Sources */,
 				8BDBAF5C1F51297600A41C85 /* MainScreenViewController.swift in Sources */,
 				8BDBAF561F51295200A41C85 /* LoginViewController.swift in Sources */,
+				8BDBAF731F512FBE00A41C85 /* PBaseRestService.swift in Sources */,
+				8BDBAF711F512FAC00A41C85 /* PCacheProvider.swift in Sources */,
+				8BDBAF901F5130D900A41C85 /* APILogoutRequest.swift in Sources */,
+				8BDBAF8B1F51309A00A41C85 /* TextResponse.swift in Sources */,
+				8BDBAF6D1F512F9100A41C85 /* BaseRestService.swift in Sources */,
+				8BDBAF971F51353400A41C85 /* ListHotelMapViewController.swift in Sources */,
+				8BDBAF6F1F512FA200A41C85 /* PAuthenticationService.swift in Sources */,
+				8BDBAF7A1F51305800A41C85 /* User.swift in Sources */,
+				8BDBAF781F51301300A41C85 /* AuthenticationRouter.swift in Sources */,
 				8BDBAF331F51244E00A41C85 /* ViewController.swift in Sources */,
+				8BDBAF8A1F51309A00A41C85 /* SignInReponse.swift in Sources */,
+				8BDBAF7C1F51307900A41C85 /* APIRegisterRequest.swift in Sources */,
+				8BDBAF861F51309A00A41C85 /* APIPagination.swift in Sources */,
 				8BDBAF681F512CA300A41C85 /* HotelDetailViewController.swift in Sources */,
+				8BDBAF851F51309A00A41C85 /* APILogoutReponse.swift in Sources */,
+				8BDBAF9C1F51381000A41C85 /* HotelInfoMakerViewController.swift in Sources */,
+				8BDBAF871F51309A00A41C85 /* BaseAPIError.swift in Sources */,
 				8BDBAF611F512AF400A41C85 /* ListHotelViewController.swift in Sources */,
+				8BDBAF8F1F5130D900A41C85 /* APILoginRequest.swift in Sources */,
 				8BDBAF311F51244E00A41C85 /* AppDelegate.swift in Sources */,
+				8BDBAF921F51311300A41C85 /* AppConstants.swift in Sources */,
 				8BDBAF521F51293F00A41C85 /* InitViewController.swift in Sources */,
+				8BDBAF891F51309A00A41C85 /* BoolResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
