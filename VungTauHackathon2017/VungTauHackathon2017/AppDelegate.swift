@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GMSServices.provideAPIKey("AIzaSyCaNIA8p6P0fRDHDXP9FGUUX7h8Iwqbayg")
         
         // Override point for customization after application launch.
-        rootViewController = LoginViewController()
+        rootViewController = ListHotelViewController()
         navigationController = UINavigationController(rootViewController: rootViewController!)
         navigationController?.isNavigationBarHidden = true
         window?.rootViewController = navigationController

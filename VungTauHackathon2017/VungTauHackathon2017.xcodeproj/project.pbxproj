@@ -45,6 +45,8 @@
 		8BDBAF981F51353400A41C85 /* ListHotelMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDBAF961F51353400A41C85 /* ListHotelMapViewController.xib */; };
 		8BDBAF9C1F51381000A41C85 /* HotelInfoMakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF9A1F51381000A41C85 /* HotelInfoMakerViewController.swift */; };
 		8BDBAF9D1F51381000A41C85 /* HotelInfoMakerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDBAF9B1F51381000A41C85 /* HotelInfoMakerViewController.xib */; };
+		8BDBAFA21F5154F600A41C85 /* ListHotelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAFA01F5154F600A41C85 /* ListHotelTableViewCell.swift */; };
+		8BDBAFA31F5154F600A41C85 /* ListHotelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDBAFA11F5154F600A41C85 /* ListHotelTableViewCell.xib */; };
 		91FFE7E66E754C14F1293DCF /* Pods_VungTauHackathon2017.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179092E1A7721E4051A9B2D0 /* Pods_VungTauHackathon2017.framework */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +93,8 @@
 		8BDBAF961F51353400A41C85 /* ListHotelMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListHotelMapViewController.xib; sourceTree = "<group>"; };
 		8BDBAF9A1F51381000A41C85 /* HotelInfoMakerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelInfoMakerViewController.swift; sourceTree = "<group>"; };
 		8BDBAF9B1F51381000A41C85 /* HotelInfoMakerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotelInfoMakerViewController.xib; sourceTree = "<group>"; };
+		8BDBAFA01F5154F600A41C85 /* ListHotelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListHotelTableViewCell.swift; sourceTree = "<group>"; };
+		8BDBAFA11F5154F600A41C85 /* ListHotelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListHotelTableViewCell.xib; sourceTree = "<group>"; };
 		DE31194C497F375D1EE5C7FB /* Pods-VungTauHackathon2017.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VungTauHackathon2017.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VungTauHackathon2017/Pods-VungTauHackathon2017.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,6 +167,7 @@
 		8BDBAF421F51268B00A41C85 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8BDBAF9E1F5154CB00A41C85 /* Cells */,
 				8BDBAF4F1F51292000A41C85 /* MainGroup */,
 				8BDBAF4E1F51290A00A41C85 /* LoginGroup */,
 				8BDBAF4B1F5128A400A41C85 /* Init */,
@@ -340,6 +345,23 @@
 			path = ViewInfoMaker;
 			sourceTree = "<group>";
 		};
+		8BDBAF9E1F5154CB00A41C85 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8BDBAF9F1F5154DA00A41C85 /* Table Cells */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8BDBAF9F1F5154DA00A41C85 /* Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8BDBAFA01F5154F600A41C85 /* ListHotelTableViewCell.swift */,
+				8BDBAFA11F5154F600A41C85 /* ListHotelTableViewCell.xib */,
+			);
+			path = "Table Cells";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -404,6 +426,7 @@
 			files = (
 				8BDBAF9D1F51381000A41C85 /* HotelInfoMakerViewController.xib in Resources */,
 				8BDBAF981F51353400A41C85 /* ListHotelMapViewController.xib in Resources */,
+				8BDBAFA31F5154F600A41C85 /* ListHotelTableViewCell.xib in Resources */,
 				8BDBAF571F51295200A41C85 /* LoginViewController.xib in Resources */,
 				8BDBAF621F512AF400A41C85 /* ListHotelViewController.xib in Resources */,
 				8BDBAF3B1F51244E00A41C85 /* LaunchScreen.storyboard in Resources */,
@@ -473,6 +496,7 @@
 				8BDBAF881F51309A00A41C85 /* BaseAPIResponse.swift in Sources */,
 				8BDBAF6B1F512F3C00A41C85 /* ApplicationAssembly.swift in Sources */,
 				8BDBAF761F512FE300A41C85 /* AuthenticationRestService.swift in Sources */,
+				8BDBAFA21F5154F600A41C85 /* ListHotelTableViewCell.swift in Sources */,
 				8BDBAF5C1F51297600A41C85 /* MainScreenViewController.swift in Sources */,
 				8BDBAF561F51295200A41C85 /* LoginViewController.swift in Sources */,
 				8BDBAF731F512FBE00A41C85 /* PBaseRestService.swift in Sources */,

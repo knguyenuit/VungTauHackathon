@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListHotelCell" rowHeight="308" id="KGk-i7-Jjw" customClass="ListHotelTableViewCell" customModule="VungTauHackathon2017" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="308"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="307"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pexels-photo-406152" translatesAutoresizingMaskIntoConstraints="NO" id="830-iy-UFy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="WFU-hV-sMu"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoàng Gia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZI-ba-yrG">
+                        <rect key="frame" x="22" y="217" width="84.5" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtb-Vc-oF7">
+                        <rect key="frame" x="328" y="213" width="29" height="29"/>
+                        <state key="normal" backgroundImage="Oval filled with check blue"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NhT-Lm-ZH1">
+                        <rect key="frame" x="22" y="246" width="41" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.67827486991882324" green="0.67837351560592651" blue="0.68158519268035889" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="|" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKa-2T-yIn">
+                        <rect key="frame" x="66" y="246" width="6" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.67827486989999997" green="0.67837351560000003" blue="0.68158519269999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Green location icon_create an account" translatesAutoresizingMaskIntoConstraints="NO" id="C3c-Xm-WaB">
+                        <rect key="frame" x="22" y="275" width="14" height="20"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Licensed Tag" translatesAutoresizingMaskIntoConstraints="NO" id="aEv-AT-lXn">
+                        <rect key="frame" x="77" y="248" width="60" height="18"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BYO Tag" translatesAutoresizingMaskIntoConstraints="NO" id="Qwf-l4-ykQ">
+                        <rect key="frame" x="139" y="248" width="44" height="18"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Alfresco tag" translatesAutoresizingMaskIntoConstraints="NO" id="thT-R4-ysZ">
+                        <rect key="frame" x="185" y="248" width="60" height="18"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="72 Trương Công Định" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tX4-pA-A9j">
+                        <rect key="frame" x="44" y="276" width="146.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.67827486989999997" green="0.67837351560000003" blue="0.68158519269999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sZI-ba-yrG" firstAttribute="top" secondItem="830-iy-UFy" secondAttribute="bottom" constant="17" id="2dd-Uf-kww"/>
+                    <constraint firstItem="830-iy-UFy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="658-dq-OdB"/>
+                    <constraint firstItem="IKa-2T-yIn" firstAttribute="leading" secondItem="NhT-Lm-ZH1" secondAttribute="trailing" constant="2.5" id="8rk-iS-dtX"/>
+                    <constraint firstItem="NhT-Lm-ZH1" firstAttribute="leading" secondItem="sZI-ba-yrG" secondAttribute="leading" id="A2W-he-DaS"/>
+                    <constraint firstItem="sZI-ba-yrG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="14" id="B7e-2K-VC6"/>
+                    <constraint firstItem="NhT-Lm-ZH1" firstAttribute="top" secondItem="sZI-ba-yrG" secondAttribute="bottom" constant="8" id="FAa-Qy-23D"/>
+                    <constraint firstItem="830-iy-UFy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="FXy-0I-a6e"/>
+                    <constraint firstItem="tX4-pA-A9j" firstAttribute="centerY" secondItem="C3c-Xm-WaB" secondAttribute="centerY" id="Hwk-bl-ItE"/>
+                    <constraint firstItem="Qwf-l4-ykQ" firstAttribute="centerY" secondItem="aEv-AT-lXn" secondAttribute="centerY" id="KzT-6B-LaS"/>
+                    <constraint firstItem="qtb-Vc-oF7" firstAttribute="centerY" secondItem="sZI-ba-yrG" secondAttribute="centerY" id="RTp-fF-AV5"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="qtb-Vc-oF7" secondAttribute="trailing" constant="10" id="Tdx-KL-0vI"/>
+                    <constraint firstItem="aEv-AT-lXn" firstAttribute="centerY" secondItem="IKa-2T-yIn" secondAttribute="centerY" id="YIC-Pb-z2K"/>
+                    <constraint firstAttribute="trailing" secondItem="830-iy-UFy" secondAttribute="trailing" id="iuA-K0-QdB"/>
+                    <constraint firstItem="aEv-AT-lXn" firstAttribute="leading" secondItem="IKa-2T-yIn" secondAttribute="trailing" constant="5" id="jrb-0O-unM"/>
+                    <constraint firstItem="tX4-pA-A9j" firstAttribute="leading" secondItem="C3c-Xm-WaB" secondAttribute="trailing" constant="8" id="ki8-MJ-xun"/>
+                    <constraint firstItem="C3c-Xm-WaB" firstAttribute="top" secondItem="NhT-Lm-ZH1" secondAttribute="bottom" constant="8" id="mBG-wc-961"/>
+                    <constraint firstItem="IKa-2T-yIn" firstAttribute="centerY" secondItem="NhT-Lm-ZH1" secondAttribute="centerY" id="mpB-nI-Zh4"/>
+                    <constraint firstItem="thT-R4-ysZ" firstAttribute="leading" secondItem="Qwf-l4-ykQ" secondAttribute="trailing" constant="2" id="oZ7-9S-rpH"/>
+                    <constraint firstItem="C3c-Xm-WaB" firstAttribute="leading" secondItem="NhT-Lm-ZH1" secondAttribute="leading" id="pYQ-Jj-VSP"/>
+                    <constraint firstItem="thT-R4-ysZ" firstAttribute="centerY" secondItem="Qwf-l4-ykQ" secondAttribute="centerY" id="sM8-LA-H2i"/>
+                    <constraint firstItem="Qwf-l4-ykQ" firstAttribute="leading" secondItem="aEv-AT-lXn" secondAttribute="trailing" constant="2" id="u11-v7-jqI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="24.5" y="184"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Alfresco tag" width="60" height="18"/>
+        <image name="BYO Tag" width="44" height="18"/>
+        <image name="Green location icon_create an account" width="14" height="20"/>
+        <image name="Licensed Tag" width="60" height="18"/>
+        <image name="Oval filled with check blue" width="29" height="29"/>
+        <image name="pexels-photo-406152" width="1280" height="853"/>
+    </resources>
+</document>

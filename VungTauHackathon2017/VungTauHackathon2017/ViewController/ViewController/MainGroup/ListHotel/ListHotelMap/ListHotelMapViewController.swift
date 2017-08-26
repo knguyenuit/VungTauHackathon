@@ -12,7 +12,7 @@ import GooglePlaces
 import CoreLocation
 import NVActivityIndicatorView
 
-class ListHotelMapViewController: UIViewController, GMSMapViewDelegate {
+class ListHotelMapViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDelegate {
 
    
     @IBOutlet weak var mapView: GMSMapView!
@@ -30,13 +30,22 @@ class ListHotelMapViewController: UIViewController, GMSMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.delegate = self
-        
+        self.locationManager.delegate = self
         //mapView = GMSMapView(frame: view.bounds)
         
         mapView.isMyLocationEnabled = true
         mapView.sizeToFit()
         self.locationManager.startUpdatingLocation()
+        let marker = GMSMarker()
+        marker.position = CLLocationCoordinate2D(latitude: 10.36408
+            , longitude: 107.08377)
+        marker.title = "Khánh Nguyên"
+        //marker.snippet = "VietNam"
+        marker.icon = GMSMarker.markerImage(with: .black)
+        marker.tracksInfoWindowChanges = true
+        marker.map = self.mapView
         
+        //marker.userData = pitch
         self.mapView.camera = GMSCameraPosition.camera(withLatitude: 10.36408
             , longitude: 107.08377, zoom: 15)
         //self.locationManager.delegate = self

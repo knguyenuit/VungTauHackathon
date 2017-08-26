@@ -24,7 +24,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List Hotel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7EL-D2-jIx">
-                            <rect key="frame" x="122.5" y="32" width="131" height="21"/>
+                            <rect key="frame" x="122" y="32" width="131" height="21"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="131" id="OFf-5m-ry0"/>
                             </constraints>
@@ -33,7 +33,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdm-Pw-LM5">
-                            <rect key="frame" x="8" y="32" width="64.5" height="21"/>
+                            <rect key="frame" x="8" y="32" width="64" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <state key="normal" title="  Back" image="icBack">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -57,8 +57,6 @@
                     <color key="backgroundColor" red="0.0" green="0.20392156859999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="kdm-Pw-LM5" firstAttribute="top" secondItem="vfI-Pl-pFB" secondAttribute="top" constant="31.5" id="ALl-lp-bAE"/>
-                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="65" id="C84-Ux-TCn"/>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="Ejk-oq-7SE"/>
                         <constraint firstAttribute="height" constant="65" id="K3F-wh-TNP"/>
                         <constraint firstItem="7EL-D2-jIx" firstAttribute="centerX" secondItem="vfI-Pl-pFB" secondAttribute="centerX" id="M32-vE-j9p"/>
                         <constraint firstItem="7EL-D2-jIx" firstAttribute="leading" secondItem="kdm-Pw-LM5" secondAttribute="trailing" constant="50" id="RLd-G6-giY"/>
@@ -67,23 +65,25 @@
                         <constraint firstItem="kdm-Pw-LM5" firstAttribute="leading" secondItem="vfI-Pl-pFB" secondAttribute="leading" constant="8.5" id="z4c-Gt-q02"/>
                     </constraints>
                 </view>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JGe-fu-7oo">
-                    <rect key="frame" x="26" y="126" width="284" height="176"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JGe-fu-7oo">
+                    <rect key="frame" x="0.0" y="65" width="375" height="602"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="JGe-fu-7oo" secondAttribute="bottom" id="0Sh-US-5m0"/>
+                <constraint firstItem="JGe-fu-7oo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4Rr-0L-VGf"/>
+                <constraint firstAttribute="trailing" secondItem="JGe-fu-7oo" secondAttribute="trailing" id="65n-OQ-wyT"/>
                 <constraint firstItem="vfI-Pl-pFB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DVb-wc-Lf9"/>
                 <constraint firstAttribute="trailing" secondItem="vfI-Pl-pFB" secondAttribute="trailing" id="Vgh-Qv-wEl"/>
-                <constraint firstAttribute="bottom" secondItem="vfI-Pl-pFB" secondAttribute="bottom" id="cmV-x4-biD"/>
                 <constraint firstItem="vfI-Pl-pFB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="oh2-cQ-wkn"/>
+                <constraint firstItem="JGe-fu-7oo" firstAttribute="top" secondItem="vfI-Pl-pFB" secondAttribute="bottom" id="ttl-zy-qMY"/>
             </constraints>
             <point key="canvasLocation" x="33.5" y="54.5"/>
         </view>
     </objects>
     <resources>
-        <image name="icBack" width="16" height="16"/>
+        <image name="icBack" width="13" height="22"/>
     </resources>
 </document>

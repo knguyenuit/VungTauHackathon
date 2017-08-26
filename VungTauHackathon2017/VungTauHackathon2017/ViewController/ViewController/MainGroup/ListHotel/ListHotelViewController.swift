@@ -14,6 +14,11 @@ class ListHotelViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tbListHotel.delegate = self
+        tbListHotel.dataSource = self
+        //let cell = ListChildTableViewCell()
+        //cell.ref = self
+        tbListHotel.register(UINib(nibName: "ListHotelTableViewCell", bundle: nil), forCellReuseIdentifier: "ListHotelCell")
         // Do any additional setup after loading the view.
     }
 
@@ -38,3 +43,30 @@ class ListHotelViewController: UIViewController {
     */
 
 }
+
+extension ListHotelViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 307
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tbListHotel.dequeueReusableCell(withIdentifier: "ListHotelCell") as! ListHotelTableViewCell
+//        cell.index = indexPath.row
+//        cell.id = listChild[indexPath.row].id ?? ""
+//        cell.ref = self
+//        cell.lbName.text = listChild[indexPath.row].name
+//        cell.pupolateAvtar(imageName: listChild[indexPath.row].avatar!)
+        //cell.populateDate(name: name!)
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
+    }}
+
