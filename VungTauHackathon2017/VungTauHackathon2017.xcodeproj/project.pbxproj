@@ -12,6 +12,16 @@
 		8BDBAF361F51244E00A41C85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BDBAF341F51244E00A41C85 /* Main.storyboard */; };
 		8BDBAF381F51244E00A41C85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BDBAF371F51244E00A41C85 /* Assets.xcassets */; };
 		8BDBAF3B1F51244E00A41C85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BDBAF391F51244E00A41C85 /* LaunchScreen.storyboard */; };
+		8BDBAF521F51293F00A41C85 /* InitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF501F51293F00A41C85 /* InitViewController.swift */; };
+		8BDBAF531F51293F00A41C85 /* InitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDBAF511F51293F00A41C85 /* InitViewController.xib */; };
+		8BDBAF561F51295200A41C85 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF541F51295200A41C85 /* LoginViewController.swift */; };
+		8BDBAF571F51295200A41C85 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDBAF551F51295200A41C85 /* LoginViewController.xib */; };
+		8BDBAF5C1F51297600A41C85 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF5A1F51297600A41C85 /* MainScreenViewController.swift */; };
+		8BDBAF5D1F51297600A41C85 /* MainScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDBAF5B1F51297600A41C85 /* MainScreenViewController.xib */; };
+		8BDBAF611F512AF400A41C85 /* ListHotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF5F1F512AF400A41C85 /* ListHotelViewController.swift */; };
+		8BDBAF621F512AF400A41C85 /* ListHotelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDBAF601F512AF400A41C85 /* ListHotelViewController.xib */; };
+		8BDBAF681F512CA300A41C85 /* HotelDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF661F512CA300A41C85 /* HotelDetailViewController.swift */; };
+		8BDBAF691F512CA300A41C85 /* HotelDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDBAF671F512CA300A41C85 /* HotelDetailViewController.xib */; };
 		91FFE7E66E754C14F1293DCF /* Pods_VungTauHackathon2017.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179092E1A7721E4051A9B2D0 /* Pods_VungTauHackathon2017.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +35,16 @@
 		8BDBAF371F51244E00A41C85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BDBAF3A1F51244E00A41C85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BDBAF3C1F51244E00A41C85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BDBAF501F51293F00A41C85 /* InitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitViewController.swift; sourceTree = "<group>"; };
+		8BDBAF511F51293F00A41C85 /* InitViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InitViewController.xib; sourceTree = "<group>"; };
+		8BDBAF541F51295200A41C85 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8BDBAF551F51295200A41C85 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		8BDBAF5A1F51297600A41C85 /* MainScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		8BDBAF5B1F51297600A41C85 /* MainScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainScreenViewController.xib; sourceTree = "<group>"; };
+		8BDBAF5F1F512AF400A41C85 /* ListHotelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListHotelViewController.swift; sourceTree = "<group>"; };
+		8BDBAF601F512AF400A41C85 /* ListHotelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListHotelViewController.xib; sourceTree = "<group>"; };
+		8BDBAF661F512CA300A41C85 /* HotelDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelDetailViewController.swift; sourceTree = "<group>"; };
+		8BDBAF671F512CA300A41C85 /* HotelDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotelDetailViewController.xib; sourceTree = "<group>"; };
 		DE31194C497F375D1EE5C7FB /* Pods-VungTauHackathon2017.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VungTauHackathon2017.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VungTauHackathon2017/Pods-VungTauHackathon2017.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +98,11 @@
 		8BDBAF2F1F51244E00A41C85 /* VungTauHackathon2017 */ = {
 			isa = PBXGroup;
 			children = (
+				8BDBAF4D1F5128EB00A41C85 /* ApplicationAssembly */,
+				8BDBAF4C1F5128CC00A41C85 /* Helpers */,
+				8BDBAF461F51277F00A41C85 /* Models */,
+				8BDBAF431F51272500A41C85 /* Services */,
+				8BDBAF421F51268B00A41C85 /* ViewController */,
 				8BDBAF301F51244E00A41C85 /* AppDelegate.swift */,
 				8BDBAF321F51244E00A41C85 /* ViewController.swift */,
 				8BDBAF341F51244E00A41C85 /* Main.storyboard */,
@@ -86,6 +111,140 @@
 				8BDBAF3C1F51244E00A41C85 /* Info.plist */,
 			);
 			path = VungTauHackathon2017;
+			sourceTree = "<group>";
+		};
+		8BDBAF421F51268B00A41C85 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8BDBAF4F1F51292000A41C85 /* MainGroup */,
+				8BDBAF4E1F51290A00A41C85 /* LoginGroup */,
+				8BDBAF4B1F5128A400A41C85 /* Init */,
+			);
+			name = ViewController;
+			path = ViewController/ViewController;
+			sourceTree = "<group>";
+		};
+		8BDBAF431F51272500A41C85 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8BDBAF451F51275800A41C85 /* RestServices */,
+				8BDBAF441F51274800A41C85 /* Services */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8BDBAF441F51274800A41C85 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8BDBAF451F51275800A41C85 /* RestServices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RestServices;
+			sourceTree = "<group>";
+		};
+		8BDBAF461F51277F00A41C85 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8BDBAF481F5127BE00A41C85 /* APIModels */,
+				8BDBAF471F51279100A41C85 /* CoreModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8BDBAF471F51279100A41C85 /* CoreModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreModels;
+			sourceTree = "<group>";
+		};
+		8BDBAF481F5127BE00A41C85 /* APIModels */ = {
+			isa = PBXGroup;
+			children = (
+				8BDBAF4A1F5127FD00A41C85 /* APIResponseModels */,
+				8BDBAF491F5127DC00A41C85 /* APIRequestModels */,
+			);
+			path = APIModels;
+			sourceTree = "<group>";
+		};
+		8BDBAF491F5127DC00A41C85 /* APIRequestModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = APIRequestModels;
+			sourceTree = "<group>";
+		};
+		8BDBAF4A1F5127FD00A41C85 /* APIResponseModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = APIResponseModels;
+			sourceTree = "<group>";
+		};
+		8BDBAF4B1F5128A400A41C85 /* Init */ = {
+			isa = PBXGroup;
+			children = (
+				8BDBAF501F51293F00A41C85 /* InitViewController.swift */,
+				8BDBAF511F51293F00A41C85 /* InitViewController.xib */,
+			);
+			path = Init;
+			sourceTree = "<group>";
+		};
+		8BDBAF4C1F5128CC00A41C85 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8BDBAF4D1F5128EB00A41C85 /* ApplicationAssembly */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ApplicationAssembly;
+			sourceTree = "<group>";
+		};
+		8BDBAF4E1F51290A00A41C85 /* LoginGroup */ = {
+			isa = PBXGroup;
+			children = (
+				8BDBAF541F51295200A41C85 /* LoginViewController.swift */,
+				8BDBAF551F51295200A41C85 /* LoginViewController.xib */,
+			);
+			path = LoginGroup;
+			sourceTree = "<group>";
+		};
+		8BDBAF4F1F51292000A41C85 /* MainGroup */ = {
+			isa = PBXGroup;
+			children = (
+				8BDBAF5E1F512A9C00A41C85 /* ListHotel */,
+				8BDBAF5A1F51297600A41C85 /* MainScreenViewController.swift */,
+				8BDBAF5B1F51297600A41C85 /* MainScreenViewController.xib */,
+			);
+			path = MainGroup;
+			sourceTree = "<group>";
+		};
+		8BDBAF5E1F512A9C00A41C85 /* ListHotel */ = {
+			isa = PBXGroup;
+			children = (
+				8BDBAF631F512C3600A41C85 /* HotelDetail */,
+				8BDBAF5F1F512AF400A41C85 /* ListHotelViewController.swift */,
+				8BDBAF601F512AF400A41C85 /* ListHotelViewController.xib */,
+			);
+			path = ListHotel;
+			sourceTree = "<group>";
+		};
+		8BDBAF631F512C3600A41C85 /* HotelDetail */ = {
+			isa = PBXGroup;
+			children = (
+				8BDBAF661F512CA300A41C85 /* HotelDetailViewController.swift */,
+				8BDBAF671F512CA300A41C85 /* HotelDetailViewController.xib */,
+			);
+			path = HotelDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +309,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BDBAF571F51295200A41C85 /* LoginViewController.xib in Resources */,
+				8BDBAF621F512AF400A41C85 /* ListHotelViewController.xib in Resources */,
 				8BDBAF3B1F51244E00A41C85 /* LaunchScreen.storyboard in Resources */,
 				8BDBAF381F51244E00A41C85 /* Assets.xcassets in Resources */,
+				8BDBAF691F512CA300A41C85 /* HotelDetailViewController.xib in Resources */,
+				8BDBAF531F51293F00A41C85 /* InitViewController.xib in Resources */,
 				8BDBAF361F51244E00A41C85 /* Main.storyboard in Resources */,
+				8BDBAF5D1F51297600A41C85 /* MainScreenViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,8 +375,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BDBAF5C1F51297600A41C85 /* MainScreenViewController.swift in Sources */,
+				8BDBAF561F51295200A41C85 /* LoginViewController.swift in Sources */,
 				8BDBAF331F51244E00A41C85 /* ViewController.swift in Sources */,
+				8BDBAF681F512CA300A41C85 /* HotelDetailViewController.swift in Sources */,
+				8BDBAF611F512AF400A41C85 /* ListHotelViewController.swift in Sources */,
 				8BDBAF311F51244E00A41C85 /* AppDelegate.swift in Sources */,
+				8BDBAF521F51293F00A41C85 /* InitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +543,7 @@
 				8BDBAF411F51244E00A41C85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListHotelViewController" customModule="VungTauHackathon2017" customModuleProvider="target">
+            <connections>
+                <outlet property="tbListHotel" destination="JGe-fu-7oo" id="LJ2-Bt-l9X"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vfI-Pl-pFB">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List Hotel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7EL-D2-jIx">
+                            <rect key="frame" x="122.5" y="32" width="131" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="131" id="OFf-5m-ry0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdm-Pw-LM5">
+                            <rect key="frame" x="8" y="32" width="64.5" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="  Back" image="icBack">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnBackClick:" destination="-1" eventType="touchUpInside" id="Tc4-W1-tNT"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0PV-SI-zeT">
+                            <rect key="frame" x="294" y="47" width="74" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.34081354740000003" green="0.56911426779999996" blue="0.2048030794" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="tim quanh day">
+                                <color key="titleColor" red="0.93321985009999997" green="0.37668132780000002" blue="0.14868611100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnFindNearByClick:" destination="-1" eventType="touchUpInside" id="CYa-IA-6tK"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.20392156859999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="kdm-Pw-LM5" firstAttribute="top" secondItem="vfI-Pl-pFB" secondAttribute="top" constant="31.5" id="ALl-lp-bAE"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="65" id="C84-Ux-TCn"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="Ejk-oq-7SE"/>
+                        <constraint firstAttribute="height" constant="65" id="K3F-wh-TNP"/>
+                        <constraint firstItem="7EL-D2-jIx" firstAttribute="centerX" secondItem="vfI-Pl-pFB" secondAttribute="centerX" id="M32-vE-j9p"/>
+                        <constraint firstItem="7EL-D2-jIx" firstAttribute="leading" secondItem="kdm-Pw-LM5" secondAttribute="trailing" constant="50" id="RLd-G6-giY"/>
+                        <constraint firstItem="7EL-D2-jIx" firstAttribute="top" secondItem="vfI-Pl-pFB" secondAttribute="top" constant="32" id="dKy-BP-QEG"/>
+                        <constraint firstAttribute="bottom" secondItem="kdm-Pw-LM5" secondAttribute="bottom" constant="12" id="m5L-Hb-RzF"/>
+                        <constraint firstItem="kdm-Pw-LM5" firstAttribute="leading" secondItem="vfI-Pl-pFB" secondAttribute="leading" constant="8.5" id="z4c-Gt-q02"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JGe-fu-7oo">
+                    <rect key="frame" x="26" y="126" width="284" height="176"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vfI-Pl-pFB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DVb-wc-Lf9"/>
+                <constraint firstAttribute="trailing" secondItem="vfI-Pl-pFB" secondAttribute="trailing" id="Vgh-Qv-wEl"/>
+                <constraint firstAttribute="bottom" secondItem="vfI-Pl-pFB" secondAttribute="bottom" id="cmV-x4-biD"/>
+                <constraint firstItem="vfI-Pl-pFB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="oh2-cQ-wkn"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icBack" width="16" height="16"/>
+    </resources>
+</document>
