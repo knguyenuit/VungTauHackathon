@@ -25,9 +25,11 @@ class InitViewController: UIViewController {
     }
     
     @IBAction func btnOwnerClick(_ sender: Any) {
+        navigationController?.pushViewController(LoginViewController(), animated: true)
     }
 
     @IBAction func btnUserClick(_ sender: Any) {
+        navigationController?.pushViewController(SelectViewController(), animated: true)
     }
     /*
     // MARK: - Navigation

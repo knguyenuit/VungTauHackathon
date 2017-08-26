@@ -29,7 +29,7 @@ class BaseJSonHotel: NSObject, Mappable {
 
 class Hotel: FAAutoCode, Mappable {
     
-    var id: String?
+    var id: Int = 0
     var hotelName: String?
     var phoneNumber: String?
     var hotelAddress: String?
@@ -58,8 +58,8 @@ class Hotel: FAAutoCode, Mappable {
         
     }
     
-    init(id: String?, hotelName: String?, phoneNumber: String?, hotelAddress: String?, avatar: String, lat: Double, lng: Double) {
-        self.id = id
+    init(id: Int?, hotelName: String?, phoneNumber: String?, hotelAddress: String?, avatar: String, lat: Double, lng: Double) {
+        self.id = id!
         self.hotelName = hotelName
         self.phoneNumber = phoneNumber
         self.avatar = avatar

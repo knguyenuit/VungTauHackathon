@@ -97,8 +97,12 @@ class DetailHotelViewController: UIViewController, UICollectionViewDelegate, UIC
             let vc = OverviewHotelViewController()
             vc.view.frame = vContent.bounds
             vContent.addSubview(vc.view)
-        } else if indexPath.item == 1 {
+        } else if indexPath.item == 2 {
             let vc = ServiceMapViewController()
+            vc.view.frame = vContent.bounds
+            vContent.addSubview(vc.view)
+        } else if indexPath.item == 1 {
+            let vc = ReviewViewController()
             vc.view.frame = vContent.bounds
             vContent.addSubview(vc.view)
         }

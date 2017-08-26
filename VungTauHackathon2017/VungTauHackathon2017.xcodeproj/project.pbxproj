@@ -87,6 +87,12 @@
 		8BDBB0071F51EBEE00A41C85 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBB0061F51EBEE00A41C85 /* Global.swift */; };
 		8BDBB00B1F51F69000A41C85 /* ServiceMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBB0091F51F69000A41C85 /* ServiceMapViewController.swift */; };
 		8BDBB00C1F51F69000A41C85 /* ServiceMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDBB00A1F51F69000A41C85 /* ServiceMapViewController.xib */; };
+		8BDBB0101F52020100A41C85 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBB00E1F52020100A41C85 /* ReviewViewController.swift */; };
+		8BDBB0111F52020100A41C85 /* ReviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDBB00F1F52020100A41C85 /* ReviewViewController.xib */; };
+		8BDBB0131F5202BA00A41C85 /* APIRequestGetReviewByService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBB0121F5202BA00A41C85 /* APIRequestGetReviewByService.swift */; };
+		8BDBB0151F52032700A41C85 /* ReviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBB0141F52032700A41C85 /* ReviewService.swift */; };
+		8BDBB0181F52057A00A41C85 /* ListReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBB0161F52057A00A41C85 /* ListReviewTableViewCell.swift */; };
+		8BDBB0191F52057A00A41C85 /* ListReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDBB0171F52057A00A41C85 /* ListReviewTableViewCell.xib */; };
 		91FFE7E66E754C14F1293DCF /* Pods_VungTauHackathon2017.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179092E1A7721E4051A9B2D0 /* Pods_VungTauHackathon2017.framework */; };
 /* End PBXBuildFile section */
 
@@ -175,6 +181,12 @@
 		8BDBB0061F51EBEE00A41C85 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		8BDBB0091F51F69000A41C85 /* ServiceMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceMapViewController.swift; sourceTree = "<group>"; };
 		8BDBB00A1F51F69000A41C85 /* ServiceMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServiceMapViewController.xib; sourceTree = "<group>"; };
+		8BDBB00E1F52020100A41C85 /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		8BDBB00F1F52020100A41C85 /* ReviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReviewViewController.xib; sourceTree = "<group>"; };
+		8BDBB0121F5202BA00A41C85 /* APIRequestGetReviewByService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestGetReviewByService.swift; sourceTree = "<group>"; };
+		8BDBB0141F52032700A41C85 /* ReviewService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewService.swift; sourceTree = "<group>"; };
+		8BDBB0161F52057A00A41C85 /* ListReviewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListReviewTableViewCell.swift; sourceTree = "<group>"; };
+		8BDBB0171F52057A00A41C85 /* ListReviewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListReviewTableViewCell.xib; sourceTree = "<group>"; };
 		DE31194C497F375D1EE5C7FB /* Pods-VungTauHackathon2017.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VungTauHackathon2017.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VungTauHackathon2017/Pods-VungTauHackathon2017.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -317,6 +329,7 @@
 				8BDBAFA41F51707200A41C85 /* Hotel.swift */,
 				8BDBAFA61F51748400A41C85 /* Restaurant.swift */,
 				8BDBAFD41F51944200A41C85 /* Site.swift */,
+				8BDBB0141F52032700A41C85 /* ReviewService.swift */,
 			);
 			path = CoreModels;
 			sourceTree = "<group>";
@@ -337,6 +350,7 @@
 				8BDBAF8D1F5130D900A41C85 /* APILoginRequest.swift */,
 				8BDBAF8E1F5130D900A41C85 /* APILogoutRequest.swift */,
 				8BDBAF7B1F51307900A41C85 /* APIRegisterRequest.swift */,
+				8BDBB0121F5202BA00A41C85 /* APIRequestGetReviewByService.swift */,
 			);
 			path = APIRequestModels;
 			sourceTree = "<group>";
@@ -476,6 +490,8 @@
 				8BDBAFA11F5154F600A41C85 /* ListHotelTableViewCell.xib */,
 				8BDBAFD61F5196CF00A41C85 /* ListSiteTableViewCell.swift */,
 				8BDBAFD71F5196CF00A41C85 /* ListSiteTableViewCell.xib */,
+				8BDBB0161F52057A00A41C85 /* ListReviewTableViewCell.swift */,
+				8BDBB0171F52057A00A41C85 /* ListReviewTableViewCell.xib */,
 			);
 			path = "Table Cells";
 			sourceTree = "<group>";
@@ -602,6 +618,8 @@
 		8BDBB00D1F5200A100A41C85 /* Review */ = {
 			isa = PBXGroup;
 			children = (
+				8BDBB00E1F52020100A41C85 /* ReviewViewController.swift */,
+				8BDBB00F1F52020100A41C85 /* ReviewViewController.xib */,
 			);
 			path = Review;
 			sourceTree = "<group>";
@@ -679,6 +697,7 @@
 				8BDBAFC41F51856300A41C85 /* DetailHotelCollectionViewCell.xib in Resources */,
 				8BDBAFA31F5154F600A41C85 /* ListHotelTableViewCell.xib in Resources */,
 				8BDBB0001F51DB4700A41C85 /* SellectTableViewCell.xib in Resources */,
+				8BDBB0111F52020100A41C85 /* ReviewViewController.xib in Resources */,
 				8BDBAF571F51295200A41C85 /* LoginViewController.xib in Resources */,
 				8BDBAFDD1F51977400A41C85 /* SiteDetailViewController.xib in Resources */,
 				8BDBAFE81F519F8800A41C85 /* CreateServiceViewController.xib in Resources */,
@@ -696,6 +715,7 @@
 				8BDBAF381F51244E00A41C85 /* Assets.xcassets in Resources */,
 				8BDBAF531F51293F00A41C85 /* InitViewController.xib in Resources */,
 				8BDBAF361F51244E00A41C85 /* Main.storyboard in Resources */,
+				8BDBB0191F52057A00A41C85 /* ListReviewTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -755,6 +775,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BDBAFE71F519F8800A41C85 /* CreateServiceViewController.swift in Sources */,
+				8BDBB0151F52032700A41C85 /* ReviewService.swift in Sources */,
 				8BDBAFA51F51707200A41C85 /* Hotel.swift in Sources */,
 				8BDBAF881F51309A00A41C85 /* BaseAPIResponse.swift in Sources */,
 				8BDBAFEF1F51A52900A41C85 /* DropMenuButton.swift in Sources */,
@@ -778,8 +799,10 @@
 				8BDBAFF51F51B75900A41C85 /* APIResponseCreateServices.swift in Sources */,
 				8BDBAFC31F51856300A41C85 /* DetailHotelCollectionViewCell.swift in Sources */,
 				8BDBAF6D1F512F9100A41C85 /* BaseRestService.swift in Sources */,
+				8BDBB0181F52057A00A41C85 /* ListReviewTableViewCell.swift in Sources */,
 				8BDBAF971F51353400A41C85 /* ListHotelMapViewController.swift in Sources */,
 				8BDBAF6F1F512FA200A41C85 /* PAuthenticationService.swift in Sources */,
+				8BDBB0101F52020100A41C85 /* ReviewViewController.swift in Sources */,
 				8BDBAF7A1F51305800A41C85 /* User.swift in Sources */,
 				8BDBAF781F51301300A41C85 /* AuthenticationRouter.swift in Sources */,
 				8BDBAFF91F51D0BF00A41C85 /* APIResponseGetAllService.swift in Sources */,
@@ -798,6 +821,7 @@
 				8BDBAF871F51309A00A41C85 /* BaseAPIError.swift in Sources */,
 				8BDBAF611F512AF400A41C85 /* ListHotelViewController.swift in Sources */,
 				8BDBAF8F1F5130D900A41C85 /* APILoginRequest.swift in Sources */,
+				8BDBB0131F5202BA00A41C85 /* APIRequestGetReviewByService.swift in Sources */,
 				8BDBAF311F51244E00A41C85 /* AppDelegate.swift in Sources */,
 				8BDBAF921F51311300A41C85 /* AppConstants.swift in Sources */,
 				8BDBAF521F51293F00A41C85 /* InitViewController.swift in Sources */,

@@ -19,10 +19,11 @@ enum AuthenticationRouter: URLRequestConvertible {
     case Register(APIRegisterRequest)
     case createServices(APIRequestCreateServices)
     case getAllRestaurant(APIRequestGetServices)
+    case getReviewByService(APIRequestGetReviewByService)
     
     var method: Alamofire.HTTPMethod {
         switch self {
-        case .Login, .Logout, .Register, .createServices, .getAllRestaurant:
+        case .Login, .Logout, .Register, .createServices, .getAllRestaurant, .getReviewByService:
             return .post
             
         case .GetCurrentUser:
@@ -45,6 +46,8 @@ enum AuthenticationRouter: URLRequestConvertible {
             return "/service/?action=\(apiCreate.action)&serviceName=\(apiCreate.name!)&address=\(apiCreate.address!)&serviceTypeId=\(apiCreate.serviceType)&addressLat=\(apiCreate.lat!)&addressLng=\(apiCreate.lng!)"
         case .getAllRestaurant(let apiGet):
             return "/service/?action=\(apiGet.action)&serviceTypeId=\(apiGet.serviceTypeId)"
+        case .getReviewByService(let apiGet):
+            return "/review/?action=\(apiGet.action)&serviceId=\(apiGet.serviceId)"
 
         }
     }
@@ -64,6 +67,7 @@ enum AuthenticationRouter: URLRequestConvertible {
 //            urlRequest.httpBody = data
         case .createServices(let _): break
         case .getAllRestaurant(let _): break
+        case .getReviewByService(let _): break
         case .Register(let registerRequest):
             let JSONString = Mapper().toJSONString(registerRequest, prettyPrint: true)
             let data = JSONString!.data(using: String.Encoding.utf8)

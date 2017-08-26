@@ -9,9 +9,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectViewController" customModule="VungTauHackathon2017" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReviewViewController" customModule="VungTauHackathon2017" customModuleProvider="target">
             <connections>
-                <outlet property="tbListSelect" destination="ROQ-cu-zVq" id="ryu-1I-KvB"/>
+                <outlet property="tbListReview" destination="qBA-d2-eua" id="gXv-xB-9j9"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,19 +20,18 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ROQ-cu-zVq">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qBA-d2-eua">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="ROQ-cu-zVq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Esh-Mw-U1s"/>
-                <constraint firstItem="ROQ-cu-zVq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Mpw-Y5-gXB"/>
-                <constraint firstAttribute="trailing" secondItem="ROQ-cu-zVq" secondAttribute="trailing" id="aUg-oR-0TP"/>
-                <constraint firstAttribute="bottom" secondItem="ROQ-cu-zVq" secondAttribute="bottom" id="lU7-70-ITc"/>
+                <constraint firstItem="qBA-d2-eua" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="01b-mL-rVF"/>
+                <constraint firstItem="qBA-d2-eua" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="EB1-OM-3Lf"/>
+                <constraint firstAttribute="trailing" secondItem="qBA-d2-eua" secondAttribute="trailing" id="Nvl-VJ-CHh"/>
+                <constraint firstAttribute="bottom" secondItem="qBA-d2-eua" secondAttribute="bottom" id="zi5-8U-UQW"/>
             </constraints>
-            <point key="canvasLocation" x="25.5" y="51.5"/>
         </view>
     </objects>
 </document>

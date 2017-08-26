@@ -38,6 +38,10 @@ class AuthenticationRestService : PAuthenticationService, PBaseRestService {
         return doRequest(request: AuthenticationRouter.getAllRestaurant(serviceType), showLoading: true)
     }
     
+    func getAllReviewByService(_ service: APIRequestGetReviewByService) -> Task<[ReviewService]> {
+        return doRequest(request: AuthenticationRouter.getReviewByService(service), showLoading: false)
+    }
+    
     func login(_ loginRequest: APILoginRequest!, showLoading: Bool = true) -> Task<User> {
         return doRequest(request: AuthenticationRouter.Login(loginRequest), showLoading: true)
     }

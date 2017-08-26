@@ -29,6 +29,8 @@ protocol PAuthenticationService {
     func logout() -> Task<String>
     
     func getAllRestaurant(_ serviceType: APIRequestGetServices) -> Task<[APIResponseGetAllServices]>
+    
+    func getAllReviewByService(_ service: APIRequestGetReviewByService) -> Task<[ReviewService]>
 
     ///Change password
     //func changePassword(_ changePasswordRequest: APIChangePasswordRequest!, showLoading: Bool) -> Task<User>
