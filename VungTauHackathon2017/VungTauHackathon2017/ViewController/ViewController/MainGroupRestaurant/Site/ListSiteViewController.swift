@@ -21,7 +21,7 @@ class ListSiteViewController: UIViewController {
         tbListSite.dataSource = self
         //let cell = ListChildTableViewCell()
         //cell.ref = self
-        tbListSite.register(UINib(nibName: "ListSiteTableViewCell", bundle: nil), forCellReuseIdentifier: "ListSiteCell")
+        tbListSite.register(UINib(nibName: "ListViewRestaurantTableViewCell", bundle: nil), forCellReuseIdentifier: "ListRestaurantCell")
 
         // Do any additional setup after loading the view.
     }
@@ -80,13 +80,13 @@ extension ListSiteViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+        return 203
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tbListSite.dequeueReusableCell(withIdentifier: "ListSiteCell") as! ListSiteTableViewCell
+        let cell = tbListSite.dequeueReusableCell(withIdentifier: "ListRestaurantCell") as! ListViewRestaurantTableViewCell
         let site = listCurrentSite[indexPath.row]
-        cell.populateData(siteName: site.title!)
+        cell.populateSite(title: site.title!, avatar: site.avatar!)
         
         return cell
     }

@@ -42,6 +42,12 @@ class ListViewRestaurantTableViewCell: UITableViewCell {
         
     }
     
+    func populateSite(title: String, avatar: String) {
+        lbName.text = title
+        lbAddress.isHidden = true
+        ivRestaurant.image = UIImage(named: avatar)
+    }
+    
     public func gradient(listColor : Array<CGColor>, listLocation: Array<NSNumber>, view : UIView) -> Void{
         
         let gradientLayer = CAGradientLayer()
