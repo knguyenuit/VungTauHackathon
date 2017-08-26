@@ -82,6 +82,7 @@
 		8BDBB0011F51DB4700A41C85 /* SellectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAFFF1F51DB4700A41C85 /* SellectTableViewCell.swift */; };
 		8BDBB0041F51DBB400A41C85 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBB0021F51DBB400A41C85 /* TestViewController.swift */; };
 		8BDBB0051F51DBB400A41C85 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDBB0031F51DBB400A41C85 /* TestViewController.xib */; };
+		8BDBB0071F51EBEE00A41C85 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBB0061F51EBEE00A41C85 /* Global.swift */; };
 		91FFE7E66E754C14F1293DCF /* Pods_VungTauHackathon2017.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179092E1A7721E4051A9B2D0 /* Pods_VungTauHackathon2017.framework */; };
 /* End PBXBuildFile section */
 
@@ -165,6 +166,7 @@
 		8BDBAFFF1F51DB4700A41C85 /* SellectTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellectTableViewCell.swift; sourceTree = "<group>"; };
 		8BDBB0021F51DBB400A41C85 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		8BDBB0031F51DBB400A41C85 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		8BDBB0061F51EBEE00A41C85 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		DE31194C497F375D1EE5C7FB /* Pods-VungTauHackathon2017.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VungTauHackathon2017.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VungTauHackathon2017/Pods-VungTauHackathon2017.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -240,6 +242,7 @@
 			children = (
 				8BDBAFE31F519F1000A41C85 /* Owner */,
 				8BDBAFDE1F519A8800A41C85 /* MainScreen */,
+				8BDBAFCD1F5193DE00A41C85 /* Site */,
 				8BDBAFA81F51763100A41C85 /* MainGroupRestaurant */,
 				8BDBAF9E1F5154CB00A41C85 /* Cells */,
 				8BDBAF4F1F51292000A41C85 /* MainGroupHotel */,
@@ -354,6 +357,7 @@
 			isa = PBXGroup;
 			children = (
 				8BDBAFED1F51A50B00A41C85 /* Libraries */,
+				8BDBB0061F51EBEE00A41C85 /* Global.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -459,7 +463,6 @@
 		8BDBAFA81F51763100A41C85 /* MainGroupRestaurant */ = {
 			isa = PBXGroup;
 			children = (
-				8BDBAFCD1F5193DE00A41C85 /* Site */,
 				8BDBAFBC1F51773D00A41C85 /* Restaurant Detail */,
 				8BDBAFB21F51768C00A41C85 /* Main */,
 				8BDBAFA91F51764500A41C85 /* ListRestaurant */,
@@ -528,7 +531,8 @@
 				8BDBAFDA1F51977400A41C85 /* SiteDetailViewController.swift */,
 				8BDBAFDB1F51977400A41C85 /* SiteDetailViewController.xib */,
 			);
-			path = Site;
+			name = Site;
+			path = MainGroupRestaurant/Site;
 			sourceTree = "<group>";
 		};
 		8BDBAFDE1F519A8800A41C85 /* MainScreen */ = {
@@ -762,6 +766,7 @@
 				8BDBAF891F51309A00A41C85 /* BoolResponse.swift in Sources */,
 				8BDBAFDC1F51977400A41C85 /* SiteDetailViewController.swift in Sources */,
 				8BDBAFA71F51748400A41C85 /* Restaurant.swift in Sources */,
+				8BDBB0071F51EBEE00A41C85 /* Global.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,6 +22,7 @@ class ListViewRestaurantTableViewCell: UITableViewCell {
     let color2 = UIColor(red: 251/255, green: 89/255, blue: 212/255, alpha: 0.7).cgColor
     override func awakeFromNib() {
         super.awakeFromNib()
+        
         // Initialization code
        
     }
@@ -38,6 +39,7 @@ class ListViewRestaurantTableViewCell: UITableViewCell {
         lbAddress.text = address
         var urlImage = URL(string: avatar)
         ivRestaurant.kf.setImage(with: urlImage)
+        
     }
     
     public func gradient(listColor : Array<CGColor>, listLocation: Array<NSNumber>, view : UIView) -> Void{
@@ -67,4 +69,12 @@ class ListViewRestaurantTableViewCell: UITableViewCell {
     }
 
     
+}
+
+extension UIImageView {
+    func customBorder(cornerRadius: CGFloat, borderWidth: CGFloat, color: UIColor) {
+        self.layer.cornerRadius = cornerRadius
+        self.layer.borderWidth = borderWidth
+        self.layer.borderColor = color.cgColor
+    }
 }
