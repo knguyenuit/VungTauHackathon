@@ -11,6 +11,7 @@ import GoogleMaps
 import GooglePlaces
 import CoreLocation
 import NVActivityIndicatorView
+import ObjectMapper
 
 class ListHotelMapViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDelegate {
 
@@ -33,24 +34,59 @@ class ListHotelMapViewController: UIViewController, GMSMapViewDelegate, CLLocati
         mapView.delegate = self
         self.locationManager.delegate = self
         //mapView = GMSMapView(frame: view.bounds)
+        if listHotel.count == 0 {
+          readJSON()
+        }
         
         mapView.isMyLocationEnabled = true
         mapView.sizeToFit()
         self.locationManager.startUpdatingLocation()
+        if let listHotel = listHotel as? [Hotel] {
+            DispatchQueue.main.async {
+                listHotel.forEach({ (hotel) in
+                    let marker = GMSMarker()
+                    marker.position = CLLocationCoordinate2D(latitude: hotel.lat
+                        , longitude: hotel.lng)
+                    marker.title = "\((hotel.hotelName)!)"
+                    //marker.snippet = "VietNam"
+                    marker.icon = #imageLiteral(resourceName: "ic_restaurant")
+                    marker.tracksInfoWindowChanges = true
+                    marker.map = self.mapView
+                    
+                    marker.userData = hotel
+                })
+            }
+            
+            
+        }
 
-        let hotel = listHotel.first
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: (hotel?.lat)!
-            , longitude: (hotel?.lng)!)
-        marker.title = "Khánh Nguyên"
-        //marker.snippet = "VietNam"
-        marker.icon = GMSMarker.markerImage(with: .black)
-        marker.tracksInfoWindowChanges = true
-        marker.map = self.mapView
-        
-        marker.userData = hotel
-        self.mapView.camera = GMSCameraPosition.camera(withLatitude: 10.36408
-            , longitude: 107.08377, zoom: 15)
+        self.mapView.camera = GMSCameraPosition.camera(withLatitude: (listHotel.first?.lat)!
+            , longitude: (listHotel.first?.lng)!, zoom: 15)
+        //self.locationManager.delegate = self
+        // Do any additional setup after loading the view.
+    }
+
+    func readJSON() {
+        if let path = Bundle.main.path(forResource: "hotel", ofType: "json")
+        {
+            do {
+                let jsonData = try NSData(contentsOfFile: path, options: NSData.ReadingOptions.mappedIfSafe)
+                do {
+                    let jsonResult: NSDictionary = try JSONSerialization.jsonObject(with: jsonData as Data, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSDictionary
+                    if let reader = Mapper<BaseJSonHotel>().map(JSONObject: jsonResult) {
+                        reader.listHotel.forEach({ (test) in
+                            listHotel.append(test)
+                        })
+                    }
+                    if let people : [NSDictionary] = jsonResult["tests"] as? [NSDictionary] {
+                        
+                        people.forEach({ (test) in
+                            //print(test["behaviors"]!)
+                        })
+                    }
+                } catch {}
+            } catch {}
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -74,8 +110,14 @@ class ListHotelMapViewController: UIViewController, GMSMapViewDelegate, CLLocati
     }
     
     func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
-        //event on click info window
+        let vc = DetailHotelViewController()
+        let hotel = marker.userData as! Hotel
+        vc.name = hotel.hotelName!
+        vc.address = hotel.hotelAddress!
+        vc.phoneNumber = hotel.phoneNumber!
+        vc.avatar = hotel.avatar!
         print("load list detail")
+        navigationController?.pushViewController(vc, animated: true)
         
     }
     

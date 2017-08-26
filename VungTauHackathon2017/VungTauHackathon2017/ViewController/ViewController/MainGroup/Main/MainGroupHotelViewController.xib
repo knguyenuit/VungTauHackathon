@@ -1,12 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainGroupHotelViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainGroupHotelViewController" customModule="VungTauHackathon2017" customModuleProvider="target">
             <connections>
+                <outlet property="vContent" destination="b59-7K-yKH" id="g6J-a4-X23"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +19,68 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="URg-hk-Ple">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vcq-x3-gIF">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List Hotel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZfE-g4-4j8">
+                                    <rect key="frame" x="122" y="32" width="131" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="131" id="BpO-qB-Vo7"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbC-IG-kFj">
+                                    <rect key="frame" x="8" y="32" width="64" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <state key="normal" title="  Back" image="icBack">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.20392156859999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="ZfE-g4-4j8" firstAttribute="top" secondItem="vcq-x3-gIF" secondAttribute="top" constant="32" id="C5G-rQ-J1A"/>
+                                <constraint firstAttribute="height" constant="65" id="Cuq-O8-89D"/>
+                                <constraint firstAttribute="bottom" secondItem="fbC-IG-kFj" secondAttribute="bottom" constant="12" id="MNJ-4I-rcB"/>
+                                <constraint firstItem="fbC-IG-kFj" firstAttribute="top" secondItem="vcq-x3-gIF" secondAttribute="top" constant="31.5" id="Oid-43-fTF"/>
+                                <constraint firstItem="ZfE-g4-4j8" firstAttribute="centerX" secondItem="vcq-x3-gIF" secondAttribute="centerX" id="XjV-Zu-gVz"/>
+                                <constraint firstItem="ZfE-g4-4j8" firstAttribute="leading" secondItem="fbC-IG-kFj" secondAttribute="trailing" constant="50" id="bfI-Oy-fl2"/>
+                                <constraint firstItem="fbC-IG-kFj" firstAttribute="leading" secondItem="vcq-x3-gIF" secondAttribute="leading" constant="8.5" id="wlc-Ph-2k2"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b59-7K-yKH">
+                            <rect key="frame" x="0.0" y="65" width="375" height="602"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="b59-7K-yKH" firstAttribute="leading" secondItem="URg-hk-Ple" secondAttribute="leading" id="0pW-0a-uoV"/>
+                        <constraint firstAttribute="bottom" secondItem="b59-7K-yKH" secondAttribute="bottom" id="DAi-lL-mgt"/>
+                        <constraint firstItem="b59-7K-yKH" firstAttribute="top" secondItem="vcq-x3-gIF" secondAttribute="bottom" id="F86-vi-Mvd"/>
+                        <constraint firstAttribute="trailing" secondItem="vcq-x3-gIF" secondAttribute="trailing" id="JW4-Dy-Frm"/>
+                        <constraint firstItem="vcq-x3-gIF" firstAttribute="leading" secondItem="URg-hk-Ple" secondAttribute="leading" id="MFr-dZ-lTo"/>
+                        <constraint firstItem="vcq-x3-gIF" firstAttribute="top" secondItem="URg-hk-Ple" secondAttribute="top" id="Nwm-GB-6A7"/>
+                        <constraint firstAttribute="trailing" secondItem="b59-7K-yKH" secondAttribute="trailing" id="YlI-Ky-ef1"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="URg-hk-Ple" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="F1R-EF-2bJ"/>
+                <constraint firstItem="URg-hk-Ple" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Mg9-KR-mAI"/>
+                <constraint firstAttribute="trailing" secondItem="URg-hk-Ple" secondAttribute="trailing" id="lYU-lS-E5x"/>
+                <constraint firstAttribute="bottom" secondItem="URg-hk-Ple" secondAttribute="bottom" id="yyx-al-SRv"/>
+            </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="icBack" width="13" height="22"/>
+    </resources>
 </document>

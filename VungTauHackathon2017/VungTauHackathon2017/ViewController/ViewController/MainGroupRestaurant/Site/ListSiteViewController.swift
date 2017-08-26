@@ -1,5 +1,5 @@
 //
-//  ListHotelViewController.swift
+//  ListSiteViewController.swift
 //  VungTauHackathon2017
 //
 //  Created by Khanh Nguyen on 8/26/17.
@@ -9,19 +9,20 @@
 import UIKit
 import ObjectMapper
 
-class ListHotelViewController: UIViewController {
+class ListSiteViewController: UIViewController {
 
-    @IBOutlet weak var tbListHotel: UITableView!
-    var listCurrentHotel = [Hotel]()
+    @IBOutlet weak var tbListSite: UITableView!
+    var listCurrentSite = [Site]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tbListHotel.delegate = self
-        tbListHotel.dataSource = self
+        tbListSite.delegate = self
+        tbListSite.dataSource = self
         //let cell = ListChildTableViewCell()
         //cell.ref = self
-        tbListHotel.register(UINib(nibName: "ListHotelTableViewCell", bundle: nil), forCellReuseIdentifier: "ListHotelCell")
+        tbListSite.register(UINib(nibName: "ListSiteTableViewCell", bundle: nil), forCellReuseIdentifier: "ListSiteCell")
+
         // Do any additional setup after loading the view.
     }
 
@@ -32,20 +33,21 @@ class ListHotelViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        listCurrentSite.removeAll()
         readJSON()
-        tbListHotel.reloadData()
+        tbListSite.reloadData()
     }
     
     func readJSON() {
-        if let path = Bundle.main.path(forResource: "hotel", ofType: "json")
+        if let path = Bundle.main.path(forResource: "sites", ofType: "json")
         {
             do {
                 let jsonData = try NSData(contentsOfFile: path, options: NSData.ReadingOptions.mappedIfSafe)
                 do {
                     let jsonResult: NSDictionary = try JSONSerialization.jsonObject(with: jsonData as Data, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSDictionary
-                    if let reader = Mapper<BaseJSonHotel>().map(JSONObject: jsonResult) {
-                        reader.listHotel.forEach({ (test) in
-                            listCurrentHotel.append(test)
+                    if let reader = Mapper<BaseJSonSite>().map(JSONObject: jsonResult) {
+                        reader.listSite.forEach({ (test) in
+                            listCurrentSite.append(test)
                         })
                     }
                     if let people : [NSDictionary] = jsonResult["tests"] as? [NSDictionary] {
@@ -58,46 +60,48 @@ class ListHotelViewController: UIViewController {
             } catch {}
         }
     }
-    
-    @IBAction func btnBackClick(_ sender: Any) {
-    }
 
-    @IBAction func btnFindNearByClick(_ sender: Any) {
-        let vc = ListHotelMapViewController()
-        vc.listHotel = self.listCurrentHotel
-        navigationController?.pushViewController(vc, animated: true)
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
     }
-    
+    */
+
 }
 
-extension ListHotelViewController: UITableViewDelegate, UITableViewDataSource {
+extension ListSiteViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return listCurrentHotel.count
+        return listCurrentSite.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 307
+        return 50
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tbListHotel.dequeueReusableCell(withIdentifier: "ListHotelCell") as! ListHotelTableViewCell
-        let hotel = listCurrentHotel[indexPath.row]
-        cell.poplulateDate(avatarName: hotel.avatar!, name: hotel.hotelName!, address: hotel.hotelAddress!)
+        let cell = tbListSite.dequeueReusableCell(withIdentifier: "ListSiteCell") as! ListSiteTableViewCell
+        let site = listCurrentSite[indexPath.row]
+        cell.populateData(siteName: site.title!)
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let vc = DetailHotelViewController()
-        let hotel = listCurrentHotel[indexPath.row]
-        vc.name = hotel.hotelName!
-        vc.address = hotel.hotelAddress!
-        vc.phoneNumber = hotel.phoneNumber!
-        vc.avatar = hotel.avatar!
+        let vc = SiteDetailViewController()
+        let site = listCurrentSite[indexPath.row]
+        vc.siteTitle = site.title!
+        vc.siteDescription = site.siteDescription!
+        vc.avatar = site.avatar!
+        
         print("load list detail")
-        (UIApplication.shared.delegate as! AppDelegate).navigationController?.pushViewController(vc, animated: true)
-        tbListHotel.deselectRow(at: indexPath, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
+        tbListSite.deselectRow(at: indexPath, animated: true)
     }
 }
 

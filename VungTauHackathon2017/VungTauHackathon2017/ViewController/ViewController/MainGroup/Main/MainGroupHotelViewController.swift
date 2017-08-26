@@ -8,10 +8,40 @@
 
 import UIKit
 
-class MainGroupHotelViewController: UIViewController {
+class MainGroupHotelViewController: UIViewController, UITabBarControllerDelegate {
 
+    @IBOutlet weak var vContent: UIView!
+    var listViewController = [UIViewController]()
+    var tabbar:UITabBarController = UITabBarController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        
+        self.tabBarController?.delegate = self
+        
+        let vcListHotel = ListHotelViewController()
+        let viewListHotel = vcListHotel.view
+        vcListHotel.tabBarItem = UITabBarItem(title: "List Hotel", image: #imageLiteral(resourceName: "icon_Phone"), tag: 0)
+        
+        
+        
+        let vcListHotelMap = ListHotelMapViewController()
+        let viewHotelMap = vcListHotelMap.view
+        vcListHotelMap.tabBarItem = UITabBarItem(title: "Map", image: #imageLiteral(resourceName: "icon_Location"), tag: 1)
+        
+        
+        
+        listViewController.append(vcListHotel)
+        listViewController.append(vcListHotelMap)
+        
+        
+        tabbar.setViewControllers(listViewController, animated: true)
+        
+        tabbar.view.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        tabbar.view.frame = vContent.bounds
+        vContent.autoresizesSubviews = true
+        vContent.addSubview(tabbar.view)
 
         // Do any additional setup after loading the view.
     }

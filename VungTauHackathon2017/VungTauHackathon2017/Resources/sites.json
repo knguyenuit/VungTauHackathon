@@ -1,0 +1,90 @@
+{
+  "sites": [
+    {
+      "id": 1,
+      "title": "Khám phá núi Dinh",
+      "desc": "Cách Sài Gòn khoảng 80km, núi Dinh thuộc địa phận huyện Tân Thành, tỉnh Bà Rịa - Vũng Tàu, từ lâu đã là địa điểm yêu thích của những người đam mê khám phá. Núi Dinh có độ cao khoảng 500m với rừng cây xanh thẫm tươi tốt và không gian trong lành bao phủ. Vì đặc điểm khá gần Sài Gòn nên du khách có đủ thời gian để thử thách chính mình trong hành trình khám phá vẻ đẹp núi Dinh trong ngày hoặc hai ngày một đêm. ",
+      "img": "nuidinh.jpg"
+    },
+    {
+      "id": 2,
+      "title": " Khám phá con đường dưới đáy biển độc nhất Việt Nam",
+      "desc": "Hòn Bà nằm trên đường Hạ Long (tên khác là Thùy Vân) thuộc Bãi Sau của thành phố Vũng Tàu. Nơi đây lúc nào cũng sôi động tấp nập khách lịch. Nếu nhìn từ xa hay từ núi có tượng Chúa dang tay, Hòn Bà giữa biển xen lẫn màu xanh của cây cối và màu đỏ của mái ngói. Khung cảnh thơ mộng khiến bạn đến đây luôn dừng chân để ngắm từ xa, bởi quanh năm sóng miên man vỗ bờ.",
+      "img": "anhso_103057_Bai_Sau.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Khám phá Đồi con Heo",
+      "desc": "Đồi này nằm ngay bãi Sau, Thùy Vân. Trước ở đây là nơi khai khác đá nhưng mà bây giờ nơi này đã thuộc về những chú heo",
+      "img": "doiconheo.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Đồng cừu",
+      "desc": "Cách trung tâm TP.HCM khoảng 70 km, đồng cừu Suối Nghệ ở xã Châu Đức thuộc địa phận TP biển Vũng Tàu cũng là một trong những địa điểm hot được săn lùng vào dịp cuối tuần. vào khoảng thời gian buổi sáng từ 6-10h, và buổi chiều 14-16h đây là lúc ghi lại những bức ảnh đẹp nhất, ấn tượng nhất vì lúc này người chăn họ sẽ thả cho cừu ra đồng ăn cỏ",
+      "img": "dongcuu.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Đường ven biển Long Hải",
+      "desc": "Trên đường từ thành phố đi bạn hãy để ý khúc cua ven biển. Đoạn này rất ngắn và chỉ duy nhất chỗ đó nên không lẫn đi đâu được. Nếu vào tầm 9,10h trưa bạn đến đó ánh sáng rất tốt, cung đường cua rộng nhìn ra biển xanh chụp nhìn chất đừng hỏi, bạn có thể đi bộ xuống bãi đá check-in thêm vài kiểu nữa nha.",
+      "img": "1495891040-kul_news_top-6-dia-diem-chup-anh-song-ao-o-vung-tau-bao-dep-ivivu-3.jpg"
+      
+    },
+    {
+      "id": 6,
+      "title": "Bến du thuyền Marina",
+      "desc": "Tọa lạc trên đường số 1 KCN Đông Xuyên, phường Rạch Dừa. Đặt chân đến đây nhiều người không khỏi liên tưởng đến hòn đảo JeJu xinh đẹp, nổi tiếng của Hàn Quốc với chiếc cầu gỗ giữa biển, những chiếc du thuyền tiêu chuẩn 5 sao và hàng loạt chiếc thuyền màu sắc xanh đỏ rực rỡ.",
+      "img": "1495891856-kul_news_ben-tau-marina-ivivu-9.jpg"
+      
+    },
+    {
+      "id": 7,
+      "title": "Bãi sau",
+      "desc": "Trải dài gần 10 km, nằm ở phía Nam Vũng Tàu, có tên gọi là Thùy Vân hay Thùy Dương, bãi Sau được biết đến với 1 trong những bãi biển đẹp nhất Việt Nam với những bãi cát trắng mịn, thẳng tắp.",
+      "img": "du-lich-vung-tau-ivivu-4.jpg"
+      
+    },
+    {
+      "id": 8,
+      "title": "Hồ Cốc",
+      "desc": "Vốn là vùng biển hoang sơ nằm sát bên rừng xanh rậm rạp nên Hồ Cốc hầu như không có dân cư sinh sống, ngoại trừ một vài resort hay nhà nghỉ được xây dựng để phục vụ du khách. Ấy thế nên, tìm đến Hồ Cốc, khách du lịch hoàn toàn chìm đắm trong thế giới của riêng mình cùng sóng vỗ, tiếng trùng dương rì rào với gió, tất cả đều bình yên và trầm lắng. Từng được trang Thrillist bình chọn là một trong những thiên đường du lịch biển rẻ nhất trên thế giới lại gần với Sài Gòn nên du lịch Hồ Cốc rất dễ",
+      "img": "du-lich-ho-coc-vung-tau-mytour-10.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Bãi dâu",
+      "desc": "Bãi Dâu nằm phía Tây núi Lớn và phía Bắc trung tâm thành phố Vũng Tàu. Từ bãi Trước, theo đường Trần Phú ven biển, đi quá di tích Bạch Dinh chừng 3km là tới bãi Dâu. Trước khi có tên gọi bãi Dâu được gọi là bãi Vũng Mây do nơi đây có nhiều mây rừng. Ngày nay, cây mây và dâu rừng không còn nhưng tên gọi của nó lại gắn liền với một bãi biển kín gió, nhiều ghềnh đá kỳ thú, thơ mộng.",
+      "img": "binh-yen-bai-dau-vung-tau-2.jpg"
+      
+    },
+    {
+      "id": 10,
+      "title": "Biển Suối Ồ",
+      "desc": "Cách TP.HCM hơn 120km, Vũng Tàu luôn là điểm đến thu hút khách du lịch mỗi dịp cuối tuần hay lễ, tết. Không chỉ nổi tiếng với những bãi biển đẹp như: Vọng nguyệt, Chí Linh, Đồi Nhái, Hồ Cốc, Hồ Tràm, Lộc An,…mà Vũng Tàu còn là điểm đến “gây hot” khi xuất hiện thêm bãi biển Suối Ồ - Một bãi biển mới khá hoang sơ mà bạn không thể bỏ qua. ",
+      "img": "biensuoio.jpg"
+      
+    },
+	{
+      "id": 11,
+      "title": "Biển Phước Hải",
+      "desc": "Không ồn ào nhộn nhịp như những bãi biển khác của Vũng Tàu, biển Phước Hải lại được nhiều người yêu thích bởi vẻ đẹp hoang sơ đầy thơ mộng của các bãi tắm và một không gian yên bình để nghỉ ngơi, thư giãn. Biển Phước Hải nằm dưới chân núi Minh Đam thuộc thị trấn Phước Hải, huyện Đất Đỏ, tỉnh Bà Rịa – Vũng Tàu được xem là một bãi biển hấp dẫn nhất Vũng Tàu khi sở hữu những bãi tắm hoang sơ hiếm có.",
+      "img": "bienphuochai.jpg"
+      
+    },
+	{
+      "id": 12,
+      "title": "Bãi Vọng Nguyệt",
+      "desc": "Bãi Vọng Nguyệt là một bãi biển tại Vũng Tàu. Bãi biển nằm dưới chân Núi Nhỏ, có thể nhìn thấy toàn cảnh từ vị trí của Tượng Đức Chúa giang tay trên đỉnh Núi Nhỏ. Vọng Nguyệt có nghĩa là đón trăng. Những đêm vào mùa trăng mọc, hay lúc hoàng hôn, biển ở đây sáng rực như được dát một lớp bạc óng ánh. Bên tiếng sóng rì rào, trước mặt biển sáng bạc mênh mông, du khách sẽ có cảm giác cái mênh mông bao la của trời mây sóng nước, của vũ trụ vô cùng, vô tận, lâng lâng bay bổng trong tâm hồn.",
+      "img": "50432695.jpg"
+      
+    },
+	{
+      "id": 13,
+      "title": "Bãi Trước",
+      "desc": "Là mặt tiền của Vũng Tàu, nằm về hướng tây-nam, còn gọi là bãi “Tầm Dương” - Tìm ánh mặt trời. Vào buổi bình minh và hoàng hôn, mặt trời đỏ rực như tan vào nước biển mênh mông. Bãi Trước như một nửa vành trăng tựa lưng vào đất liền, hai đầu là hai ngọn núi Tương Kỳ và Tao Phùng. Thiên nhiên sơn thuỷ hửu tình đã tạo cho Bãi Trước cảnh thơ mộng là bến đậu của những con tàu trở về sau những chuyến hải trình.",
+      "img": "bai-truoc.jpg"
+      
+    }
+  ]
+}

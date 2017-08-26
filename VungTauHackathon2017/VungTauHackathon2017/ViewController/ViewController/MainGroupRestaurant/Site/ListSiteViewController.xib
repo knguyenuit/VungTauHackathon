@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListSiteViewController" customModule="VungTauHackathon2017" customModuleProvider="target">
+            <connections>
+                <outlet property="tbListSite" destination="sG2-Lz-g2p" id="oHk-6X-qog"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TCe-DH-OkX">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List Sites" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goW-ol-hyM">
+                            <rect key="frame" x="122" y="32" width="131" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="131" id="fuV-Yj-9a5"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwj-Da-mvX">
+                            <rect key="frame" x="8" y="32" width="64" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="  Back" image="icBack">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.20392156859999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="goW-ol-hyM" firstAttribute="centerX" secondItem="TCe-DH-OkX" secondAttribute="centerX" id="3Et-iw-2eC"/>
+                        <constraint firstItem="pwj-Da-mvX" firstAttribute="leading" secondItem="TCe-DH-OkX" secondAttribute="leading" constant="8.5" id="DSz-gS-tcw"/>
+                        <constraint firstAttribute="bottom" secondItem="pwj-Da-mvX" secondAttribute="bottom" constant="12" id="Tj9-uF-MsS"/>
+                        <constraint firstAttribute="height" constant="65" id="Udd-bi-5HZ"/>
+                        <constraint firstItem="pwj-Da-mvX" firstAttribute="top" secondItem="TCe-DH-OkX" secondAttribute="top" constant="31.5" id="qpj-11-Dob"/>
+                        <constraint firstItem="goW-ol-hyM" firstAttribute="leading" secondItem="pwj-Da-mvX" secondAttribute="trailing" constant="50" id="u6s-x9-5b2"/>
+                        <constraint firstItem="goW-ol-hyM" firstAttribute="top" secondItem="TCe-DH-OkX" secondAttribute="top" constant="32" id="x1j-Yi-RDW"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sG2-Lz-g2p">
+                    <rect key="frame" x="0.0" y="65" width="375" height="602"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="TCe-DH-OkX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3qv-61-gDy"/>
+                <constraint firstAttribute="bottom" secondItem="sG2-Lz-g2p" secondAttribute="bottom" id="6qf-K9-i3G"/>
+                <constraint firstItem="sG2-Lz-g2p" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Gm1-EA-bC0"/>
+                <constraint firstItem="TCe-DH-OkX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="flr-cT-Pe2"/>
+                <constraint firstAttribute="trailing" secondItem="sG2-Lz-g2p" secondAttribute="trailing" id="smj-Hn-b3C"/>
+                <constraint firstAttribute="trailing" secondItem="TCe-DH-OkX" secondAttribute="trailing" id="voe-dy-IyY"/>
+                <constraint firstItem="sG2-Lz-g2p" firstAttribute="top" secondItem="TCe-DH-OkX" secondAttribute="bottom" id="zmV-GQ-rcR"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="icBack" width="13" height="22"/>
+    </resources>
+</document>

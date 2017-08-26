@@ -1,5 +1,5 @@
 //
-//  HotelDetailViewController.swift
+//  SiteDetailViewController.swift
 //  VungTauHackathon2017
 //
 //  Created by Khanh Nguyen on 8/26/17.
@@ -8,8 +8,17 @@
 
 import UIKit
 
-class HotelDetailViewController: UIViewController {
+class SiteDetailViewController: UIViewController {
+    @IBOutlet weak var ivAvatar: UIImageView!
 
+   
+    @IBOutlet weak var lbDescription: UILabel!
+    @IBOutlet weak var lbTitle: UILabel!
+    
+    var avatar = ""
+    var siteDescription = ""
+    var siteTitle = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +30,16 @@ class HotelDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        ivAvatar.image = UIImage(named: avatar)
+        lbTitle.text = siteTitle
+        lbDescription.text = siteDescription
+    }
+    
+    @IBAction func btnBackClick(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
     /*
     // MARK: - Navigation
 
