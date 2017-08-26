@@ -90,6 +90,11 @@
                     <constraint firstItem="Qwf-l4-ykQ" firstAttribute="leading" secondItem="aEv-AT-lXn" secondAttribute="trailing" constant="2" id="u11-v7-jqI"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="ivAvatar" destination="830-iy-UFy" id="rn7-zz-IA8"/>
+                <outlet property="lbAddress" destination="tX4-pA-A9j" id="vFQ-0l-Juz"/>
+                <outlet property="lbName" destination="sZI-ba-yrG" id="GHB-Zy-38Q"/>
+            </connections>
             <point key="canvasLocation" x="24.5" y="184"/>
         </tableViewCell>
     </objects>

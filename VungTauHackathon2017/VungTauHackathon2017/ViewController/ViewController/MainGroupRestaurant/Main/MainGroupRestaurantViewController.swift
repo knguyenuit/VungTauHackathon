@@ -1,5 +1,5 @@
 //
-//  HotelInfoMakerViewController.swift
+//  MainGroupRestaurantViewController.swift
 //  VungTauHackathon2017
 //
 //  Created by Khanh Nguyen on 8/26/17.
@@ -8,31 +8,12 @@
 
 import UIKit
 
-class HotelInfoMakerViewController: UIViewController {
+class MainGroupRestaurantViewController: UIViewController {
 
-    @IBOutlet weak var ivAvatar: UIImageView!
-    @IBOutlet weak var lbName: UILabel!
-    @IBOutlet weak var lbPhone: UILabel!
-    @IBOutlet weak var lbAddress: UILabel!
-    
-    var avatar = ""
-    var name = ""
-    var phone = ""
-    var address = ""
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-        ivAvatar.image = UIImage(named: avatar)
-        lbName.text = name
-        lbPhone.text = phone
-        lbAddress.text = address
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,8 +21,6 @@ class HotelInfoMakerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func btnBookRoomClick(_ sender: Any) {
-    }
 
     /*
     // MARK: - Navigation

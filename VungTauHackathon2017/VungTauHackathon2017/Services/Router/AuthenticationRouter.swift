@@ -30,8 +30,8 @@ enum AuthenticationRouter: URLRequestConvertible {
     
     var path: String {
         switch self {
-        case .Login:
-            return "/user/?a=login"
+        case .Login(let apiLogin):
+            return "/user/?action=\(apiLogin.action)&userName=\(apiLogin.userName!)&userPassword=\(apiLogin.userPassword!)"
         case .Logout:
             return "/api/auth/signOut"
         
@@ -51,10 +51,10 @@ enum AuthenticationRouter: URLRequestConvertible {
         
         
         switch self {
-        case .Login(let loginRequest):
-            let JSONString = Mapper().toJSONString(loginRequest, prettyPrint: true)
-            let data = JSONString!.data(using: String.Encoding.utf8)
-            urlRequest.httpBody = data
+        case .Login(let _): break
+//            let JSONString = Mapper().toJSONString(loginRequest, prettyPrint: true)
+//            let data = JSONString!.data(using: String.Encoding.utf8)
+//            urlRequest.httpBody = data
         case .Register(let registerRequest):
             let JSONString = Mapper().toJSONString(registerRequest, prettyPrint: true)
             let data = JSONString!.data(using: String.Encoding.utf8)

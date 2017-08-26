@@ -16,6 +16,7 @@ class ListHotelMapViewController: UIViewController, GMSMapViewDelegate, CLLocati
 
    
     @IBOutlet weak var mapView: GMSMapView!
+    var listHotel = [Hotel]()
     
     var location = ""
     let locationManager = CLLocationManager()
@@ -36,20 +37,20 @@ class ListHotelMapViewController: UIViewController, GMSMapViewDelegate, CLLocati
         mapView.isMyLocationEnabled = true
         mapView.sizeToFit()
         self.locationManager.startUpdatingLocation()
+
+        let hotel = listHotel.first
         let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: 10.36408
-            , longitude: 107.08377)
+        marker.position = CLLocationCoordinate2D(latitude: (hotel?.lat)!
+            , longitude: (hotel?.lng)!)
         marker.title = "Khánh Nguyên"
         //marker.snippet = "VietNam"
         marker.icon = GMSMarker.markerImage(with: .black)
         marker.tracksInfoWindowChanges = true
         marker.map = self.mapView
         
-        //marker.userData = pitch
+        marker.userData = hotel
         self.mapView.camera = GMSCameraPosition.camera(withLatitude: 10.36408
             , longitude: 107.08377, zoom: 15)
-        //self.locationManager.delegate = self
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -120,12 +121,12 @@ class ListHotelMapViewController: UIViewController, GMSMapViewDelegate, CLLocati
         
         let vc = HotelInfoMakerViewController()
         let info = vc.view
-//        let pitch = marker.userData as! Pitch
-//        vc.name = pitch.name!
-//        vc.address = pitch.location?.address
-//        vc.avatar = pitch.avatar
-//        vc.phone = pitch.phone
-//        vc.btnOrderPitch.addTarget(self, action: #selector(buttonTapped(_:)), for: .touchUpInside)
+        let currentHotel = marker.userData as! Hotel
+        vc.name = currentHotel.hotelName!
+        vc.address = currentHotel.hotelAddress!
+        vc.avatar = currentHotel.avatar!
+        vc.phone = currentHotel.phoneNumber!
+        
         
         
         return info

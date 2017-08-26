@@ -10,6 +10,10 @@ import UIKit
 
 class ListHotelTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var ivAvatar: UIImageView!
+    @IBOutlet weak var lbName: UILabel!
+    @IBOutlet weak var lbAddress: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,6 +23,12 @@ class ListHotelTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func poplulateDate(avatarName: String, name: String, address: String) {
+        ivAvatar.image = UIImage(named: avatarName)
+        lbName.text = name
+        lbAddress.text = address
     }
     
 }

@@ -1,0 +1,31 @@
+{
+  "hotel": [
+    {
+      "id": 1,
+      "name": "Van Quynh Guesthouse",
+      "phone": "0120765321",
+      "address": "94/16 Trịnh Hoài Đức, Vung Tau City, Vietnam",
+	  "lat": 10.36408,
+	  "long": 107.08377,
+	  "avatar": "truongphat.jpg",
+    },
+    {
+      "id": 2,
+      "name": "Khách sạn Hay Lnn Vũng Tàu",
+      "phone": "0120765243",
+      "address": "76/04 Trịnh Hoài Đức, Vung Tau City, Vietnam",
+	  "lat": 10.365450,
+	  "long": 107.085334,
+	  "avatar": "pexels-photo-406152",
+    },
+    {
+      "id": 3,
+      "name": "Ruby Land Hotel",
+      "phone": "0120765564",
+      "address": "08 Trương Văn Bang, Phường 7, Vung Tau City, Vietnam",
+	  "lat": 10.364844,
+	  "long": 107.084781,
+	  "avatar": "RubyLandHotel.jpg",
+    }
+  ]
+}

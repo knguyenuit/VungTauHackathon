@@ -1,5 +1,5 @@
 //
-//  MainScreenViewController.swift
+//  MainGroupHotelViewController.swift
 //  VungTauHackathon2017
 //
 //  Created by Khanh Nguyen on 8/26/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainScreenViewController: UIViewController {
+class MainGroupHotelViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

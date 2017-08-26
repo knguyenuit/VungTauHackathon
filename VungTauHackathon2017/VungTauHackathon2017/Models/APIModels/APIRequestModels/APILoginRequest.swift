@@ -14,7 +14,7 @@ class APILoginRequest : FAAutoCode, Mappable {
     
     var userName: String?
     var userPassword: String?
-    
+    var action = "login"
     
 
     override init() {
@@ -35,7 +35,9 @@ class APILoginRequest : FAAutoCode, Mappable {
     }
     
     func mapping(map: Map) {
+        action <- map["action"]
         userName <- map["userName"]
         userPassword <- map["userPassword"]
+        
     }
 }
