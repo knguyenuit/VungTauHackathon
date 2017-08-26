@@ -14,8 +14,7 @@ class APILoginRequest : FAAutoCode, Mappable {
     
     var email: String?
     var passWord: String?
-    var clientId = "1"
-    var clientSecret = "6DFUKtdNveO7oue7INvxKNc5B4VmUdVKE6Wue55f"
+    
     
 
     override init() {
@@ -38,7 +37,5 @@ class APILoginRequest : FAAutoCode, Mappable {
     func mapping(map: Map) {
         email <- map["email"]
         passWord <- map["password"]
-        clientId <- map["client_id"]
-        clientSecret <- map["client_secret"]
     }
 }

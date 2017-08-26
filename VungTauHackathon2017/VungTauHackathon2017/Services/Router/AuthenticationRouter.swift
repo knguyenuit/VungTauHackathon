@@ -31,7 +31,7 @@ enum AuthenticationRouter: URLRequestConvertible {
     var path: String {
         switch self {
         case .Login:
-            return "/api/auth/signIn"
+            return "/user?a=login"
         case .Logout:
             return "/api/auth/signOut"
         

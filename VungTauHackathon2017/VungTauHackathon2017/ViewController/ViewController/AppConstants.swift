@@ -14,7 +14,7 @@ class AppConstants {
     public static let listKidCredentialKey = "listKidCredentialKey"
     public static let listQuizQuestionTrueKey = "listQuizQuestionTrueKey"
     public static let baseURLAvatarImage = "https://kiddi.s3.amazonaws.com/avatars/"
-    public static let baseNodeNextgenURLString = "http://jenkins.web.beesightsoft.com/kiddi-api/public"
+    public static let baseNodeNextgenURLString = "http://fooco.esy.es/public/api"
 //    #if DEV || INTEGRATION
 //    public static let baseNodeNextgenURLString = "http://jenkins.web.beesightsoft.com/kiddi-api/public"
 //    #elseif STAGING
