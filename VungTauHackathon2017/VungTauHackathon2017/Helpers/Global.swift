@@ -10,4 +10,6 @@ import Foundation
 
 class Global {
     public static var currentServices = 0
+    public static var currentRestaurant = APIResponseGetAllServices()
+    public static var currentHotel = Hotel()
 }

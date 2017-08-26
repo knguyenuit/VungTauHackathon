@@ -60,6 +60,8 @@ class ListHotelMapViewController: UIViewController, GMSMapViewDelegate, CLLocati
                 
                 
             }
+            self.mapView.camera = GMSCameraPosition.camera(withLatitude: (listHotel.first?.lat)!
+                , longitude: (listHotel.first?.lng)!, zoom: 15)
 
         } else {
             listRestaurant.removeAll()
@@ -90,19 +92,17 @@ class ListHotelMapViewController: UIViewController, GMSMapViewDelegate, CLLocati
                         
                         
                     }
-                    
-                
-                    
-                    
+  
                 }
+                self.mapView.camera = GMSCameraPosition.camera(withLatitude: (self.listRestaurant.first?.addressLat)!
+                    , longitude: (self.listRestaurant.first?.addressLng)!, zoom: 15)
+
             })
             
         
         
         
-        self.mapView.camera = GMSCameraPosition.camera(withLatitude: (listHotel.first?.lat)!
-            , longitude: (listHotel.first?.lng)!, zoom: 15)
-        //self.locationManager.delegate = self
+                    //self.locationManager.delegate = self
         // Do any additional setup after loading the view.
     }
         
@@ -229,7 +229,10 @@ class ListHotelMapViewController: UIViewController, GMSMapViewDelegate, CLLocati
             vc.avatar = currentRes.avatar!
             vc.phone = "0905358224"
         }
-
+       
+        
+        
+        
         return info
         
     }

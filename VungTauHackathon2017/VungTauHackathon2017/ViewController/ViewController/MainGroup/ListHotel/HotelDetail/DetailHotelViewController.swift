@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class DetailHotelViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource{
 
@@ -39,7 +40,14 @@ class DetailHotelViewController: UIViewController, UICollectionViewDelegate, UIC
         lblNamePlace.text = name
         lblAddress.text = address
         lblNumberComment.text = phoneNumber
-        imgMainDetailImage.image = UIImage(named: avatar)
+        if Global.currentServices == 2 {
+           imgMainDetailImage.image = UIImage(named: avatar)
+            
+        } else {
+            var urlImage = URL(string: avatar)
+            imgMainDetailImage.kf.setImage(with: urlImage)
+        }
+        
     }
 
     @IBAction func btnBackClick(_ sender: Any) {
@@ -87,6 +95,10 @@ class DetailHotelViewController: UIViewController, UICollectionViewDelegate, UIC
         selectOption = indexPath.item
         if indexPath.item == 0 {
             let vc = OverviewHotelViewController()
+            vc.view.frame = vContent.bounds
+            vContent.addSubview(vc.view)
+        } else if indexPath.item == 1 {
+            let vc = ServiceMapViewController()
             vc.view.frame = vContent.bounds
             vContent.addSubview(vc.view)
         }
