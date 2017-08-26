@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="224"/>
                     </imageView>
                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Cw-Xi-IP5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                        <rect key="frame" x="0.0" y="0.0" width="426" height="225"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XOo-Si-QrW">
@@ -66,7 +66,7 @@
                 <outlet property="lblNameOption" destination="Iyr-78-ZF2" id="wVk-2N-sJz"/>
                 <outlet property="vGradient" destination="8Cw-Xi-IP5" id="UtT-uN-I7B"/>
             </connections>
-            <point key="canvasLocation" x="5" y="50"/>
+            <point key="canvasLocation" x="4.5" y="49.5"/>
         </tableViewCell>
     </objects>
     <resources>
