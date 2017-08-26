@@ -79,15 +79,7 @@ class DetailHotelViewController: UIViewController, UICollectionViewDelegate, UIC
             cell.vHighlight.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
         }
         
-        if selectOption == 2
-        {
-            vContent.isHidden = true
-        }
         
-        if selectOption == 0
-        {
-            vContent.isHidden = false
-        }
         
         return cell
     }
@@ -96,14 +88,17 @@ class DetailHotelViewController: UIViewController, UICollectionViewDelegate, UIC
         selectOption = indexPath.item
         if indexPath.item == 0 {
             let vc = OverviewHotelViewController()
-            vc.view.frame = vContent.bounds
-            vContent.addSubview(vc.view)
-        } else if indexPath.item == 2 {
-            let vc = ServiceMapViewController()
+            self.addChildViewController(vc)
             vc.view.frame = vContent.bounds
             vContent.addSubview(vc.view)
         } else if indexPath.item == 1 {
             let vc = ReviewViewController()
+            self.addChildViewController(vc)
+            vc.view.frame = vContent.bounds
+            vContent.addSubview(vc.view)
+
+        } else if indexPath.item == 2 {
+            let vc = ServiceMapViewController()
             self.addChildViewController(vc)
             vc.view.frame = vContent.bounds
             vContent.addSubview(vc.view)
