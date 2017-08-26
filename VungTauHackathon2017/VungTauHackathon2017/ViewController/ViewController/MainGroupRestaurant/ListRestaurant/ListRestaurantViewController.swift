@@ -33,7 +33,11 @@ class ListRestaurantViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        getAllRestaurant()
+        
+        if listCurrentRestaurant.count == 0 {
+           getAllRestaurant()
+        }
+        
     }
     
     func getAllRestaurant() {

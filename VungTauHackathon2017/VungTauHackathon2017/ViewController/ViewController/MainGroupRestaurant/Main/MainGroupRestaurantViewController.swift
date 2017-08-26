@@ -8,10 +8,39 @@
 
 import UIKit
 
-class MainGroupRestaurantViewController: UIViewController {
+class MainGroupRestaurantViewController: UIViewController, UITabBarControllerDelegate {
+    
+    @IBOutlet weak var vContent: UIView!
 
+    var listViewController = [UIViewController]()
+    var tabbar:UITabBarController = UITabBarController()
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.tabBarController?.delegate = self
+        
+        let vcListRestaurant = ListRestaurantViewController()
+        let viewListRestaurant = vcListRestaurant.view
+        vcListRestaurant.tabBarItem = UITabBarItem(title: "List Restaurant", image: #imageLiteral(resourceName: "icon_Phone"), tag: 0)
+        
+        
+        
+        let vcListHotelMap = ListHotelMapViewController()
+        let viewHotelMap = vcListHotelMap.view
+        vcListHotelMap.tabBarItem = UITabBarItem(title: "Map", image: #imageLiteral(resourceName: "icon_Location"), tag: 1)
+        
+        
+        
+        listViewController.append(vcListRestaurant)
+        listViewController.append(vcListHotelMap)
+        
+        
+        tabbar.setViewControllers(listViewController, animated: true)
+        
+        tabbar.view.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        tabbar.view.frame = vContent.bounds
+        vContent.autoresizesSubviews = true
+        vContent.addSubview(tabbar.view)
 
         // Do any additional setup after loading the view.
     }
@@ -21,6 +50,9 @@ class MainGroupRestaurantViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func btnBackClick(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
 
     /*
     // MARK: - Navigation

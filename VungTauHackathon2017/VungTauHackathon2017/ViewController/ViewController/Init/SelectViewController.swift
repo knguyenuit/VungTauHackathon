@@ -59,6 +59,10 @@ extension SelectViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
             navigationController?.pushViewController(MainGroupHotelViewController(), animated: true)
+            Global.currentServices = 2
+        } else if indexPath.row == 1 {
+            navigationController?.pushViewController(MainGroupRestaurantViewController(), animated: true)
+            Global.currentServices == 1
         }
     }
 }

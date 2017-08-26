@@ -18,6 +18,7 @@ class ListHotelMapViewController: UIViewController, GMSMapViewDelegate, CLLocati
    
     @IBOutlet weak var mapView: GMSMapView!
     var listHotel = [Hotel]()
+    var listRestaurant = [APIResponseGetAllServices]()
     
     var location = ""
     let locationManager = CLLocationManager()
@@ -34,36 +35,77 @@ class ListHotelMapViewController: UIViewController, GMSMapViewDelegate, CLLocati
         mapView.delegate = self
         self.locationManager.delegate = self
         //mapView = GMSMapView(frame: view.bounds)
-        if listHotel.count == 0 {
-          readJSON()
-        }
-        
-        mapView.isMyLocationEnabled = true
-        mapView.sizeToFit()
-        self.locationManager.startUpdatingLocation()
-        if let listHotel = listHotel as? [Hotel] {
-            DispatchQueue.main.async {
-                listHotel.forEach({ (hotel) in
-                    let marker = GMSMarker()
-                    marker.position = CLLocationCoordinate2D(latitude: hotel.lat
-                        , longitude: hotel.lng)
-                    marker.title = "\((hotel.hotelName)!)"
-                    //marker.snippet = "VietNam"
-                    marker.icon = #imageLiteral(resourceName: "ic_restaurant")
-                    marker.tracksInfoWindowChanges = true
-                    marker.map = self.mapView
-                    
-                    marker.userData = hotel
-                })
+        if Global.currentServices == 2 {
+            if listHotel.count == 0 {
+                readJSON()
             }
-            
-            
-        }
+            mapView.isMyLocationEnabled = true
+            mapView.sizeToFit()
+            self.locationManager.startUpdatingLocation()
+            if let listHotel = listHotel as? [Hotel] {
+                DispatchQueue.main.async {
+                    listHotel.forEach({ (hotel) in
+                        let marker = GMSMarker()
+                        marker.position = CLLocationCoordinate2D(latitude: hotel.lat
+                            , longitude: hotel.lng)
+                        marker.title = "\((hotel.hotelName)!)"
+                        //marker.snippet = "VietNam"
+                        marker.icon = #imageLiteral(resourceName: "ic_restaurant")
+                        marker.tracksInfoWindowChanges = true
+                        marker.map = self.mapView
+                        
+                        marker.userData = hotel
+                    })
+                }
+                
+                
+            }
 
+        } else {
+            listRestaurant.removeAll()
+            let apiReqest = APIRequestGetServices(serviceTypeId: 1)
+            ApplicationAssembler.sharedInstance.resolver.resolve(PAuthenticationService.self)?.getAllRestaurant(apiReqest).continueWith(continuation: { (task) -> Void in
+                if let getKidReponse = task.result {
+                    
+                    self.listRestaurant = getKidReponse
+                    
+                    self.mapView.isMyLocationEnabled = true
+                    self.mapView.sizeToFit()
+                    self.locationManager.startUpdatingLocation()
+                    if let listRestaurant = self.listRestaurant as? [APIResponseGetAllServices] {
+                        DispatchQueue.main.async {
+                            listRestaurant.forEach({ (res) in
+                                let marker = GMSMarker()
+                                marker.position = CLLocationCoordinate2D(latitude: res.addressLat!
+                                    , longitude: res.addressLng!)
+                                marker.title = "\((res.serviceName)!)"
+                                //marker.snippet = "VietNam"
+                                marker.icon = #imageLiteral(resourceName: "Venue post suburb icon")
+                                marker.tracksInfoWindowChanges = true
+                                marker.map = self.mapView
+                                
+                                marker.userData = res
+                            })
+                        }
+                        
+                        
+                    }
+                    
+                
+                    
+                    
+                }
+            })
+            
+        
+        
+        
         self.mapView.camera = GMSCameraPosition.camera(withLatitude: (listHotel.first?.lat)!
             , longitude: (listHotel.first?.lng)!, zoom: 15)
         //self.locationManager.delegate = self
         // Do any additional setup after loading the view.
+    }
+        
     }
 
     func readJSON() {
@@ -110,14 +152,25 @@ class ListHotelMapViewController: UIViewController, GMSMapViewDelegate, CLLocati
     }
     
     func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
-        let vc = DetailHotelViewController()
-        let hotel = marker.userData as! Hotel
-        vc.name = hotel.hotelName!
-        vc.address = hotel.hotelAddress!
-        vc.phoneNumber = hotel.phoneNumber!
-        vc.avatar = hotel.avatar!
-        print("load list detail")
-        navigationController?.pushViewController(vc, animated: true)
+        if Global.currentServices == 2 {
+            let vc = DetailHotelViewController()
+            let hotel = marker.userData as! Hotel
+            vc.name = hotel.hotelName!
+            vc.address = hotel.hotelAddress!
+            vc.phoneNumber = hotel.phoneNumber!
+            vc.avatar = hotel.avatar!
+            print("load list detail")
+            navigationController?.pushViewController(vc, animated: true)
+        } else {
+            let vc = DetailHotelViewController()
+            let res = marker.userData as! APIResponseGetAllServices
+            vc.name = res.serviceName!
+            vc.address = res.address!
+            vc.phoneNumber = "0905358224"
+            vc.avatar = res.avatar!
+            navigationController?.pushViewController(vc, animated: true)
+        }
+       
         
     }
     
@@ -163,14 +216,20 @@ class ListHotelMapViewController: UIViewController, GMSMapViewDelegate, CLLocati
         
         let vc = HotelInfoMakerViewController()
         let info = vc.view
-        let currentHotel = marker.userData as! Hotel
-        vc.name = currentHotel.hotelName!
-        vc.address = currentHotel.hotelAddress!
-        vc.avatar = currentHotel.avatar!
-        vc.phone = currentHotel.phoneNumber!
-        
-        
-        
+        if Global.currentServices == 2 {
+            let currentHotel = marker.userData as! Hotel
+            vc.name = currentHotel.hotelName!
+            vc.address = currentHotel.hotelAddress!
+            vc.avatar = currentHotel.avatar!
+            vc.phone = currentHotel.phoneNumber!
+        } else {
+            let currentRes = marker.userData as! APIResponseGetAllServices
+            vc.name = currentRes.serviceName!
+            vc.address = currentRes.address!
+            vc.avatar = currentRes.avatar!
+            vc.phone = "0905358224"
+        }
+
         return info
         
     }

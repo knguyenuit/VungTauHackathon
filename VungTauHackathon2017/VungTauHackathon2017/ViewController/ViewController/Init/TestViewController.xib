@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestViewController" customModule="hackAThon" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestViewController" customModule="VungTauHackathon2017" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -19,40 +19,57 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navigationbar2" translatesAutoresizingMaskIntoConstraints="NO" id="HKD-nX-OH8">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kCb-Qm-w6C">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="97"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navigationbar2" translatesAutoresizingMaskIntoConstraints="NO" id="HKD-nX-OH8">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="97"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Isx-Zj-SMd">
+                            <rect key="frame" x="10" y="33" width="65" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="DNL-49-v7v"/>
+                                <constraint firstAttribute="width" constant="65" id="gFo-9o-xkP"/>
+                            </constraints>
+                            <state key="normal" title="  Back" image="icBack">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LH1-x2-Ljq">
+                            <rect key="frame" x="94" y="35.5" width="187.5" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="26" id="4R5-wr-u9W"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="97" id="gaD-Wk-sIi"/>
+                        <constraint firstAttribute="bottom" secondItem="HKD-nX-OH8" secondAttribute="bottom" id="FpR-IJ-aIn"/>
+                        <constraint firstAttribute="height" constant="97" id="MVl-eg-3Hj"/>
+                        <constraint firstItem="LH1-x2-Ljq" firstAttribute="centerY" secondItem="kCb-Qm-w6C" secondAttribute="centerY" id="PsI-TY-gtI"/>
+                        <constraint firstItem="Isx-Zj-SMd" firstAttribute="centerY" secondItem="kCb-Qm-w6C" secondAttribute="centerY" id="SyW-m4-0A3"/>
+                        <constraint firstItem="LH1-x2-Ljq" firstAttribute="centerX" secondItem="kCb-Qm-w6C" secondAttribute="centerX" id="Uf2-vY-Tlk"/>
+                        <constraint firstAttribute="trailing" secondItem="HKD-nX-OH8" secondAttribute="trailing" id="gap-DF-GsX"/>
+                        <constraint firstItem="HKD-nX-OH8" firstAttribute="leading" secondItem="kCb-Qm-w6C" secondAttribute="leading" id="ggA-cF-MQu"/>
+                        <constraint firstItem="Isx-Zj-SMd" firstAttribute="leading" secondItem="kCb-Qm-w6C" secondAttribute="leading" constant="10" id="kqf-Ug-dAV"/>
+                        <constraint firstItem="HKD-nX-OH8" firstAttribute="top" secondItem="kCb-Qm-w6C" secondAttribute="top" id="p32-nN-BQ6"/>
                     </constraints>
-                </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LH1-x2-Ljq">
-                    <rect key="frame" x="94" y="35" width="187.5" height="26"/>
-                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Isx-Zj-SMd">
-                    <rect key="frame" x="16" y="33" width="46" height="30"/>
-                    <state key="normal" title="Button">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                </button>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Isx-Zj-SMd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="33" id="5Ah-Ml-3PQ"/>
-                <constraint firstAttribute="trailing" secondItem="HKD-nX-OH8" secondAttribute="trailing" id="7jt-SH-XkI"/>
-                <constraint firstItem="HKD-nX-OH8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="R6o-ET-Jl2"/>
-                <constraint firstItem="LH1-x2-Ljq" firstAttribute="centerX" secondItem="HKD-nX-OH8" secondAttribute="centerX" id="WFa-KA-5uj"/>
-                <constraint firstItem="LH1-x2-Ljq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="35" id="axM-U6-Jbk"/>
-                <constraint firstItem="Isx-Zj-SMd" firstAttribute="centerY" secondItem="LH1-x2-Ljq" secondAttribute="centerY" id="byz-vx-PQF"/>
-                <constraint firstItem="Isx-Zj-SMd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="tSM-nP-RD1"/>
-                <constraint firstItem="HKD-nX-OH8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="y46-PB-J1I"/>
+                <constraint firstItem="kCb-Qm-w6C" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aph-QT-mk7"/>
+                <constraint firstItem="kCb-Qm-w6C" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sJf-pM-fto"/>
+                <constraint firstAttribute="trailing" secondItem="kCb-Qm-w6C" secondAttribute="trailing" id="z49-8s-cXl"/>
             </constraints>
             <point key="canvasLocation" x="24.5" y="51.5"/>
         </view>
     </objects>
     <resources>
+        <image name="icBack" width="13" height="22"/>
         <image name="navigationbar2" width="375" height="82"/>
     </resources>
 </document>
