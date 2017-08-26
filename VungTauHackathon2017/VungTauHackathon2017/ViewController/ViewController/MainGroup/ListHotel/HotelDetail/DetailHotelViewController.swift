@@ -85,7 +85,11 @@ class DetailHotelViewController: UIViewController, UICollectionViewDelegate, UIC
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         selectOption = indexPath.item
-        
+        if indexPath.item == 0 {
+            let vc = OverviewHotelViewController()
+            vc.view.frame = vContent.bounds
+            vContent.addSubview(vc.view)
+        }
         collectionView.reloadData()
     }
 }

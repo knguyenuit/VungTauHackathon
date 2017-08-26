@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A002ECE1F51E56B0019B215 /* OverviewHotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A002ECC1F51E56B0019B215 /* OverviewHotelViewController.swift */; };
+		2A002ECF1F51E56B0019B215 /* OverviewHotelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A002ECD1F51E56B0019B215 /* OverviewHotelViewController.xib */; };
 		8BDBAF311F51244E00A41C85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF301F51244E00A41C85 /* AppDelegate.swift */; };
 		8BDBAF331F51244E00A41C85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF321F51244E00A41C85 /* ViewController.swift */; };
 		8BDBAF361F51244E00A41C85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BDBAF341F51244E00A41C85 /* Main.storyboard */; };
@@ -89,6 +91,8 @@
 /* Begin PBXFileReference section */
 		153C05A846962C0B142A6F69 /* Pods-VungTauHackathon2017.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VungTauHackathon2017.release.xcconfig"; path = "Pods/Target Support Files/Pods-VungTauHackathon2017/Pods-VungTauHackathon2017.release.xcconfig"; sourceTree = "<group>"; };
 		179092E1A7721E4051A9B2D0 /* Pods_VungTauHackathon2017.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VungTauHackathon2017.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A002ECC1F51E56B0019B215 /* OverviewHotelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverviewHotelViewController.swift; sourceTree = "<group>"; };
+		2A002ECD1F51E56B0019B215 /* OverviewHotelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverviewHotelViewController.xib; sourceTree = "<group>"; };
 		8BDBAF2D1F51244E00A41C85 /* VungTauHackathon2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VungTauHackathon2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BDBAF301F51244E00A41C85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BDBAF321F51244E00A41C85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -189,6 +193,15 @@
 				153C05A846962C0B142A6F69 /* Pods-VungTauHackathon2017.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		2A002ECB1F51E5050019B215 /* OverviewHotel */ = {
+			isa = PBXGroup;
+			children = (
+				2A002ECC1F51E56B0019B215 /* OverviewHotelViewController.swift */,
+				2A002ECD1F51E56B0019B215 /* OverviewHotelViewController.xib */,
+			);
+			path = OverviewHotel;
 			sourceTree = "<group>";
 		};
 		5F4C45DDF34BD13CA20428E7 /* Frameworks */ = {
@@ -404,6 +417,7 @@
 		8BDBAF631F512C3600A41C85 /* HotelDetail */ = {
 			isa = PBXGroup;
 			children = (
+				2A002ECB1F51E5050019B215 /* OverviewHotel */,
 				8BDBAFC91F5185EF00A41C85 /* DetailHotelViewController.swift */,
 				8BDBAFCA1F5185EF00A41C85 /* DetailHotelViewController.xib */,
 			);
@@ -651,6 +665,7 @@
 				8BDBAFB61F5176A300A41C85 /* MainGroupRestaurantViewController.xib in Resources */,
 				8BDBAFBB1F5176D700A41C85 /* MainGroupHotelViewController.xib in Resources */,
 				8BDBAF3B1F51244E00A41C85 /* LaunchScreen.storyboard in Resources */,
+				2A002ECF1F51E56B0019B215 /* OverviewHotelViewController.xib in Resources */,
 				8BDBAFB11F51767900A41C85 /* ListRestaurantViewController.xib in Resources */,
 				8BDBAFD11F5193FE00A41C85 /* ListSiteViewController.xib in Resources */,
 				8BDBAFCC1F5185EF00A41C85 /* DetailHotelViewController.xib in Resources */,
@@ -765,6 +780,7 @@
 				8BDBAFF71F51BB7300A41C85 /* APIRequestGetRestaurant.swift in Sources */,
 				8BDBAF891F51309A00A41C85 /* BoolResponse.swift in Sources */,
 				8BDBAFDC1F51977400A41C85 /* SiteDetailViewController.swift in Sources */,
+				2A002ECE1F51E56B0019B215 /* OverviewHotelViewController.swift in Sources */,
 				8BDBAFA71F51748400A41C85 /* Restaurant.swift in Sources */,
 				8BDBB0071F51EBEE00A41C85 /* Global.swift in Sources */,
 			);
