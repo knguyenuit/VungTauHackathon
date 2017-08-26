@@ -68,6 +68,8 @@
 		8BDBAFE21F519AAE00A41C85 /* MainScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDBAFE01F519AAE00A41C85 /* MainScreenViewController.xib */; };
 		8BDBAFE71F519F8800A41C85 /* CreateServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAFE51F519F8800A41C85 /* CreateServiceViewController.swift */; };
 		8BDBAFE81F519F8800A41C85 /* CreateServiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDBAFE61F519F8800A41C85 /* CreateServiceViewController.xib */; };
+		8BDBAFEB1F51A31700A41C85 /* ListViewRestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAFE91F51A31700A41C85 /* ListViewRestaurantTableViewCell.swift */; };
+		8BDBAFEC1F51A31700A41C85 /* ListViewRestaurantTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDBAFEA1F51A31700A41C85 /* ListViewRestaurantTableViewCell.xib */; };
 		91FFE7E66E754C14F1293DCF /* Pods_VungTauHackathon2017.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179092E1A7721E4051A9B2D0 /* Pods_VungTauHackathon2017.framework */; };
 /* End PBXBuildFile section */
 
@@ -137,6 +139,8 @@
 		8BDBAFE01F519AAE00A41C85 /* MainScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainScreenViewController.xib; sourceTree = "<group>"; };
 		8BDBAFE51F519F8800A41C85 /* CreateServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateServiceViewController.swift; sourceTree = "<group>"; };
 		8BDBAFE61F519F8800A41C85 /* CreateServiceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateServiceViewController.xib; sourceTree = "<group>"; };
+		8BDBAFE91F51A31700A41C85 /* ListViewRestaurantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewRestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		8BDBAFEA1F51A31700A41C85 /* ListViewRestaurantTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListViewRestaurantTableViewCell.xib; sourceTree = "<group>"; };
 		DE31194C497F375D1EE5C7FB /* Pods-VungTauHackathon2017.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VungTauHackathon2017.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VungTauHackathon2017/Pods-VungTauHackathon2017.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -406,6 +410,8 @@
 		8BDBAF9F1F5154DA00A41C85 /* Table Cells */ = {
 			isa = PBXGroup;
 			children = (
+				8BDBAFE91F51A31700A41C85 /* ListViewRestaurantTableViewCell.swift */,
+				8BDBAFEA1F51A31700A41C85 /* ListViewRestaurantTableViewCell.xib */,
 				8BDBAFA01F5154F600A41C85 /* ListHotelTableViewCell.swift */,
 				8BDBAFA11F5154F600A41C85 /* ListHotelTableViewCell.xib */,
 				8BDBAFD61F5196CF00A41C85 /* ListSiteTableViewCell.swift */,
@@ -582,6 +588,7 @@
 				8BDBAFD91F5196CF00A41C85 /* ListSiteTableViewCell.xib in Resources */,
 				8BDBAF9D1F51381000A41C85 /* HotelInfoMakerViewController.xib in Resources */,
 				8BDBAF981F51353400A41C85 /* ListHotelMapViewController.xib in Resources */,
+				8BDBAFEC1F51A31700A41C85 /* ListViewRestaurantTableViewCell.xib in Resources */,
 				8BDBAFBF1F5177FF00A41C85 /* hotel.json in Resources */,
 				8BDBAFC41F51856300A41C85 /* DetailHotelCollectionViewCell.xib in Resources */,
 				8BDBAFA31F5154F600A41C85 /* ListHotelTableViewCell.xib in Resources */,
@@ -668,6 +675,7 @@
 				8BDBAFD81F5196CF00A41C85 /* ListSiteTableViewCell.swift in Sources */,
 				8BDBAFCB1F5185EF00A41C85 /* DetailHotelViewController.swift in Sources */,
 				8BDBAFD01F5193FE00A41C85 /* ListSiteViewController.swift in Sources */,
+				8BDBAFEB1F51A31700A41C85 /* ListViewRestaurantTableViewCell.swift in Sources */,
 				8BDBAFB01F51767900A41C85 /* ListRestaurantViewController.swift in Sources */,
 				8BDBAF561F51295200A41C85 /* LoginViewController.swift in Sources */,
 				8BDBAF731F512FBE00A41C85 /* PBaseRestService.swift in Sources */,
