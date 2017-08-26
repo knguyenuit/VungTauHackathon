@@ -95,7 +95,8 @@ extension ListHotelViewController: UITableViewDelegate, UITableViewDataSource {
         vc.address = hotel.hotelAddress!
         vc.phoneNumber = hotel.phoneNumber!
         vc.avatar = hotel.avatar!
-        print("load list detail")
+        Global.currentServices = 2
+        Global.currentHotel = hotel
         (UIApplication.shared.delegate as! AppDelegate).navigationController?.pushViewController(vc, animated: true)
         tbListHotel.deselectRow(at: indexPath, animated: true)
     }

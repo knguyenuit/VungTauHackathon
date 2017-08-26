@@ -62,7 +62,7 @@ extension SelectViewController: UITableViewDelegate, UITableViewDataSource{
             Global.currentServices = 2
         } else if indexPath.row == 1 {
             navigationController?.pushViewController(MainGroupRestaurantViewController(), animated: true)
-            Global.currentServices == 1
+            Global.currentServices = 1
         }
     }
 }

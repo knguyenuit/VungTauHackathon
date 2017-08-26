@@ -85,6 +85,8 @@
 		8BDBB0041F51DBB400A41C85 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBB0021F51DBB400A41C85 /* TestViewController.swift */; };
 		8BDBB0051F51DBB400A41C85 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDBB0031F51DBB400A41C85 /* TestViewController.xib */; };
 		8BDBB0071F51EBEE00A41C85 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBB0061F51EBEE00A41C85 /* Global.swift */; };
+		8BDBB00B1F51F69000A41C85 /* ServiceMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBB0091F51F69000A41C85 /* ServiceMapViewController.swift */; };
+		8BDBB00C1F51F69000A41C85 /* ServiceMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDBB00A1F51F69000A41C85 /* ServiceMapViewController.xib */; };
 		91FFE7E66E754C14F1293DCF /* Pods_VungTauHackathon2017.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179092E1A7721E4051A9B2D0 /* Pods_VungTauHackathon2017.framework */; };
 /* End PBXBuildFile section */
 
@@ -171,6 +173,8 @@
 		8BDBB0021F51DBB400A41C85 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		8BDBB0031F51DBB400A41C85 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		8BDBB0061F51EBEE00A41C85 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		8BDBB0091F51F69000A41C85 /* ServiceMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceMapViewController.swift; sourceTree = "<group>"; };
+		8BDBB00A1F51F69000A41C85 /* ServiceMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServiceMapViewController.xib; sourceTree = "<group>"; };
 		DE31194C497F375D1EE5C7FB /* Pods-VungTauHackathon2017.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VungTauHackathon2017.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VungTauHackathon2017/Pods-VungTauHackathon2017.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -253,6 +257,8 @@
 		8BDBAF421F51268B00A41C85 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8BDBB00D1F5200A100A41C85 /* Review */,
+				8BDBB0081F51F67300A41C85 /* Map */,
 				8BDBAFE31F519F1000A41C85 /* Owner */,
 				8BDBAFDE1F519A8800A41C85 /* MainScreen */,
 				8BDBAFCD1F5193DE00A41C85 /* Site */,
@@ -584,6 +590,22 @@
 			path = Libraries;
 			sourceTree = "<group>";
 		};
+		8BDBB0081F51F67300A41C85 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				8BDBB0091F51F69000A41C85 /* ServiceMapViewController.swift */,
+				8BDBB00A1F51F69000A41C85 /* ServiceMapViewController.xib */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		8BDBB00D1F5200A100A41C85 /* Review */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Review;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -667,6 +689,7 @@
 				8BDBAF3B1F51244E00A41C85 /* LaunchScreen.storyboard in Resources */,
 				2A002ECF1F51E56B0019B215 /* OverviewHotelViewController.xib in Resources */,
 				8BDBAFB11F51767900A41C85 /* ListRestaurantViewController.xib in Resources */,
+				8BDBB00C1F51F69000A41C85 /* ServiceMapViewController.xib in Resources */,
 				8BDBAFD11F5193FE00A41C85 /* ListSiteViewController.xib in Resources */,
 				8BDBAFCC1F5185EF00A41C85 /* DetailHotelViewController.xib in Resources */,
 				8BDBAFD31F51943100A41C85 /* sites.json in Resources */,
@@ -762,6 +785,7 @@
 				8BDBAFF91F51D0BF00A41C85 /* APIResponseGetAllService.swift in Sources */,
 				8BDBAF331F51244E00A41C85 /* ViewController.swift in Sources */,
 				8BDBAF8A1F51309A00A41C85 /* SignInReponse.swift in Sources */,
+				8BDBB00B1F51F69000A41C85 /* ServiceMapViewController.swift in Sources */,
 				8BDBAFF11F51AFA200A41C85 /* APIRequestCreateServices.swift in Sources */,
 				8BDBAFD51F51944200A41C85 /* Site.swift in Sources */,
 				8BDBAF7C1F51307900A41C85 /* APIRegisterRequest.swift in Sources */,

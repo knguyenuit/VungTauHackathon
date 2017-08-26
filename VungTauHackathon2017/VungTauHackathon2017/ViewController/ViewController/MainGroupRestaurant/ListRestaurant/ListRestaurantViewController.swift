@@ -92,7 +92,8 @@ extension ListRestaurantViewController: UITableViewDelegate, UITableViewDataSour
         vc.address = currentRestaurant.address!
         //vc.phoneNumber = currentRestaurant.addressLat
         vc.avatar = currentRestaurant.avatar!
-        print("load list detail")
+        Global.currentServices = 1
+        Global.currentRestaurant = currentRestaurant
         (UIApplication.shared.delegate as! AppDelegate).navigationController?.pushViewController(vc, animated: true)
         tbListRestaurant.deselectRow(at: indexPath, animated: true)
     }
