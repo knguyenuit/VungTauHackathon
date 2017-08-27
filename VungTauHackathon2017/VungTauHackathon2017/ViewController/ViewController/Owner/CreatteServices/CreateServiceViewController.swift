@@ -19,6 +19,7 @@ class CreateServiceViewController: UIViewController {
     @IBOutlet weak var tfAddress: UITextField!
     @IBOutlet weak var tfName: UITextField!
     @IBOutlet weak var btnChooseServices: DropMenuButton!
+
     
     var currentTypeServices = 0
     var lat = 0.0
@@ -57,13 +58,10 @@ class CreateServiceViewController: UIViewController {
 
         
     }
-    @IBAction func btnBackClick(_ sender: Any) {
-       navigationController?.popViewController(animated: true)
-    }
+//    @IBAction func btnBackClick(_ sender: Any) {
+//       navigationController?.popViewController(animated: true)
+//    }
 
-    @IBAction func btnCancelClick(_ sender: Any) {
-        
-    }
     @IBAction func btnCreateClick(_ sender: Any) {
         //getCoordinateLocation(location: tfAddress.text!)
         let requestServices = APIRequestCreateServices(serviceType: self.currentTypeServices, name: self.tfName.text!, address: self.tfAddress.text!, lat: 10.358256, lng: 107.086480)
