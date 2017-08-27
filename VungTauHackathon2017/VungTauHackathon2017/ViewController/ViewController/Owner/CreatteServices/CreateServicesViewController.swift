@@ -1,8 +1,8 @@
 //
-//  CreateServiceViewController.swift
+//  CreateServicesViewController.swift
 //  VungTauHackathon2017
 //
-//  Created by Khanh Nguyen on 8/26/17.
+//  Created by Khanh Nguyen on 8/27/17.
 //  Copyright © 2017 Khanh Nguyen. All rights reserved.
 //
 
@@ -11,21 +11,20 @@ import BoltsSwift
 import Alamofire
 import ObjectMapper
 
-class CreateServiceViewController: UIViewController {
-    
-
-    @IBOutlet weak var ivAvatar: UIImageView!
-    @IBOutlet weak var btnChooseImage: UIButton!
-    @IBOutlet weak var tfAddress: UITextField!
+class CreateServicesViewController: UIViewController {
     @IBOutlet weak var tfName: UITextField!
-    @IBOutlet weak var btnChooseServices: DropMenuButton!
+    @IBOutlet weak var ivAvatar: UIImageView!
 
+    @IBOutlet weak var btnChooseImage: UIButton!
+    @IBOutlet weak var btnChooseServices: DropMenuButton!
+    @IBOutlet weak var tfAddress: UITextField!
     
     var currentTypeServices = 0
     var lat = 0.0
     var lng = 0.0
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
         
@@ -36,8 +35,9 @@ class CreateServiceViewController: UIViewController {
             self.editWhenChoose()
             self.currentTypeServices = 2
         })])
-
+        
         ivAvatar.isHidden = true
+
         // Do any additional setup after loading the view.
     }
 
@@ -50,18 +50,6 @@ class CreateServiceViewController: UIViewController {
         self.btnChooseServices.contentHorizontalAlignment = .center
     }
     
-    @IBAction func btnChooseImageClick(_ sender: Any) {
-        let picker = UIImagePickerController()
-        picker.delegate = self
-        picker.allowsEditing = true
-        present(picker, animated: true, completion: nil)
-
-        
-    }
-//    @IBAction func btnBackClick(_ sender: Any) {
-//       navigationController?.popViewController(animated: true)
-//    }
-
     @IBAction func btnCreateClick(_ sender: Any) {
         //getCoordinateLocation(location: tfAddress.text!)
         let requestServices = APIRequestCreateServices(serviceType: self.currentTypeServices, name: self.tfName.text!, address: self.tfAddress.text!, lat: 10.358256, lng: 107.086480)
@@ -73,37 +61,27 @@ class CreateServiceViewController: UIViewController {
             }
         })
     }
-   
-  
-    func getCoordinateLocation(location: String){
-        
-        let temp1 = location.replacingOccurrences(of: "Đ", with: "D")
-        let temp2 = temp1.replacingOccurrences(of: "đ", with: "d")
-        let oldString = temp2.folding(options: .diacriticInsensitive, locale: .current)
-        let newString = oldString.replacingOccurrences(of: " ", with: "+")
-        Alamofire.request("https://maps.googleapis.com/maps/api/geocode/json", method: .get, parameters: ["address": newString, "key": "AIzaSyCaNIA8p6P0fRDHDXP9FGUUX7h8Iwqbayg"], encoding: URLEncoding.default, headers: nil).responseJSON { (reponse) in
-            switch reponse.result {
-            case .failure(let error) :
-                print(error)
-            case .success(let responseObject) :
-                
-                if let apiResponse = Mapper<APIResponseArray<MapReponse>>().map(JSONObject: responseObject) {
-                    apiResponse.result?.forEach({ (results) in
-                        if results.geometry != nil {
-                            self.lat = (results.geometry?.location?.lat!)!
-                            self.lng = (results.geometry?.location?.lng!)!
-                            
-                            
-                        }
-                    })
-                }
-            }
-        }
+    
+    @IBAction func btnChooseImageClick(_ sender: Any) {
+        let picker = UIImagePickerController()
+        picker.delegate = self
+        picker.allowsEditing = true
+        present(picker, animated: true, completion: nil)
     }
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
 
 }
 
-extension CreateServiceViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+extension CreateServicesViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
@@ -121,7 +99,7 @@ extension CreateServiceViewController: UIImagePickerControllerDelegate, UINaviga
             ivAvatar.isHidden = false
             btnChooseImage.isHidden = true
             
-          
+            
         }
         
         dismiss(animated: true, completion: nil)
