@@ -32,6 +32,7 @@ protocol PAuthenticationService {
     
     func getAllReviewByService(_ service: APIRequestGetReviewByService) -> Task<[ReviewService]>
 
+    func getServiceByOwner(_ owner: APIRequestGetServiceByOwner) -> Task<[APIResponseGetAllServices]>
     ///Change password
     //func changePassword(_ changePasswordRequest: APIChangePasswordRequest!, showLoading: Bool) -> Task<User>
     

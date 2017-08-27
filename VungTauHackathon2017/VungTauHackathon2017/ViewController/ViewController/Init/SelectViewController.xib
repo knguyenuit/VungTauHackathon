@@ -24,15 +24,32 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lA-me-MXj">
+                    <rect key="frame" x="0.0" y="0.0" width="58" height="58"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="58" id="WKy-Cb-pkk"/>
+                        <constraint firstAttribute="height" constant="58" id="x2o-fv-TmI"/>
+                    </constraints>
+                    <state key="normal" image="icBack"/>
+                    <connections>
+                        <action selector="btnBackClick:" destination="-1" eventType="touchUpInside" id="Juv-f7-TCX"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="2lA-me-MXj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1Tc-Vj-Brq"/>
                 <constraint firstItem="ROQ-cu-zVq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Esh-Mw-U1s"/>
                 <constraint firstItem="ROQ-cu-zVq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Mpw-Y5-gXB"/>
                 <constraint firstAttribute="trailing" secondItem="ROQ-cu-zVq" secondAttribute="trailing" id="aUg-oR-0TP"/>
                 <constraint firstAttribute="bottom" secondItem="ROQ-cu-zVq" secondAttribute="bottom" id="lU7-70-ITc"/>
+                <constraint firstItem="2lA-me-MXj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="otc-JH-xgX"/>
             </constraints>
             <point key="canvasLocation" x="25.5" y="51.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="icBack" width="13" height="22"/>
+    </resources>
 </document>

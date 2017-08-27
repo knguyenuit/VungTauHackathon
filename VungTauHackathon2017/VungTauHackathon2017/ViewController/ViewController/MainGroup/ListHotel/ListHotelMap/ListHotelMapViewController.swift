@@ -50,7 +50,7 @@ class ListHotelMapViewController: UIViewController, GMSMapViewDelegate, CLLocati
                             , longitude: hotel.lng)
                         marker.title = "\((hotel.hotelName)!)"
                         //marker.snippet = "VietNam"
-                        marker.icon = #imageLiteral(resourceName: "ic_restaurant")
+                        marker.icon = #imageLiteral(resourceName: "icon-hotel-18")
                         marker.tracksInfoWindowChanges = true
                         marker.map = self.mapView
                         
@@ -82,7 +82,7 @@ class ListHotelMapViewController: UIViewController, GMSMapViewDelegate, CLLocati
                                     , longitude: res.addressLng!)
                                 marker.title = "\((res.serviceName)!)"
                                 //marker.snippet = "VietNam"
-                                marker.icon = #imageLiteral(resourceName: "Venue post suburb icon")
+                                marker.icon = #imageLiteral(resourceName: "cook")
                                 marker.tracksInfoWindowChanges = true
                                 marker.map = self.mapView
                                 
@@ -160,7 +160,7 @@ class ListHotelMapViewController: UIViewController, GMSMapViewDelegate, CLLocati
             vc.phoneNumber = hotel.phoneNumber!
             vc.avatar = hotel.avatar!
             print("load list detail")
-            navigationController?.pushViewController(vc, animated: true)
+            (UIApplication.shared.delegate as! AppDelegate).navigationController?.pushViewController(vc, animated: true)
         } else {
             let vc = DetailHotelViewController()
             let res = marker.userData as! APIResponseGetAllServices
@@ -168,7 +168,7 @@ class ListHotelMapViewController: UIViewController, GMSMapViewDelegate, CLLocati
             vc.address = res.address!
             vc.phoneNumber = "0905358224"
             vc.avatar = res.avatar!
-            navigationController?.pushViewController(vc, animated: true)
+            (UIApplication.shared.delegate as! AppDelegate).navigationController?.pushViewController(vc, animated: true)
         }
        
         

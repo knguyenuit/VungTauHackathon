@@ -42,6 +42,9 @@ class AuthenticationRestService : PAuthenticationService, PBaseRestService {
         return doRequest(request: AuthenticationRouter.getReviewByService(service), showLoading: false)
     }
     
+    func getServiceByOwner(_ owner: APIRequestGetServiceByOwner) -> Task<[APIResponseGetAllServices]> {
+        return doRequest(request: AuthenticationRouter.getServiceByOwner(owner), showLoading: true)
+    }
     func login(_ loginRequest: APILoginRequest!, showLoading: Bool = true) -> Task<User> {
         return doRequest(request: AuthenticationRouter.Login(loginRequest), showLoading: true)
     }

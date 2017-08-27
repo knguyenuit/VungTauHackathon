@@ -35,7 +35,12 @@ class ServiceMapViewController: UIViewController {
             , longitude: lng)
         marker.title = "\(name)"
         //marker.snippet = "VietNam"
-        marker.icon = #imageLiteral(resourceName: "Location Icon")
+        if Global.currentServices == 1 {
+            marker.icon = #imageLiteral(resourceName: "cook")
+        } else {
+            marker.icon = #imageLiteral(resourceName: "icon-hotel-18")
+        }
+        
         marker.tracksInfoWindowChanges = true
         marker.map = self.vMap
         self.vMap.camera = GMSCameraPosition.camera(withLatitude: lat

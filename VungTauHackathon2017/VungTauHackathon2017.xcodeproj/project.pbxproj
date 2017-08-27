@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		2A002ECE1F51E56B0019B215 /* OverviewHotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A002ECC1F51E56B0019B215 /* OverviewHotelViewController.swift */; };
 		2A002ECF1F51E56B0019B215 /* OverviewHotelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A002ECD1F51E56B0019B215 /* OverviewHotelViewController.xib */; };
+<<<<<<< HEAD
 		2A002ED21F523D260019B215 /* PhotosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A002ED01F523D260019B215 /* PhotosTableViewCell.swift */; };
 		2A002ED31F523D260019B215 /* PhotosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A002ED11F523D260019B215 /* PhotosTableViewCell.xib */; };
 		2A002ED71F5258580019B215 /* ProfileUserGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A002ED51F5258580019B215 /* ProfileUserGroupViewController.swift */; };
 		2A002ED81F5258580019B215 /* ProfileUserGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A002ED61F5258580019B215 /* ProfileUserGroupViewController.xib */; };
+=======
+>>>>>>> c60ee1f7d5702e189a1ffa946b5e8e7c48ad7e7d
 		8BDBAF311F51244E00A41C85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF301F51244E00A41C85 /* AppDelegate.swift */; };
 		8BDBAF331F51244E00A41C85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF321F51244E00A41C85 /* ViewController.swift */; };
 		8BDBAF361F51244E00A41C85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BDBAF341F51244E00A41C85 /* Main.storyboard */; };
@@ -97,6 +100,9 @@
 		8BDBB0151F52032700A41C85 /* ReviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBB0141F52032700A41C85 /* ReviewService.swift */; };
 		8BDBB0181F52057A00A41C85 /* ListReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBB0161F52057A00A41C85 /* ListReviewTableViewCell.swift */; };
 		8BDBB0191F52057A00A41C85 /* ListReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDBB0171F52057A00A41C85 /* ListReviewTableViewCell.xib */; };
+		8BDBB01C1F523A8B00A41C85 /* ListServicesOwnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBB01A1F523A8B00A41C85 /* ListServicesOwnerViewController.swift */; };
+		8BDBB01D1F523A8B00A41C85 /* ListServicesOwnerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDBB01B1F523A8B00A41C85 /* ListServicesOwnerViewController.xib */; };
+		8BDBB01F1F523CD400A41C85 /* APIRequestGetServiceByOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBB01E1F523CD400A41C85 /* APIRequestGetServiceByOwner.swift */; };
 		91FFE7E66E754C14F1293DCF /* Pods_VungTauHackathon2017.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179092E1A7721E4051A9B2D0 /* Pods_VungTauHackathon2017.framework */; };
 /* End PBXBuildFile section */
 
@@ -105,10 +111,13 @@
 		179092E1A7721E4051A9B2D0 /* Pods_VungTauHackathon2017.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VungTauHackathon2017.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A002ECC1F51E56B0019B215 /* OverviewHotelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverviewHotelViewController.swift; sourceTree = "<group>"; };
 		2A002ECD1F51E56B0019B215 /* OverviewHotelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverviewHotelViewController.xib; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		2A002ED01F523D260019B215 /* PhotosTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosTableViewCell.swift; sourceTree = "<group>"; };
 		2A002ED11F523D260019B215 /* PhotosTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotosTableViewCell.xib; sourceTree = "<group>"; };
 		2A002ED51F5258580019B215 /* ProfileUserGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileUserGroupViewController.swift; sourceTree = "<group>"; };
 		2A002ED61F5258580019B215 /* ProfileUserGroupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileUserGroupViewController.xib; sourceTree = "<group>"; };
+=======
+>>>>>>> c60ee1f7d5702e189a1ffa946b5e8e7c48ad7e7d
 		8BDBAF2D1F51244E00A41C85 /* VungTauHackathon2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VungTauHackathon2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BDBAF301F51244E00A41C85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BDBAF321F51244E00A41C85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -195,6 +204,9 @@
 		8BDBB0141F52032700A41C85 /* ReviewService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewService.swift; sourceTree = "<group>"; };
 		8BDBB0161F52057A00A41C85 /* ListReviewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListReviewTableViewCell.swift; sourceTree = "<group>"; };
 		8BDBB0171F52057A00A41C85 /* ListReviewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListReviewTableViewCell.xib; sourceTree = "<group>"; };
+		8BDBB01A1F523A8B00A41C85 /* ListServicesOwnerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListServicesOwnerViewController.swift; sourceTree = "<group>"; };
+		8BDBB01B1F523A8B00A41C85 /* ListServicesOwnerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListServicesOwnerViewController.xib; sourceTree = "<group>"; };
+		8BDBB01E1F523CD400A41C85 /* APIRequestGetServiceByOwner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestGetServiceByOwner.swift; sourceTree = "<group>"; };
 		DE31194C497F375D1EE5C7FB /* Pods-VungTauHackathon2017.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VungTauHackathon2017.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VungTauHackathon2017/Pods-VungTauHackathon2017.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -369,6 +381,7 @@
 				8BDBAF8E1F5130D900A41C85 /* APILogoutRequest.swift */,
 				8BDBAF7B1F51307900A41C85 /* APIRegisterRequest.swift */,
 				8BDBB0121F5202BA00A41C85 /* APIRequestGetReviewByService.swift */,
+				8BDBB01E1F523CD400A41C85 /* APIRequestGetServiceByOwner.swift */,
 			);
 			path = APIRequestModels;
 			sourceTree = "<group>";
@@ -602,6 +615,8 @@
 			isa = PBXGroup;
 			children = (
 				8BDBAFE41F519F5100A41C85 /* CreateServices */,
+				8BDBB01A1F523A8B00A41C85 /* ListServicesOwnerViewController.swift */,
+				8BDBB01B1F523A8B00A41C85 /* ListServicesOwnerViewController.xib */,
 			);
 			path = Owner;
 			sourceTree = "<group>";
@@ -611,8 +626,6 @@
 			children = (
 				8BDBAFE51F519F8800A41C85 /* CreateServiceViewController.swift */,
 				8BDBAFE61F519F8800A41C85 /* CreateServiceViewController.xib */,
-				2A002ED01F523D260019B215 /* PhotosTableViewCell.swift */,
-				2A002ED11F523D260019B215 /* PhotosTableViewCell.xib */,
 			);
 			name = CreateServices;
 			path = CreatteServices;
@@ -711,7 +724,7 @@
 				8BDBAF9D1F51381000A41C85 /* HotelInfoMakerViewController.xib in Resources */,
 				8BDBAFFD1F51DB3100A41C85 /* SelectViewController.xib in Resources */,
 				8BDBAF981F51353400A41C85 /* ListHotelMapViewController.xib in Resources */,
-				2A002ED31F523D260019B215 /* PhotosTableViewCell.xib in Resources */,
+				8BDBB01D1F523A8B00A41C85 /* ListServicesOwnerViewController.xib in Resources */,
 				8BDBAFEC1F51A31700A41C85 /* ListViewRestaurantTableViewCell.xib in Resources */,
 				8BDBAFBF1F5177FF00A41C85 /* hotel.json in Resources */,
 				8BDBB0051F51DBB400A41C85 /* TestViewController.xib in Resources */,
@@ -831,6 +844,8 @@
 				8BDBAFF91F51D0BF00A41C85 /* APIResponseGetAllService.swift in Sources */,
 				8BDBAF331F51244E00A41C85 /* ViewController.swift in Sources */,
 				8BDBAF8A1F51309A00A41C85 /* SignInReponse.swift in Sources */,
+				8BDBB01F1F523CD400A41C85 /* APIRequestGetServiceByOwner.swift in Sources */,
+				8BDBB01C1F523A8B00A41C85 /* ListServicesOwnerViewController.swift in Sources */,
 				8BDBB00B1F51F69000A41C85 /* ServiceMapViewController.swift in Sources */,
 				8BDBAFF11F51AFA200A41C85 /* APIRequestCreateServices.swift in Sources */,
 				8BDBAFD51F51944200A41C85 /* Site.swift in Sources */,
@@ -841,7 +856,6 @@
 				8BDBAF851F51309A00A41C85 /* APILogoutReponse.swift in Sources */,
 				8BDBAFF31F51B26700A41C85 /* MapResponse.swift in Sources */,
 				8BDBAF9C1F51381000A41C85 /* HotelInfoMakerViewController.swift in Sources */,
-				2A002ED21F523D260019B215 /* PhotosTableViewCell.swift in Sources */,
 				8BDBAF871F51309A00A41C85 /* BaseAPIError.swift in Sources */,
 				8BDBAF611F512AF400A41C85 /* ListHotelViewController.swift in Sources */,
 				8BDBAF8F1F5130D900A41C85 /* APILoginRequest.swift in Sources */,

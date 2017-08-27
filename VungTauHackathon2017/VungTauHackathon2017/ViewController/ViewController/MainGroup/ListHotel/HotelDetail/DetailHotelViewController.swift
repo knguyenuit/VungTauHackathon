@@ -40,7 +40,7 @@ class DetailHotelViewController: UIViewController, UICollectionViewDelegate, UIC
         super.viewWillAppear(true)
         lblNamePlace.text = name
         lblAddress.text = address
-        lblNumberComment.text = phoneNumber
+        lblNumberComment.text = "Phone: \(phoneNumber)"
         if Global.currentServices == 2 {
            imgMainDetailImage.image = UIImage(named: avatar)
             
@@ -48,6 +48,10 @@ class DetailHotelViewController: UIViewController, UICollectionViewDelegate, UIC
             var urlImage = URL(string: avatar)
             imgMainDetailImage.kf.setImage(with: urlImage)
         }
+        let vc = OverviewHotelViewController()
+        self.addChildViewController(vc)
+        vc.view.frame = vContent.bounds
+        vContent.addSubview(vc.view)
         
     }
 
