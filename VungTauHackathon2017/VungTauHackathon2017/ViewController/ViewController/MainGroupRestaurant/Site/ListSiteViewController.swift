@@ -61,6 +61,9 @@ class ListSiteViewController: UIViewController {
         }
     }
 
+    @IBAction func btnBackClick(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
 
     /*
     // MARK: - Navigation

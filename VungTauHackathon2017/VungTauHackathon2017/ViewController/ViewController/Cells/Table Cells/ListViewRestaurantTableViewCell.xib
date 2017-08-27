@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,7 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="365" height="203"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="365" height="202.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="365" height="202"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vung-tau-4" translatesAutoresizingMaskIntoConstraints="NO" id="YrV-Vx-gjP">
@@ -24,9 +24,8 @@
                             <constraint firstAttribute="height" constant="176" id="eMc-ZZ-qwd"/>
                         </constraints>
                     </imageView>
-                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mW7-Oh-9wK">
-                        <rect key="frame" x="10" y="0.0" width="355" height="176"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mW7-Oh-9wK">
+                        <rect key="frame" x="10" y="0.0" width="394" height="176"/>
                     </view>
                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lxu-Xe-GDN">
                         <rect key="frame" x="10" y="0.0" width="344" height="176"/>
@@ -51,7 +50,11 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="YrV-Vx-gjP" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="1Rc-i8-Dir"/>
+                    <constraint firstItem="mW7-Oh-9wK" firstAttribute="height" secondItem="YrV-Vx-gjP" secondAttribute="height" id="38u-cx-XEU"/>
                     <constraint firstItem="YrV-Vx-gjP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="9Li-UZ-KO6"/>
+                    <constraint firstItem="mW7-Oh-9wK" firstAttribute="leading" secondItem="YrV-Vx-gjP" secondAttribute="leading" id="QIC-yZ-msn"/>
+                    <constraint firstItem="mW7-Oh-9wK" firstAttribute="top" secondItem="YrV-Vx-gjP" secondAttribute="top" id="eap-GW-9Ky"/>
+                    <constraint firstItem="mW7-Oh-9wK" firstAttribute="width" secondItem="YrV-Vx-gjP" secondAttribute="width" constant="50" id="oDI-LU-VPP"/>
                     <constraint firstItem="YrV-Vx-gjP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="rOU-0v-ajM"/>
                 </constraints>
             </tableViewCellContentView>

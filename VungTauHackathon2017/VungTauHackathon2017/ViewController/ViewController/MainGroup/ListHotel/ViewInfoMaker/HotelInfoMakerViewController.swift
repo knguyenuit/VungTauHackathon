@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HotelInfoMakerViewController: UIViewController {
 
@@ -29,7 +30,15 @@ class HotelInfoMakerViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        ivAvatar.image = UIImage(named: avatar)
+        if Global.currentServices == 1 {
+            var urlImage = URL(string: avatar)
+            ivAvatar.kf.setImage(with: urlImage)
+            
+        } else {
+            
+            ivAvatar.image = UIImage(named: avatar)
+        }
+        
         lbName.text = name
         lbPhone.text = phone
         lbAddress.text = address

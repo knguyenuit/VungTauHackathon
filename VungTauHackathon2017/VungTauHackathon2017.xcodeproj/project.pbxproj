@@ -93,6 +93,9 @@
 		8BDBB0151F52032700A41C85 /* ReviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBB0141F52032700A41C85 /* ReviewService.swift */; };
 		8BDBB0181F52057A00A41C85 /* ListReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBB0161F52057A00A41C85 /* ListReviewTableViewCell.swift */; };
 		8BDBB0191F52057A00A41C85 /* ListReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDBB0171F52057A00A41C85 /* ListReviewTableViewCell.xib */; };
+		8BDBB01C1F523A8B00A41C85 /* ListServicesOwnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBB01A1F523A8B00A41C85 /* ListServicesOwnerViewController.swift */; };
+		8BDBB01D1F523A8B00A41C85 /* ListServicesOwnerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDBB01B1F523A8B00A41C85 /* ListServicesOwnerViewController.xib */; };
+		8BDBB01F1F523CD400A41C85 /* APIRequestGetServiceByOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBB01E1F523CD400A41C85 /* APIRequestGetServiceByOwner.swift */; };
 		91FFE7E66E754C14F1293DCF /* Pods_VungTauHackathon2017.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179092E1A7721E4051A9B2D0 /* Pods_VungTauHackathon2017.framework */; };
 /* End PBXBuildFile section */
 
@@ -187,6 +190,9 @@
 		8BDBB0141F52032700A41C85 /* ReviewService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewService.swift; sourceTree = "<group>"; };
 		8BDBB0161F52057A00A41C85 /* ListReviewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListReviewTableViewCell.swift; sourceTree = "<group>"; };
 		8BDBB0171F52057A00A41C85 /* ListReviewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListReviewTableViewCell.xib; sourceTree = "<group>"; };
+		8BDBB01A1F523A8B00A41C85 /* ListServicesOwnerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListServicesOwnerViewController.swift; sourceTree = "<group>"; };
+		8BDBB01B1F523A8B00A41C85 /* ListServicesOwnerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListServicesOwnerViewController.xib; sourceTree = "<group>"; };
+		8BDBB01E1F523CD400A41C85 /* APIRequestGetServiceByOwner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestGetServiceByOwner.swift; sourceTree = "<group>"; };
 		DE31194C497F375D1EE5C7FB /* Pods-VungTauHackathon2017.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VungTauHackathon2017.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VungTauHackathon2017/Pods-VungTauHackathon2017.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -351,6 +357,7 @@
 				8BDBAF8E1F5130D900A41C85 /* APILogoutRequest.swift */,
 				8BDBAF7B1F51307900A41C85 /* APIRegisterRequest.swift */,
 				8BDBB0121F5202BA00A41C85 /* APIRequestGetReviewByService.swift */,
+				8BDBB01E1F523CD400A41C85 /* APIRequestGetServiceByOwner.swift */,
 			);
 			path = APIRequestModels;
 			sourceTree = "<group>";
@@ -584,6 +591,8 @@
 			isa = PBXGroup;
 			children = (
 				8BDBAFE41F519F5100A41C85 /* CreateServices */,
+				8BDBB01A1F523A8B00A41C85 /* ListServicesOwnerViewController.swift */,
+				8BDBB01B1F523A8B00A41C85 /* ListServicesOwnerViewController.xib */,
 			);
 			path = Owner;
 			sourceTree = "<group>";
@@ -691,6 +700,7 @@
 				8BDBAF9D1F51381000A41C85 /* HotelInfoMakerViewController.xib in Resources */,
 				8BDBAFFD1F51DB3100A41C85 /* SelectViewController.xib in Resources */,
 				8BDBAF981F51353400A41C85 /* ListHotelMapViewController.xib in Resources */,
+				8BDBB01D1F523A8B00A41C85 /* ListServicesOwnerViewController.xib in Resources */,
 				8BDBAFEC1F51A31700A41C85 /* ListViewRestaurantTableViewCell.xib in Resources */,
 				8BDBAFBF1F5177FF00A41C85 /* hotel.json in Resources */,
 				8BDBB0051F51DBB400A41C85 /* TestViewController.xib in Resources */,
@@ -808,6 +818,8 @@
 				8BDBAFF91F51D0BF00A41C85 /* APIResponseGetAllService.swift in Sources */,
 				8BDBAF331F51244E00A41C85 /* ViewController.swift in Sources */,
 				8BDBAF8A1F51309A00A41C85 /* SignInReponse.swift in Sources */,
+				8BDBB01F1F523CD400A41C85 /* APIRequestGetServiceByOwner.swift in Sources */,
+				8BDBB01C1F523A8B00A41C85 /* ListServicesOwnerViewController.swift in Sources */,
 				8BDBB00B1F51F69000A41C85 /* ServiceMapViewController.swift in Sources */,
 				8BDBAFF11F51AFA200A41C85 /* APIRequestCreateServices.swift in Sources */,
 				8BDBAFD51F51944200A41C85 /* Site.swift in Sources */,

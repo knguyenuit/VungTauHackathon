@@ -26,6 +26,71 @@
 	  "lat": 10.364844,
 	  "long": 107.084781,
 	  "avatar": "RubyLandHotel.jpg",
-    }
-  ]
+    },
+            {
+            "id": 4,
+            "name": "Kien Nhi Tam Motel",
+            "phone": "0120765564",
+            "address": "74 Trương Văn Bang, Phường 7, Vung Tau City, Vietnam",
+            "lat": 10.365894,
+            "long": 107.085613,
+            "avatar": "kimminh"
+            },
+            {
+            "id": 5,
+            "name": "Binh Thuan Motel",
+            "phone": "0120765564",
+            "address": "667 Nguyễn An Ninh, Phường Nguyễn An Ninh, Vung Tau City, Vietnam",
+            "lat": 10.361116,
+            "long": 107.096512,
+            "avatar": "truongphat"
+            },
+            {
+            "id": 6,
+            "name": "Nga Nguyen Hotel",
+            "phone": "0120765564",
+            "address": "576 Nguyễn An Ninh, Vung Tau City, Vietnam",
+            "lat": 10.360361,
+            "long": 107.097340,
+            "avatar": "pexels-photo-67468"
+            },
+            {
+            "id": 7,
+            "name": "Nhat Nga Hotel",
+            "phone": "0120765564",
+            "address": "570 Nguyễn An Ninh, Vung Tau City, Vietnam",
+            "lat": 10.360418,
+            "long": 107.097291,
+            "avatar": "congdoan"
+            },
+            {
+            "id": 8,
+            "name": "Kim Ngan Hotel",
+            "phone": "0120765564",
+            "address": "243 Lê Hồng Phong, Vung Tau City, Vietnam",
+            "lat": 10.354824,
+            "long": 107.085224,
+            "avatar": "royal"
+            },
+            
+            {
+            "id": 9,
+            "name": "Art Home",
+            "phone": "0120765564",
+            "address": "65/7 Huyền Trân Công Chúa, Vung Tau City, Vietnam",
+            "lat": 10.358214,
+            "long": 107.088659,
+            "avatar": "ginger-tirupati"
+            },
+            {
+            "id": 10,
+            "name": "Nguyen's House",
+            "phone": "0120765564",
+            "address": "187/15 Trưong Công Định, Vung Tau City, Vietnam",
+            "lat": 10.364595,
+            "long": 107.088741,
+            "avatar": "Cassabella"
+            }
+            ]
 }
+

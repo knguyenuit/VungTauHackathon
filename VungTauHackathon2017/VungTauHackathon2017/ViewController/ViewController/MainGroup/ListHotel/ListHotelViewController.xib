@@ -24,17 +24,6 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0PV-SI-zeT">
-                    <rect key="frame" x="300" y="20" width="59" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.34081354740000003" green="0.56911426779999996" blue="0.2048030794" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <state key="normal" title="MAP">
-                        <color key="titleColor" red="0.93321985009999997" green="0.37668132780000002" blue="0.14868611100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
-                    <connections>
-                        <action selector="btnFindNearByClick:" destination="-1" eventType="touchUpInside" id="CYa-IA-6tK"/>
-                    </connections>
-                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
