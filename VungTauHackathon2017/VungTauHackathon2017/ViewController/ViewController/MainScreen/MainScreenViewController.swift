@@ -16,7 +16,7 @@ class MainScreenViewController: UIViewController, UITabBarControllerDelegate {
     var tabbarController: UITabBarController = UITabBarController()
     
     var vcHomeScreen = SelectViewController()
-    var vcHotel = ListHotelViewController()
+    var vcHotel = ListHotelCarouselViewController()
     var vcRestaurant = MainListingViewController()
     var vcSetting = InitViewController()
 //    var vcNewListing = MyListingsViewController()
