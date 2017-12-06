@@ -17,7 +17,7 @@ class MainScreenViewController: UIViewController, UITabBarControllerDelegate {
     
     var vcHomeScreen = SelectViewController()
     var vcHotel = ListHotelViewController()
-    var vcRestaurant = ListSiteViewController()
+    var vcRestaurant = MainListingViewController()
     var vcSetting = InitViewController()
 //    var vcNewListing = MyListingsViewController()
 //    var vcMainListing = MainListingViewController()
@@ -104,17 +104,17 @@ class MainScreenViewController: UIViewController, UITabBarControllerDelegate {
 //        }
         setupTabbar(homeScreenVC: vcHomeScreen, newListingVC: vcHotel, myListingVC: vcRestaurant, moreSettingVC: vcSetting)
         
-//        if currentUser == nil {
-//            DispatchQueue.main.async {
-//                self.hideTabBar(self.tabbarController)
-//            }
-//
-//        } else {
-//            DispatchQueue.main.async {
-//                self.showTabBar(self.tabbarController)
-//            }
-//
-//        }
+        if currentUser == nil {
+            DispatchQueue.main.async {
+                self.hideTabBar(self.tabbarController)
+            }
+
+        } else {
+            DispatchQueue.main.async {
+                self.showTabBar(self.tabbarController)
+            }
+
+        }
         
        
         

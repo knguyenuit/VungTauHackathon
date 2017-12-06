@@ -18,6 +18,16 @@
 		8B3243241FD7AF1700DD6B83 /* ListHotelCarouselViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B3243221FD7AF1700DD6B83 /* ListHotelCarouselViewController.xib */; };
 		8B3243281FD7CBCF00DD6B83 /* ListHotelCarouselCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3243261FD7CBCF00DD6B83 /* ListHotelCarouselCellViewController.swift */; };
 		8B3243291FD7CBCF00DD6B83 /* ListHotelCarouselCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B3243271FD7CBCF00DD6B83 /* ListHotelCarouselCellViewController.xib */; };
+		8B32432D1FD7D60600DD6B83 /* MainTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B32432B1FD7D60500DD6B83 /* MainTutorialViewController.swift */; };
+		8B32432E1FD7D60600DD6B83 /* MainTutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B32432C1FD7D60500DD6B83 /* MainTutorialViewController.xib */; };
+		8B3243371FD7FC6400DD6B83 /* MyListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3243351FD7FC6400DD6B83 /* MyListingTableViewCell.swift */; };
+		8B3243381FD7FC6400DD6B83 /* MyListingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B3243361FD7FC6400DD6B83 /* MyListingTableViewCell.xib */; };
+		8B32433B1FD7FC8800DD6B83 /* MyListingVerifyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B3243391FD7FC8800DD6B83 /* MyListingVerifyTableViewCell.xib */; };
+		8B32433C1FD7FC8800DD6B83 /* MyListingVerifyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B32433A1FD7FC8800DD6B83 /* MyListingVerifyTableViewCell.swift */; };
+		8B32433E1FD7FCE700DD6B83 /* Listings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B32433D1FD7FCE600DD6B83 /* Listings.swift */; };
+		8B3243431FD7FDAB00DD6B83 /* MainListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3243401FD7FDAB00DD6B83 /* MainListingViewController.swift */; };
+		8B3243441FD7FDAB00DD6B83 /* PUpdateViewMainListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3243411FD7FDAB00DD6B83 /* PUpdateViewMainListing.swift */; };
+		8B3243451FD7FDAB00DD6B83 /* MainListingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B3243421FD7FDAB00DD6B83 /* MainListingViewController.xib */; };
 		8BDBAF311F51244E00A41C85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF301F51244E00A41C85 /* AppDelegate.swift */; };
 		8BDBAF331F51244E00A41C85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF321F51244E00A41C85 /* ViewController.swift */; };
 		8BDBAF361F51244E00A41C85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BDBAF341F51244E00A41C85 /* Main.storyboard */; };
@@ -124,6 +134,16 @@
 		8B3243221FD7AF1700DD6B83 /* ListHotelCarouselViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListHotelCarouselViewController.xib; sourceTree = "<group>"; };
 		8B3243261FD7CBCF00DD6B83 /* ListHotelCarouselCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHotelCarouselCellViewController.swift; sourceTree = "<group>"; };
 		8B3243271FD7CBCF00DD6B83 /* ListHotelCarouselCellViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListHotelCarouselCellViewController.xib; sourceTree = "<group>"; };
+		8B32432B1FD7D60500DD6B83 /* MainTutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTutorialViewController.swift; sourceTree = "<group>"; };
+		8B32432C1FD7D60500DD6B83 /* MainTutorialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTutorialViewController.xib; sourceTree = "<group>"; };
+		8B3243351FD7FC6400DD6B83 /* MyListingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyListingTableViewCell.swift; path = "VungTauHackathon2017/ViewController/ViewController/Cells/Table Cells/My Listing/MyListingTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		8B3243361FD7FC6400DD6B83 /* MyListingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyListingTableViewCell.xib; path = "VungTauHackathon2017/ViewController/ViewController/Cells/Table Cells/My Listing/MyListingTableViewCell.xib"; sourceTree = SOURCE_ROOT; };
+		8B3243391FD7FC8800DD6B83 /* MyListingVerifyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyListingVerifyTableViewCell.xib; path = "VungTauHackathon2017/ViewController/ViewController/Cells/Table Cells/My Listing Verify/MyListingVerifyTableViewCell.xib"; sourceTree = SOURCE_ROOT; };
+		8B32433A1FD7FC8800DD6B83 /* MyListingVerifyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyListingVerifyTableViewCell.swift; path = "VungTauHackathon2017/ViewController/ViewController/Cells/Table Cells/My Listing Verify/MyListingVerifyTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		8B32433D1FD7FCE600DD6B83 /* Listings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Listings.swift; sourceTree = "<group>"; };
+		8B3243401FD7FDAB00DD6B83 /* MainListingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainListingViewController.swift; path = "VungTauHackathon2017/ViewController/ViewController/Manage Listing/MainListingViewController.swift"; sourceTree = SOURCE_ROOT; };
+		8B3243411FD7FDAB00DD6B83 /* PUpdateViewMainListing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PUpdateViewMainListing.swift; path = "VungTauHackathon2017/ViewController/ViewController/Manage Listing/PUpdateViewMainListing.swift"; sourceTree = SOURCE_ROOT; };
+		8B3243421FD7FDAB00DD6B83 /* MainListingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainListingViewController.xib; path = "VungTauHackathon2017/ViewController/ViewController/Manage Listing/MainListingViewController.xib"; sourceTree = SOURCE_ROOT; };
 		8BDBAF2D1F51244E00A41C85 /* VungTauHackathon2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VungTauHackathon2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BDBAF301F51244E00A41C85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BDBAF321F51244E00A41C85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -292,6 +312,36 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		8B32432A1FD7D5BA00DD6B83 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				8B32432B1FD7D60500DD6B83 /* MainTutorialViewController.swift */,
+				8B32432C1FD7D60500DD6B83 /* MainTutorialViewController.xib */,
+			);
+			path = Tutorial;
+			sourceTree = "<group>";
+		};
+		8B3243341FD7FC2900DD6B83 /* MyListing */ = {
+			isa = PBXGroup;
+			children = (
+				8B32433A1FD7FC8800DD6B83 /* MyListingVerifyTableViewCell.swift */,
+				8B3243391FD7FC8800DD6B83 /* MyListingVerifyTableViewCell.xib */,
+				8B3243351FD7FC6400DD6B83 /* MyListingTableViewCell.swift */,
+				8B3243361FD7FC6400DD6B83 /* MyListingTableViewCell.xib */,
+			);
+			path = MyListing;
+			sourceTree = "<group>";
+		};
+		8B32433F1FD7FD8700DD6B83 /* MyListing */ = {
+			isa = PBXGroup;
+			children = (
+				8B3243401FD7FDAB00DD6B83 /* MainListingViewController.swift */,
+				8B3243421FD7FDAB00DD6B83 /* MainListingViewController.xib */,
+				8B3243411FD7FDAB00DD6B83 /* PUpdateViewMainListing.swift */,
+			);
+			path = MyListing;
+			sourceTree = "<group>";
+		};
 		8BDBAF241F51244E00A41C85 = {
 			isa = PBXGroup;
 			children = (
@@ -334,6 +384,8 @@
 		8BDBAF421F51268B00A41C85 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8B32433F1FD7FD8700DD6B83 /* MyListing */,
+				8B32432A1FD7D5BA00DD6B83 /* Tutorial */,
 				8B3243191FD7954E00DD6B83 /* ListHotel */,
 				8BDBB00D1F5200A100A41C85 /* Review */,
 				8BDBB0081F51F67300A41C85 /* Map */,
@@ -391,6 +443,7 @@
 		8BDBAF471F51279100A41C85 /* CoreModels */ = {
 			isa = PBXGroup;
 			children = (
+				8B32433D1FD7FCE600DD6B83 /* Listings.swift */,
 				8BDBAF791F51305800A41C85 /* User.swift */,
 				8BDBAFA41F51707200A41C85 /* Hotel.swift */,
 				8BDBAFA61F51748400A41C85 /* Restaurant.swift */,
@@ -550,6 +603,7 @@
 		8BDBAF9F1F5154DA00A41C85 /* Table Cells */ = {
 			isa = PBXGroup;
 			children = (
+				8B3243341FD7FC2900DD6B83 /* MyListing */,
 				8BDBAFE91F51A31700A41C85 /* ListViewRestaurantTableViewCell.swift */,
 				8BDBAFEA1F51A31700A41C85 /* ListViewRestaurantTableViewCell.xib */,
 				8BDBAFFE1F51DB4700A41C85 /* SellectTableViewCell.xib */,
@@ -766,6 +820,7 @@
 				8BDBAFFD1F51DB3100A41C85 /* SelectViewController.xib in Resources */,
 				8BDBAF981F51353400A41C85 /* ListHotelMapViewController.xib in Resources */,
 				8BDBB01D1F523A8B00A41C85 /* ListServicesOwnerViewController.xib in Resources */,
+				8B32433B1FD7FC8800DD6B83 /* MyListingVerifyTableViewCell.xib in Resources */,
 				8BDBAFEC1F51A31700A41C85 /* ListViewRestaurantTableViewCell.xib in Resources */,
 				8BDBAFBF1F5177FF00A41C85 /* hotel.json in Resources */,
 				8BDBB0051F51DBB400A41C85 /* TestViewController.xib in Resources */,
@@ -776,6 +831,7 @@
 				8BDBAF571F51295200A41C85 /* LoginViewController.xib in Resources */,
 				8BDBAFDD1F51977400A41C85 /* SiteDetailViewController.xib in Resources */,
 				8BDBAF621F512AF400A41C85 /* ListHotelViewController.xib in Resources */,
+				8B3243451FD7FDAB00DD6B83 /* MainListingViewController.xib in Resources */,
 				8BDEF68B1F525969002E3C63 /* CreateServicesViewController.xib in Resources */,
 				8BDBAFE21F519AAE00A41C85 /* MainScreenViewController.xib in Resources */,
 				2A002ED81F5258580019B215 /* ProfileUserGroupViewController.xib in Resources */,
@@ -783,11 +839,13 @@
 				8BDBAFBB1F5176D700A41C85 /* MainGroupHotelViewController.xib in Resources */,
 				8BDBAF3B1F51244E00A41C85 /* LaunchScreen.storyboard in Resources */,
 				2A002ECF1F51E56B0019B215 /* OverviewHotelViewController.xib in Resources */,
+				8B3243381FD7FC6400DD6B83 /* MyListingTableViewCell.xib in Resources */,
 				8BDBAFB11F51767900A41C85 /* ListRestaurantViewController.xib in Resources */,
 				8BDBB00C1F51F69000A41C85 /* ServiceMapViewController.xib in Resources */,
 				8BDBAFD11F5193FE00A41C85 /* ListSiteViewController.xib in Resources */,
 				8BDBAFCC1F5185EF00A41C85 /* DetailHotelViewController.xib in Resources */,
 				8BDBAFD31F51943100A41C85 /* sites.json in Resources */,
+				8B32432E1FD7D60600DD6B83 /* MainTutorialViewController.xib in Resources */,
 				8B3243291FD7CBCF00DD6B83 /* ListHotelCarouselCellViewController.xib in Resources */,
 				8BDEF6871F525466002E3C63 /* MainOwnerViewController.xib in Resources */,
 				8BDBAF381F51244E00A41C85 /* Assets.xcassets in Resources */,
@@ -858,6 +916,7 @@
 				8BDBAFA51F51707200A41C85 /* Hotel.swift in Sources */,
 				8BDBAF881F51309A00A41C85 /* BaseAPIResponse.swift in Sources */,
 				8BDBAFEF1F51A52900A41C85 /* DropMenuButton.swift in Sources */,
+				8B3243431FD7FDAB00DD6B83 /* MainListingViewController.swift in Sources */,
 				8BDBAFFC1F51DB3100A41C85 /* SelectViewController.swift in Sources */,
 				8BDBAFB51F5176A300A41C85 /* MainGroupRestaurantViewController.swift in Sources */,
 				8BDBAF6B1F512F3C00A41C85 /* ApplicationAssembly.swift in Sources */,
@@ -873,12 +932,14 @@
 				8BDBAF561F51295200A41C85 /* LoginViewController.swift in Sources */,
 				8B3243231FD7AF1700DD6B83 /* ListHotelCarouselViewController.swift in Sources */,
 				8BDBAF731F512FBE00A41C85 /* PBaseRestService.swift in Sources */,
+				8B32432D1FD7D60600DD6B83 /* MainTutorialViewController.swift in Sources */,
 				8BDBAF711F512FAC00A41C85 /* PCacheProvider.swift in Sources */,
 				8BDBAF901F5130D900A41C85 /* APILogoutRequest.swift in Sources */,
 				8BDBAFE11F519AAE00A41C85 /* MainScreenViewController.swift in Sources */,
 				8BDEF68A1F525969002E3C63 /* CreateServicesViewController.swift in Sources */,
 				8BDBAF8B1F51309A00A41C85 /* TextResponse.swift in Sources */,
 				8BDBAFF51F51B75900A41C85 /* APIResponseCreateServices.swift in Sources */,
+				8B3243441FD7FDAB00DD6B83 /* PUpdateViewMainListing.swift in Sources */,
 				8BDBAFC31F51856300A41C85 /* DetailHotelCollectionViewCell.swift in Sources */,
 				8BDBAF6D1F512F9100A41C85 /* BaseRestService.swift in Sources */,
 				2A002ED71F5258580019B215 /* ProfileUserGroupViewController.swift in Sources */,
@@ -895,6 +956,7 @@
 				8BDBB01F1F523CD400A41C85 /* APIRequestGetServiceByOwner.swift in Sources */,
 				8BDBB01C1F523A8B00A41C85 /* ListServicesOwnerViewController.swift in Sources */,
 				8BDBB00B1F51F69000A41C85 /* ServiceMapViewController.swift in Sources */,
+				8B32433C1FD7FC8800DD6B83 /* MyListingVerifyTableViewCell.swift in Sources */,
 				8BDBAFF11F51AFA200A41C85 /* APIRequestCreateServices.swift in Sources */,
 				8BDBAFD51F51944200A41C85 /* Site.swift in Sources */,
 				8BDBAF7C1F51307900A41C85 /* APIRegisterRequest.swift in Sources */,
@@ -907,6 +969,7 @@
 				8BDBAF9C1F51381000A41C85 /* HotelInfoMakerViewController.swift in Sources */,
 				8BDBAF871F51309A00A41C85 /* BaseAPIError.swift in Sources */,
 				8BDBAF611F512AF400A41C85 /* ListHotelViewController.swift in Sources */,
+				8B32433E1FD7FCE700DD6B83 /* Listings.swift in Sources */,
 				8BDBAF8F1F5130D900A41C85 /* APILoginRequest.swift in Sources */,
 				8BDBB0131F5202BA00A41C85 /* APIRequestGetReviewByService.swift in Sources */,
 				8BDBAF311F51244E00A41C85 /* AppDelegate.swift in Sources */,
@@ -918,6 +981,7 @@
 				8BDBAFDC1F51977400A41C85 /* SiteDetailViewController.swift in Sources */,
 				2A002ECE1F51E56B0019B215 /* OverviewHotelViewController.swift in Sources */,
 				8BDBAFA71F51748400A41C85 /* Restaurant.swift in Sources */,
+				8B3243371FD7FC6400DD6B83 /* MyListingTableViewCell.swift in Sources */,
 				8BDBB0071F51EBEE00A41C85 /* Global.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

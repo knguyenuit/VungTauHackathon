@@ -22,16 +22,22 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func btnBackClick(_ sender: Any) {
+        (UIApplication.shared.delegate as! AppDelegate).navigationController?.popViewController(animated: true)
+    }
     
     @IBAction func btnLoginClick(_ sender: Any) {
-        var loginRequest = APILoginRequest(email: tfUserName.text!, passWord: tfPassword.text!)
-        ApplicationAssembler.sharedInstance.resolver.resolve(PAuthenticationService.self)?.login(loginRequest, showLoading: true).continueWith(continuation: { (task) -> Void in
-            if task.error != nil {
-                print("Error")
-            } else {
-                print("Login success")
-            }
-        })
+//        var loginRequest = APILoginRequest(email: tfUserName.text!, passWord: tfPassword.text!)
+//        ApplicationAssembler.sharedInstance.resolver.resolve(PAuthenticationService.self)?.login(loginRequest, showLoading: true).continueWith(continuation: { (task) -> Void in
+//            if task.error != nil {
+//                print("Error")
+//            } else {
+//                print("Login success")
+//            }
+//        })
+        var user = User(id: "1", email: "knguyen.uit@gmail.com", userName: "KN7", phoneNumber: "01214231341", avatar: "Hotel", access_token: "123456", refresh_token: "123456")
+        ApplicationAssembler.sharedInstance.resolver.resolve(PAuthenticationService.self)?.saveCurrentUser(user: user)
+        (UIApplication.shared.delegate as! AppDelegate).navigationController?.popViewController(animated: true)
     }
 
     @IBAction func btnCancelClick(_ sender: Any) {

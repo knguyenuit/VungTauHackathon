@@ -12,6 +12,7 @@ class SelectViewController: ViewController {
 
     @IBOutlet weak var vHeader: UIView!
     @IBOutlet weak var tbListSelect: UITableView!
+    @IBOutlet weak var btnSignIn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         tbListSelect.delegate = self
@@ -25,20 +26,23 @@ class SelectViewController: ViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        let currentUser = ApplicationAssembler.sharedInstance.resolver.resolve(PAuthenticationService.self)?.getCurrentUser()
+        if currentUser == nil {
+            btnSignIn.isHidden = false
+        } else {
+            btnSignIn.isHidden = true
+        }
+    }
+    
     @IBAction func btnBackClick(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func btnSignInClick(_ sender: Any) {
+        (UIApplication.shared.delegate as! AppDelegate).navigationController?.pushViewController(LoginViewController(), animated: true)
     }
-    */
-
+    
 }
 
 extension SelectViewController: UITableViewDelegate, UITableViewDataSource{

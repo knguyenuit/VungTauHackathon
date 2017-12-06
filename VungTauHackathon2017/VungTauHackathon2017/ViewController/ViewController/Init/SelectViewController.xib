@@ -18,6 +18,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectViewController" customModule="VungTauHackathon2017" customModuleProvider="target">
             <connections>
+                <outlet property="btnSignIn" destination="M5u-oW-7ZC" id="KoL-bt-l3b"/>
                 <outlet property="tbListSelect" destination="ROQ-cu-zVq" id="ryu-1I-KvB"/>
                 <outlet property="vHeader" destination="VZ4-mW-XO8" id="oyI-94-wr8"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -39,6 +40,9 @@
                             <rect key="frame" x="314" y="23.5" width="45" height="29"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                             <state key="normal" title="Sign In"/>
+                            <connections>
+                                <action selector="btnSignInClick:" destination="-1" eventType="touchUpInside" id="cgd-fU-rjN"/>
+                            </connections>
                         </button>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ijw-bJ-Xo0" customClass="CustomView" customModule="axcro" customModuleProvider="target">
                             <rect key="frame" x="8" y="65" width="359" height="40"/>
