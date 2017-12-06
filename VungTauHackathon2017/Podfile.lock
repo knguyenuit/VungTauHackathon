@@ -12,6 +12,7 @@ PODS:
     - GoogleMaps/Base
   - GooglePlaces (2.4.0):
     - GoogleMaps/Base (= 2.4.0)
+  - iCarousel (1.8.3)
   - Kingfisher (3.11.0)
   - NVActivityIndicatorView (3.7.0):
     - NVActivityIndicatorView/Presenter (= 3.7.0)
@@ -29,6 +30,7 @@ DEPENDENCIES:
   - FAParser
   - GoogleMaps
   - GooglePlaces
+  - iCarousel
   - Kingfisher
   - NVActivityIndicatorView
   - ObjectMapper
@@ -44,6 +46,7 @@ SPEC CHECKSUMS:
   FAParser: e2d213275dbb94738354a65984479ace17147fba
   GoogleMaps: 8436ab5d1c25e36915b2f7416d0c8e3fa2e76c61
   GooglePlaces: aafe5990fa7951e98e078761bbdaaf236d7e0c65
+  iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
   Kingfisher: c8911a7672c6217dec8c0520fb6e76ec4b7e0780
   NVActivityIndicatorView: d3738df7e2e476aca0ba6bf32a8c9fbcfc33d64b
   ObjectMapper: 3d571bb5af471c779e1160828cd9ad5c4ef90958
@@ -51,6 +54,6 @@ SPEC CHECKSUMS:
   TPKeyboardAvoiding: 0d6af20e95e2850f4c621841225b59ec7d8dd852
   Validator: b1793fbfd0046097551d0edd18e2c30792d69ef5
 
-PODFILE CHECKSUM: df1e777b64dc28e045e635c18a089334f699e8bc
+PODFILE CHECKSUM: 3efa14f42231e0ba411c014372954e86935519cb
 
 COCOAPODS: 1.2.0

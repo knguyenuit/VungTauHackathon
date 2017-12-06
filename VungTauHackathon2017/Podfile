@@ -21,4 +21,5 @@ pod ‘Alamofire’
     pod 'GoogleMaps'
     pod 'GooglePlaces'
     pod 'Cosmos'
+    pod ‘iCarousel’
 end

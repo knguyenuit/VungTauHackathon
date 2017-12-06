@@ -10,11 +10,13 @@ import UIKit
 
 class SelectViewController: ViewController {
 
+    @IBOutlet weak var vHeader: UIView!
     @IBOutlet weak var tbListSelect: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         tbListSelect.delegate = self
         tbListSelect.dataSource = self
+        ShadowView(view: vHeader)
         // Do any additional setup after loading the view.
     }
 
@@ -61,13 +63,13 @@ extension SelectViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
-            navigationController?.pushViewController(MainGroupHotelViewController(), animated: true)
+            (UIApplication.shared.delegate as! AppDelegate).navigationController?.pushViewController(MainGroupHotelViewController(), animated: true)
             Global.currentServices = 2
         } else if indexPath.row == 1 {
-            navigationController?.pushViewController(MainGroupRestaurantViewController(), animated: true)
+            (UIApplication.shared.delegate as! AppDelegate).navigationController?.pushViewController(MainGroupRestaurantViewController(), animated: true)
             Global.currentServices = 1
         } else if indexPath.row == 2 {
-            navigationController?.pushViewController(ListSiteViewController(), animated: true)
+            (UIApplication.shared.delegate as! AppDelegate).navigationController?.pushViewController(ListSiteViewController(), animated: true)
         }
     }
 }

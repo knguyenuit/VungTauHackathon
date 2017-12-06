@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListHotelCarouselCellViewController" customModule="VungTauHackathon2017" customModuleProvider="target">
+            <connections>
+                <outlet property="ivAvatar" destination="6t0-Kk-kgf" id="gQX-jf-HIt"/>
+                <outlet property="lbAddress" destination="Was-mB-sAE" id="RGb-1h-Q6I"/>
+                <outlet property="lbName" destination="43k-KP-C1P" id="M1o-Sa-fWy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="278" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Restaurant" translatesAutoresizingMaskIntoConstraints="NO" id="6t0-Kk-kgf">
+                    <rect key="frame" x="0.0" y="0.0" width="278" height="140"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="140" id="uxE-En-kpK"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g3Q-5F-Vew">
+                    <rect key="frame" x="0.0" y="140" width="278" height="235"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoàng Gia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43k-KP-C1P">
+                            <rect key="frame" x="27" y="78" width="84.5" height="21"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hotel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GlQ-IW-c5q">
+                            <rect key="frame" x="27" y="107" width="41" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.67827486989999997" green="0.67837351560000003" blue="0.68158519269999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="|" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eaa-QO-qM0">
+                            <rect key="frame" x="71" y="107" width="6" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.67827486989999997" green="0.67837351560000003" blue="0.68158519269999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="Green location icon_create an account" translatesAutoresizingMaskIntoConstraints="NO" id="2O5-cq-lum">
+                            <rect key="frame" x="27" y="148" width="14" height="20"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Licensed Tag" translatesAutoresizingMaskIntoConstraints="NO" id="pXw-f6-kf0">
+                            <rect key="frame" x="82" y="109" width="60" height="18"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BYO Tag" translatesAutoresizingMaskIntoConstraints="NO" id="ElN-kr-rt7">
+                            <rect key="frame" x="144" y="109" width="44" height="18"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Alfresco tag" translatesAutoresizingMaskIntoConstraints="NO" id="jNB-Tg-BPQ">
+                            <rect key="frame" x="190" y="109" width="60" height="18"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="72 Trương Công Định" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Was-mB-sAE">
+                            <rect key="frame" x="49" y="149" width="219" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.67827486989999997" green="0.67837351560000003" blue="0.68158519269999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="GlQ-IW-c5q" firstAttribute="leading" secondItem="43k-KP-C1P" secondAttribute="leading" id="0RW-WJ-b4j"/>
+                        <constraint firstItem="pXw-f6-kf0" firstAttribute="centerY" secondItem="Eaa-QO-qM0" secondAttribute="centerY" id="30n-Rm-Eeo"/>
+                        <constraint firstItem="GlQ-IW-c5q" firstAttribute="top" secondItem="43k-KP-C1P" secondAttribute="bottom" constant="8" id="6GF-gE-gi7"/>
+                        <constraint firstItem="Eaa-QO-qM0" firstAttribute="centerY" secondItem="GlQ-IW-c5q" secondAttribute="centerY" id="7gD-3k-2rm"/>
+                        <constraint firstItem="pXw-f6-kf0" firstAttribute="leading" secondItem="Eaa-QO-qM0" secondAttribute="trailing" constant="5" id="9AM-dC-QPO"/>
+                        <constraint firstItem="ElN-kr-rt7" firstAttribute="leading" secondItem="pXw-f6-kf0" secondAttribute="trailing" constant="2" id="Czx-Qh-yEm"/>
+                        <constraint firstItem="2O5-cq-lum" firstAttribute="leading" secondItem="GlQ-IW-c5q" secondAttribute="leading" id="DHb-np-iXd"/>
+                        <constraint firstItem="Was-mB-sAE" firstAttribute="centerY" secondItem="2O5-cq-lum" secondAttribute="centerY" id="MmT-9J-lze"/>
+                        <constraint firstItem="Was-mB-sAE" firstAttribute="leading" secondItem="2O5-cq-lum" secondAttribute="trailing" constant="8" id="N7s-b4-iBv"/>
+                        <constraint firstItem="Eaa-QO-qM0" firstAttribute="leading" secondItem="GlQ-IW-c5q" secondAttribute="trailing" constant="2.5" id="U0i-wE-9RT"/>
+                        <constraint firstItem="2O5-cq-lum" firstAttribute="top" secondItem="GlQ-IW-c5q" secondAttribute="bottom" constant="20" id="aVs-hi-HhG"/>
+                        <constraint firstItem="43k-KP-C1P" firstAttribute="leading" secondItem="g3Q-5F-Vew" secondAttribute="leading" constant="27" id="dcW-pD-fH0"/>
+                        <constraint firstAttribute="trailing" secondItem="Was-mB-sAE" secondAttribute="trailing" constant="10" id="ddx-0F-nmv"/>
+                        <constraint firstItem="jNB-Tg-BPQ" firstAttribute="leading" secondItem="ElN-kr-rt7" secondAttribute="trailing" constant="2" id="gGb-jJ-a6u"/>
+                        <constraint firstItem="ElN-kr-rt7" firstAttribute="centerY" secondItem="pXw-f6-kf0" secondAttribute="centerY" id="gSw-OR-jwc"/>
+                        <constraint firstItem="jNB-Tg-BPQ" firstAttribute="centerY" secondItem="ElN-kr-rt7" secondAttribute="centerY" id="uB3-ee-hSi"/>
+                        <constraint firstItem="43k-KP-C1P" firstAttribute="top" secondItem="g3Q-5F-Vew" secondAttribute="top" constant="78" id="uqd-s3-axb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="6t0-Kk-kgf" secondAttribute="trailing" id="12f-r5-fBz"/>
+                <constraint firstItem="6t0-Kk-kgf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="EZg-sf-L2p"/>
+                <constraint firstAttribute="trailing" secondItem="g3Q-5F-Vew" secondAttribute="trailing" id="G3b-MH-DuY"/>
+                <constraint firstItem="6t0-Kk-kgf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dCd-yU-qOe"/>
+                <constraint firstItem="g3Q-5F-Vew" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hl4-yR-OBM"/>
+                <constraint firstItem="g3Q-5F-Vew" firstAttribute="top" secondItem="6t0-Kk-kgf" secondAttribute="bottom" id="isv-uf-eTa"/>
+                <constraint firstAttribute="bottom" secondItem="g3Q-5F-Vew" secondAttribute="bottom" id="s4J-OD-ZhU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Alfresco tag" width="60" height="18"/>
+        <image name="BYO Tag" width="44" height="18"/>
+        <image name="Green location icon_create an account" width="14" height="20"/>
+        <image name="Licensed Tag" width="60" height="18"/>
+        <image name="Restaurant" width="1280" height="853"/>
+    </resources>
+</document>

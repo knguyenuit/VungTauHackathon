@@ -22,6 +22,7 @@ class SellectTableViewCell: UITableViewCell {
     let endP = CGPoint(x: 1.0, y: 0.5)
     override func awakeFromNib() {
         super.awakeFromNib()
+        ivBackground.customBorder(cornerRadius: 20, borderWidth: 1, color: UIColor.clear)
         // Initialization code
         
         
@@ -94,6 +95,6 @@ class SellectTableViewCell: UITableViewCell {
 
         let listColorBlack: Array<CGColor> = [color1, color0]
         let listLocation: Array<NSNumber> = [0.0, 0.7]
-        gradient(listColor: listColorBlack, listLocation: listLocation, view: vGradient, startPoint:  startPoint, endPoint: endPoint)
+        //gradient(listColor: listColorBlack, listLocation: listLocation, view: vGradient, startPoint:  startPoint, endPoint: endPoint)
 }
 }

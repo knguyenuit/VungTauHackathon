@@ -77,10 +77,4 @@ class ListViewRestaurantTableViewCell: UITableViewCell {
     
 }
 
-extension UIImageView {
-    func customBorder(cornerRadius: CGFloat, borderWidth: CGFloat, color: UIColor) {
-        self.layer.cornerRadius = cornerRadius
-        self.layer.borderWidth = borderWidth
-        self.layer.borderColor = color.cgColor
-    }
-}
+
