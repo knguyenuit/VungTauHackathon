@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		032686F71FD84C1E00821F3E /* PayNowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032686F51FD84C1E00821F3E /* PayNowViewController.swift */; };
+		032686F81FD84C1E00821F3E /* PayNowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 032686F61FD84C1E00821F3E /* PayNowViewController.xib */; };
+		03A314881FD85A0900B0B85F /* k-type_credit-card in Resources */ = {isa = PBXBuildFile; fileRef = 03A314871FD85A0800B0B85F /* k-type_credit-card */; };
 		2A002ECE1F51E56B0019B215 /* OverviewHotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A002ECC1F51E56B0019B215 /* OverviewHotelViewController.swift */; };
 		2A002ECF1F51E56B0019B215 /* OverviewHotelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A002ECD1F51E56B0019B215 /* OverviewHotelViewController.xib */; };
 		2A002ED71F5258580019B215 /* ProfileUserGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A002ED51F5258580019B215 /* ProfileUserGroupViewController.swift */; };
@@ -121,6 +124,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		032686F51FD84C1E00821F3E /* PayNowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayNowViewController.swift; sourceTree = "<group>"; };
+		032686F61FD84C1E00821F3E /* PayNowViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PayNowViewController.xib; sourceTree = "<group>"; };
+		03A314871FD85A0800B0B85F /* k-type_credit-card */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "k-type_credit-card"; sourceTree = "<group>"; };
 		153C05A846962C0B142A6F69 /* Pods-VungTauHackathon2017.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VungTauHackathon2017.release.xcconfig"; path = "Pods/Target Support Files/Pods-VungTauHackathon2017/Pods-VungTauHackathon2017.release.xcconfig"; sourceTree = "<group>"; };
 		179092E1A7721E4051A9B2D0 /* Pods_VungTauHackathon2017.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VungTauHackathon2017.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A002ECC1F51E56B0019B215 /* OverviewHotelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverviewHotelViewController.swift; sourceTree = "<group>"; };
@@ -250,6 +256,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		032686F41FD84C0700821F3E /* PayNow */ = {
+			isa = PBXGroup;
+			children = (
+				032686F51FD84C1E00821F3E /* PayNowViewController.swift */,
+				032686F61FD84C1E00821F3E /* PayNowViewController.xib */,
+			);
+			path = PayNow;
+			sourceTree = "<group>";
+		};
 		1593BDEB4782624BFA22F777 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -375,6 +390,7 @@
 				8BDBAF911F51311300A41C85 /* AppConstants.swift */,
 				8BDBAF341F51244E00A41C85 /* Main.storyboard */,
 				8BDBAF371F51244E00A41C85 /* Assets.xcassets */,
+				03A314871FD85A0800B0B85F /* k-type_credit-card */,
 				8BDBAF391F51244E00A41C85 /* LaunchScreen.storyboard */,
 				8BDBAF3C1F51244E00A41C85 /* Info.plist */,
 			);
@@ -384,6 +400,7 @@
 		8BDBAF421F51268B00A41C85 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				032686F41FD84C0700821F3E /* PayNow */,
 				8B32433F1FD7FD8700DD6B83 /* MyListing */,
 				8B32432A1FD7D5BA00DD6B83 /* Tutorial */,
 				8B3243191FD7954E00DD6B83 /* ListHotel */,
@@ -836,6 +853,7 @@
 				8BDBAFE21F519AAE00A41C85 /* MainScreenViewController.xib in Resources */,
 				2A002ED81F5258580019B215 /* ProfileUserGroupViewController.xib in Resources */,
 				8BDBAFB61F5176A300A41C85 /* MainGroupRestaurantViewController.xib in Resources */,
+				03A314881FD85A0900B0B85F /* k-type_credit-card in Resources */,
 				8BDBAFBB1F5176D700A41C85 /* MainGroupHotelViewController.xib in Resources */,
 				8BDBAF3B1F51244E00A41C85 /* LaunchScreen.storyboard in Resources */,
 				2A002ECF1F51E56B0019B215 /* OverviewHotelViewController.xib in Resources */,
@@ -848,6 +866,7 @@
 				8B32432E1FD7D60600DD6B83 /* MainTutorialViewController.xib in Resources */,
 				8B3243291FD7CBCF00DD6B83 /* ListHotelCarouselCellViewController.xib in Resources */,
 				8BDEF6871F525466002E3C63 /* MainOwnerViewController.xib in Resources */,
+				032686F81FD84C1E00821F3E /* PayNowViewController.xib in Resources */,
 				8BDBAF381F51244E00A41C85 /* Assets.xcassets in Resources */,
 				8B3243241FD7AF1700DD6B83 /* ListHotelCarouselViewController.xib in Resources */,
 				8BDBAF531F51293F00A41C85 /* InitViewController.xib in Resources */,
@@ -956,6 +975,7 @@
 				8BDBB01F1F523CD400A41C85 /* APIRequestGetServiceByOwner.swift in Sources */,
 				8BDBB01C1F523A8B00A41C85 /* ListServicesOwnerViewController.swift in Sources */,
 				8BDBB00B1F51F69000A41C85 /* ServiceMapViewController.swift in Sources */,
+				032686F71FD84C1E00821F3E /* PayNowViewController.swift in Sources */,
 				8B32433C1FD7FC8800DD6B83 /* MyListingVerifyTableViewCell.swift in Sources */,
 				8BDBAFF11F51AFA200A41C85 /* APIRequestCreateServices.swift in Sources */,
 				8BDBAFD51F51944200A41C85 /* Site.swift in Sources */,
