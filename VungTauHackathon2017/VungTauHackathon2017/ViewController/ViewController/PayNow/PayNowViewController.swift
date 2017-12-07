@@ -29,6 +29,14 @@ class PayNowViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func btnBuyNowClick(_ sender: Any) {
+        let mainVC = Helpers.getMainViewController()
+        if let vc = mainVC {
+            navigationController?.popToViewController(vc, animated: true)
+            vc.tabbarController.selectedIndex = 1
+            
+        }
+    }
     
     @IBAction func btnBackClick(_ sender: Any) {
         navigationController?.popViewController(animated: true)
