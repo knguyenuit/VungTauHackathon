@@ -37,6 +37,13 @@
 		8B3243431FD7FDAB00DD6B83 /* MainListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3243401FD7FDAB00DD6B83 /* MainListingViewController.swift */; };
 		8B3243441FD7FDAB00DD6B83 /* PUpdateViewMainListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3243411FD7FDAB00DD6B83 /* PUpdateViewMainListing.swift */; };
 		8B3243451FD7FDAB00DD6B83 /* MainListingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B3243421FD7FDAB00DD6B83 /* MainListingViewController.xib */; };
+		8B35588D1FD93E5D008EFD4C /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B35588B1FD93E5D008EFD4C /* SettingViewController.xib */; };
+		8B35588E1FD93E5D008EFD4C /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35588C1FD93E5D008EFD4C /* SettingViewController.swift */; };
+		8B3558901FD93F90008EFD4C /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B35588F1FD93F90008EFD4C /* Helpers.swift */; };
+		8B3558941FD9407D008EFD4C /* MyPurchasesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B3558921FD9407C008EFD4C /* MyPurchasesViewController.xib */; };
+		8B3558951FD9407D008EFD4C /* MyPurchasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3558931FD9407C008EFD4C /* MyPurchasesViewController.swift */; };
+		8B3558991FD94120008EFD4C /* MyPurchasesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3558971FD94120008EFD4C /* MyPurchasesTableViewCell.swift */; };
+		8B35589A1FD94120008EFD4C /* MyPurchasesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B3558981FD94120008EFD4C /* MyPurchasesTableViewCell.xib */; };
 		8BDBAF311F51244E00A41C85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF301F51244E00A41C85 /* AppDelegate.swift */; };
 		8BDBAF331F51244E00A41C85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBAF321F51244E00A41C85 /* ViewController.swift */; };
 		8BDBAF361F51244E00A41C85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BDBAF341F51244E00A41C85 /* Main.storyboard */; };
@@ -162,6 +169,13 @@
 		8B3243401FD7FDAB00DD6B83 /* MainListingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainListingViewController.swift; path = "VungTauHackathon2017/ViewController/ViewController/Manage Listing/MainListingViewController.swift"; sourceTree = SOURCE_ROOT; };
 		8B3243411FD7FDAB00DD6B83 /* PUpdateViewMainListing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PUpdateViewMainListing.swift; path = "VungTauHackathon2017/ViewController/ViewController/Manage Listing/PUpdateViewMainListing.swift"; sourceTree = SOURCE_ROOT; };
 		8B3243421FD7FDAB00DD6B83 /* MainListingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainListingViewController.xib; path = "VungTauHackathon2017/ViewController/ViewController/Manage Listing/MainListingViewController.xib"; sourceTree = SOURCE_ROOT; };
+		8B35588B1FD93E5D008EFD4C /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		8B35588C1FD93E5D008EFD4C /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		8B35588F1FD93F90008EFD4C /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		8B3558921FD9407C008EFD4C /* MyPurchasesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyPurchasesViewController.xib; sourceTree = "<group>"; };
+		8B3558931FD9407C008EFD4C /* MyPurchasesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPurchasesViewController.swift; sourceTree = "<group>"; };
+		8B3558971FD94120008EFD4C /* MyPurchasesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPurchasesTableViewCell.swift; sourceTree = "<group>"; };
+		8B3558981FD94120008EFD4C /* MyPurchasesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyPurchasesTableViewCell.xib; sourceTree = "<group>"; };
 		8BDBAF2D1F51244E00A41C85 /* VungTauHackathon2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VungTauHackathon2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BDBAF301F51244E00A41C85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BDBAF321F51244E00A41C85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -390,6 +404,33 @@
 			path = MyListing;
 			sourceTree = "<group>";
 		};
+		8B35588A1FD93E43008EFD4C /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				8B35588C1FD93E5D008EFD4C /* SettingViewController.swift */,
+				8B35588B1FD93E5D008EFD4C /* SettingViewController.xib */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		8B3558911FD9405B008EFD4C /* MyPurchase */ = {
+			isa = PBXGroup;
+			children = (
+				8B3558931FD9407C008EFD4C /* MyPurchasesViewController.swift */,
+				8B3558921FD9407C008EFD4C /* MyPurchasesViewController.xib */,
+			);
+			path = MyPurchase;
+			sourceTree = "<group>";
+		};
+		8B3558961FD9410D008EFD4C /* MyPurchase */ = {
+			isa = PBXGroup;
+			children = (
+				8B3558971FD94120008EFD4C /* MyPurchasesTableViewCell.swift */,
+				8B3558981FD94120008EFD4C /* MyPurchasesTableViewCell.xib */,
+			);
+			path = MyPurchase;
+			sourceTree = "<group>";
+		};
 		8BDBAF241F51244E00A41C85 = {
 			isa = PBXGroup;
 			children = (
@@ -433,6 +474,8 @@
 		8BDBAF421F51268B00A41C85 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8B3558911FD9405B008EFD4C /* MyPurchase */,
+				8B35588A1FD93E43008EFD4C /* Setting */,
 				8B290B321FD931D00072BD5F /* SignUp */,
 				032686F41FD84C0700821F3E /* PayNow */,
 				8B32433F1FD7FD8700DD6B83 /* MyListing */,
@@ -563,6 +606,7 @@
 				8B32431E1FD7A6E100DD6B83 /* Extension */,
 				8BDBAFED1F51A50B00A41C85 /* Libraries */,
 				8BDBB0061F51EBEE00A41C85 /* Global.swift */,
+				8B35588F1FD93F90008EFD4C /* Helpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -654,6 +698,7 @@
 		8BDBAF9F1F5154DA00A41C85 /* Table Cells */ = {
 			isa = PBXGroup;
 			children = (
+				8B3558961FD9410D008EFD4C /* MyPurchase */,
 				8B3243341FD7FC2900DD6B83 /* MyListing */,
 				8BDBAFE91F51A31700A41C85 /* ListViewRestaurantTableViewCell.swift */,
 				8BDBAFEA1F51A31700A41C85 /* ListViewRestaurantTableViewCell.xib */,
@@ -870,9 +915,11 @@
 				8BDBAF9D1F51381000A41C85 /* HotelInfoMakerViewController.xib in Resources */,
 				8BDBAFFD1F51DB3100A41C85 /* SelectViewController.xib in Resources */,
 				8BDBAF981F51353400A41C85 /* ListHotelMapViewController.xib in Resources */,
+				8B3558941FD9407D008EFD4C /* MyPurchasesViewController.xib in Resources */,
 				8BDBB01D1F523A8B00A41C85 /* ListServicesOwnerViewController.xib in Resources */,
 				8B32433B1FD7FC8800DD6B83 /* MyListingVerifyTableViewCell.xib in Resources */,
 				8BDBAFEC1F51A31700A41C85 /* ListViewRestaurantTableViewCell.xib in Resources */,
+				8B35588D1FD93E5D008EFD4C /* SettingViewController.xib in Resources */,
 				8BDBAFBF1F5177FF00A41C85 /* hotel.json in Resources */,
 				8BDBB0051F51DBB400A41C85 /* TestViewController.xib in Resources */,
 				8BDBAFC41F51856300A41C85 /* DetailHotelCollectionViewCell.xib in Resources */,
@@ -898,6 +945,7 @@
 				8BDBB00C1F51F69000A41C85 /* ServiceMapViewController.xib in Resources */,
 				8BDBAFD11F5193FE00A41C85 /* ListSiteViewController.xib in Resources */,
 				030A5C561FD8C3C4000A038A /* CreditCardViewController.xib in Resources */,
+				8B35589A1FD94120008EFD4C /* MyPurchasesTableViewCell.xib in Resources */,
 				8BDBAFCC1F5185EF00A41C85 /* DetailHotelViewController.xib in Resources */,
 				8BDBAFD31F51943100A41C85 /* sites.json in Resources */,
 				8B32432E1FD7D60600DD6B83 /* MainTutorialViewController.xib in Resources */,
@@ -979,6 +1027,7 @@
 				8BDBAF761F512FE300A41C85 /* AuthenticationRestService.swift in Sources */,
 				8BDBAFA21F5154F600A41C85 /* ListHotelTableViewCell.swift in Sources */,
 				8BDBAFD81F5196CF00A41C85 /* ListSiteTableViewCell.swift in Sources */,
+				8B35588E1FD93E5D008EFD4C /* SettingViewController.swift in Sources */,
 				030A5C591FD8D783000A038A /* MasterCardViewController.swift in Sources */,
 				8BDBB0041F51DBB400A41C85 /* TestViewController.swift in Sources */,
 				8B3243201FD7A73B00DD6B83 /* ExtensionBorder.swift in Sources */,
@@ -998,6 +1047,7 @@
 				8BDBAF8B1F51309A00A41C85 /* TextResponse.swift in Sources */,
 				8BDBAFF51F51B75900A41C85 /* APIResponseCreateServices.swift in Sources */,
 				8B3243441FD7FDAB00DD6B83 /* PUpdateViewMainListing.swift in Sources */,
+				8B3558991FD94120008EFD4C /* MyPurchasesTableViewCell.swift in Sources */,
 				8BDBAFC31F51856300A41C85 /* DetailHotelCollectionViewCell.swift in Sources */,
 				8BDBAF6D1F512F9100A41C85 /* BaseRestService.swift in Sources */,
 				2A002ED71F5258580019B215 /* ProfileUserGroupViewController.swift in Sources */,
@@ -1015,6 +1065,7 @@
 				8BDBB01F1F523CD400A41C85 /* APIRequestGetServiceByOwner.swift in Sources */,
 				8BDBB01C1F523A8B00A41C85 /* ListServicesOwnerViewController.swift in Sources */,
 				8BDBB00B1F51F69000A41C85 /* ServiceMapViewController.swift in Sources */,
+				8B3558901FD93F90008EFD4C /* Helpers.swift in Sources */,
 				032686F71FD84C1E00821F3E /* PayNowViewController.swift in Sources */,
 				8B32433C1FD7FC8800DD6B83 /* MyListingVerifyTableViewCell.swift in Sources */,
 				8BDBAFF11F51AFA200A41C85 /* APIRequestCreateServices.swift in Sources */,
@@ -1035,6 +1086,7 @@
 				8BDBAF311F51244E00A41C85 /* AppDelegate.swift in Sources */,
 				8B32431B1FD79DB500DD6B83 /* CustomView.swift in Sources */,
 				8BDBAF921F51311300A41C85 /* AppConstants.swift in Sources */,
+				8B3558951FD9407D008EFD4C /* MyPurchasesViewController.swift in Sources */,
 				8BDBAF521F51293F00A41C85 /* InitViewController.swift in Sources */,
 				8BDBAFF71F51BB7300A41C85 /* APIRequestGetRestaurant.swift in Sources */,
 				8BDBAF891F51309A00A41C85 /* BoolResponse.swift in Sources */,
