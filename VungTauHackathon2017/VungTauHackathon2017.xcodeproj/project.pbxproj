@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		030A5C551FD8C3C4000A038A /* CreditCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030A5C531FD8C3C4000A038A /* CreditCardViewController.swift */; };
+		030A5C561FD8C3C4000A038A /* CreditCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 030A5C541FD8C3C4000A038A /* CreditCardViewController.xib */; };
+		030A5C591FD8D783000A038A /* MasterCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030A5C571FD8D783000A038A /* MasterCardViewController.swift */; };
+		030A5C5A1FD8D783000A038A /* MasterCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 030A5C581FD8D783000A038A /* MasterCardViewController.xib */; };
+		032686F71FD84C1E00821F3E /* PayNowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032686F51FD84C1E00821F3E /* PayNowViewController.swift */; };
+		032686F81FD84C1E00821F3E /* PayNowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 032686F61FD84C1E00821F3E /* PayNowViewController.xib */; };
+		03A314881FD85A0900B0B85F /* k-type_credit-card in Resources */ = {isa = PBXBuildFile; fileRef = 03A314871FD85A0800B0B85F /* k-type_credit-card */; };
 		2A002ECE1F51E56B0019B215 /* OverviewHotelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A002ECC1F51E56B0019B215 /* OverviewHotelViewController.swift */; };
 		2A002ECF1F51E56B0019B215 /* OverviewHotelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A002ECD1F51E56B0019B215 /* OverviewHotelViewController.xib */; };
 		2A002ED71F5258580019B215 /* ProfileUserGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A002ED51F5258580019B215 /* ProfileUserGroupViewController.swift */; };
@@ -121,6 +128,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		030A5C531FD8C3C4000A038A /* CreditCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardViewController.swift; sourceTree = "<group>"; };
+		030A5C541FD8C3C4000A038A /* CreditCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditCardViewController.xib; sourceTree = "<group>"; };
+		030A5C571FD8D783000A038A /* MasterCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterCardViewController.swift; sourceTree = "<group>"; };
+		030A5C581FD8D783000A038A /* MasterCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MasterCardViewController.xib; sourceTree = "<group>"; };
+		032686F51FD84C1E00821F3E /* PayNowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayNowViewController.swift; sourceTree = "<group>"; };
+		032686F61FD84C1E00821F3E /* PayNowViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PayNowViewController.xib; sourceTree = "<group>"; };
+		03A314871FD85A0800B0B85F /* k-type_credit-card */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "k-type_credit-card"; sourceTree = "<group>"; };
 		153C05A846962C0B142A6F69 /* Pods-VungTauHackathon2017.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VungTauHackathon2017.release.xcconfig"; path = "Pods/Target Support Files/Pods-VungTauHackathon2017/Pods-VungTauHackathon2017.release.xcconfig"; sourceTree = "<group>"; };
 		179092E1A7721E4051A9B2D0 /* Pods_VungTauHackathon2017.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VungTauHackathon2017.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A002ECC1F51E56B0019B215 /* OverviewHotelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverviewHotelViewController.swift; sourceTree = "<group>"; };
@@ -250,6 +264,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		030A5C521FD8C341000A038A /* CreditCard */ = {
+			isa = PBXGroup;
+			children = (
+				030A5C531FD8C3C4000A038A /* CreditCardViewController.swift */,
+				030A5C541FD8C3C4000A038A /* CreditCardViewController.xib */,
+				030A5C571FD8D783000A038A /* MasterCardViewController.swift */,
+				030A5C581FD8D783000A038A /* MasterCardViewController.xib */,
+			);
+			path = CreditCard;
+			sourceTree = "<group>";
+		};
+		032686F41FD84C0700821F3E /* PayNow */ = {
+			isa = PBXGroup;
+			children = (
+				030A5C521FD8C341000A038A /* CreditCard */,
+				032686F51FD84C1E00821F3E /* PayNowViewController.swift */,
+				032686F61FD84C1E00821F3E /* PayNowViewController.xib */,
+			);
+			path = PayNow;
+			sourceTree = "<group>";
+		};
 		1593BDEB4782624BFA22F777 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -375,6 +410,7 @@
 				8BDBAF911F51311300A41C85 /* AppConstants.swift */,
 				8BDBAF341F51244E00A41C85 /* Main.storyboard */,
 				8BDBAF371F51244E00A41C85 /* Assets.xcassets */,
+				03A314871FD85A0800B0B85F /* k-type_credit-card */,
 				8BDBAF391F51244E00A41C85 /* LaunchScreen.storyboard */,
 				8BDBAF3C1F51244E00A41C85 /* Info.plist */,
 			);
@@ -384,6 +420,7 @@
 		8BDBAF421F51268B00A41C85 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				032686F41FD84C0700821F3E /* PayNow */,
 				8B32433F1FD7FD8700DD6B83 /* MyListing */,
 				8B32432A1FD7D5BA00DD6B83 /* Tutorial */,
 				8B3243191FD7954E00DD6B83 /* ListHotel */,
@@ -827,6 +864,7 @@
 				8BDBAFC41F51856300A41C85 /* DetailHotelCollectionViewCell.xib in Resources */,
 				8BDBAFA31F5154F600A41C85 /* ListHotelTableViewCell.xib in Resources */,
 				8BDBB0001F51DB4700A41C85 /* SellectTableViewCell.xib in Resources */,
+				030A5C5A1FD8D783000A038A /* MasterCardViewController.xib in Resources */,
 				8BDBB0111F52020100A41C85 /* ReviewViewController.xib in Resources */,
 				8BDBAF571F51295200A41C85 /* LoginViewController.xib in Resources */,
 				8BDBAFDD1F51977400A41C85 /* SiteDetailViewController.xib in Resources */,
@@ -836,6 +874,7 @@
 				8BDBAFE21F519AAE00A41C85 /* MainScreenViewController.xib in Resources */,
 				2A002ED81F5258580019B215 /* ProfileUserGroupViewController.xib in Resources */,
 				8BDBAFB61F5176A300A41C85 /* MainGroupRestaurantViewController.xib in Resources */,
+				03A314881FD85A0900B0B85F /* k-type_credit-card in Resources */,
 				8BDBAFBB1F5176D700A41C85 /* MainGroupHotelViewController.xib in Resources */,
 				8BDBAF3B1F51244E00A41C85 /* LaunchScreen.storyboard in Resources */,
 				2A002ECF1F51E56B0019B215 /* OverviewHotelViewController.xib in Resources */,
@@ -843,11 +882,13 @@
 				8BDBAFB11F51767900A41C85 /* ListRestaurantViewController.xib in Resources */,
 				8BDBB00C1F51F69000A41C85 /* ServiceMapViewController.xib in Resources */,
 				8BDBAFD11F5193FE00A41C85 /* ListSiteViewController.xib in Resources */,
+				030A5C561FD8C3C4000A038A /* CreditCardViewController.xib in Resources */,
 				8BDBAFCC1F5185EF00A41C85 /* DetailHotelViewController.xib in Resources */,
 				8BDBAFD31F51943100A41C85 /* sites.json in Resources */,
 				8B32432E1FD7D60600DD6B83 /* MainTutorialViewController.xib in Resources */,
 				8B3243291FD7CBCF00DD6B83 /* ListHotelCarouselCellViewController.xib in Resources */,
 				8BDEF6871F525466002E3C63 /* MainOwnerViewController.xib in Resources */,
+				032686F81FD84C1E00821F3E /* PayNowViewController.xib in Resources */,
 				8BDBAF381F51244E00A41C85 /* Assets.xcassets in Resources */,
 				8B3243241FD7AF1700DD6B83 /* ListHotelCarouselViewController.xib in Resources */,
 				8BDBAF531F51293F00A41C85 /* InitViewController.xib in Resources */,
@@ -923,6 +964,7 @@
 				8BDBAF761F512FE300A41C85 /* AuthenticationRestService.swift in Sources */,
 				8BDBAFA21F5154F600A41C85 /* ListHotelTableViewCell.swift in Sources */,
 				8BDBAFD81F5196CF00A41C85 /* ListSiteTableViewCell.swift in Sources */,
+				030A5C591FD8D783000A038A /* MasterCardViewController.swift in Sources */,
 				8BDBB0041F51DBB400A41C85 /* TestViewController.swift in Sources */,
 				8B3243201FD7A73B00DD6B83 /* ExtensionBorder.swift in Sources */,
 				8BDBAFCB1F5185EF00A41C85 /* DetailHotelViewController.swift in Sources */,
@@ -950,12 +992,14 @@
 				8BDBB0101F52020100A41C85 /* ReviewViewController.swift in Sources */,
 				8BDBAF7A1F51305800A41C85 /* User.swift in Sources */,
 				8BDBAF781F51301300A41C85 /* AuthenticationRouter.swift in Sources */,
+				030A5C551FD8C3C4000A038A /* CreditCardViewController.swift in Sources */,
 				8BDBAFF91F51D0BF00A41C85 /* APIResponseGetAllService.swift in Sources */,
 				8BDBAF331F51244E00A41C85 /* ViewController.swift in Sources */,
 				8BDBAF8A1F51309A00A41C85 /* SignInReponse.swift in Sources */,
 				8BDBB01F1F523CD400A41C85 /* APIRequestGetServiceByOwner.swift in Sources */,
 				8BDBB01C1F523A8B00A41C85 /* ListServicesOwnerViewController.swift in Sources */,
 				8BDBB00B1F51F69000A41C85 /* ServiceMapViewController.swift in Sources */,
+				032686F71FD84C1E00821F3E /* PayNowViewController.swift in Sources */,
 				8B32433C1FD7FC8800DD6B83 /* MyListingVerifyTableViewCell.swift in Sources */,
 				8BDBAFF11F51AFA200A41C85 /* APIRequestCreateServices.swift in Sources */,
 				8BDBAFD51F51944200A41C85 /* Site.swift in Sources */,

@@ -10,9 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListHotelCarouselViewController" customModule="VungTauHackathon2017" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PayNowViewController" customModule="VungTauHackathon2017" customModuleProvider="target">
             <connections>
-                <outlet property="iCarousel" destination="edI-C2-hcE" id="Ilc-ZM-PVS"/>
+                <outlet property="vCarousel" destination="Eau-Tg-k0n" id="Ih6-jX-nQp"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,19 +21,15 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="edI-C2-hcE" customClass="iCarousel">
-                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eau-Tg-k0n" customClass="iCarousel">
+                    <rect key="frame" x="0.0" y="171" width="375" height="325"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <constraints>
-                <constraint firstItem="edI-C2-hcE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Hl4-Xd-0nT"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="edI-C2-hcE" secondAttribute="bottom" id="K5B-B9-pGw"/>
-                <constraint firstItem="edI-C2-hcE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="gsm-Za-5Hb"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="edI-C2-hcE" secondAttribute="trailing" id="k5W-CW-11a"/>
-            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="33.5" y="53.5"/>
+            <point key="canvasLocation" x="25.5" y="52.5"/>
         </view>
     </objects>
 </document>
