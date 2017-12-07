@@ -18,7 +18,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PayNowViewController" customModule="VungTauHackathon2017" customModuleProvider="target">
             <connections>
-                <outlet property="pcListCards" destination="ZKR-su-EDD" id="zq5-XJ-tPV"/>
+                <outlet property="pcListCard" destination="ZKR-su-EDD" id="xBL-9U-EeA"/>
                 <outlet property="vCarousel" destination="Eau-Tg-k0n" id="Ih6-jX-nQp"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -34,6 +34,8 @@
                         <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="ZKR-su-EDD">
                             <rect key="frame" x="168" y="221" width="39" height="37"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="pageIndicatorTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="currentPageIndicatorTintColor" red="0.5" green="0.52313910590000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </pageControl>
                     </subviews>
                     <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

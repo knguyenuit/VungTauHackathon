@@ -11,8 +11,9 @@ import iCarousel
 
 class PayNowViewController: UIViewController {
 
+    @IBOutlet weak var pcListCard: UIPageControl!
     @IBOutlet weak var vCarousel: iCarousel!
-    @IBOutlet weak var pcListCards: UIPageControl!
+
     var screenWidth = UIScreen.main.bounds.size.width
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,7 @@ class PayNowViewController: UIViewController {
         vCarousel.dataSource = self
         vCarousel.type = .coverFlow
         vCarousel.scrollToItem(at: 1, animated: true)
+        pcListCard.currentPage = 1
         // Do any additional setup after loading the view.
     }
 
@@ -98,6 +100,9 @@ extension PayNowViewController: iCarouselDataSource, iCarouselDelegate {
         return value
     }
     
+    func carouselCurrentItemIndexDidChange(_ carousel: iCarousel) {
+        pcListCard.currentPage = carousel.currentItemIndex
+    }
     
     
 }
