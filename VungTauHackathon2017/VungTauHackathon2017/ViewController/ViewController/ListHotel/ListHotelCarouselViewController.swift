@@ -31,6 +31,7 @@ class ListHotelCarouselViewController: UIViewController {
             readJSON()
         }
         iCarousel.reloadData()
+        
     }
 
     func readJSON() {
@@ -128,6 +129,8 @@ extension ListHotelCarouselViewController: iCarouselDataSource, iCarouselDelegat
         (UIApplication.shared.delegate as! AppDelegate).navigationController?.pushViewController(vc, animated: true)
         
     }
+    
+  
     
     
     func carouselDidEndScrollingAnimation(_ carousel: iCarousel) {

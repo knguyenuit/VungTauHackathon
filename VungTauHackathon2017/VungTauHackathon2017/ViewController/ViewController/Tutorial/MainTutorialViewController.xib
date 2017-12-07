@@ -115,7 +115,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LtS-cw-6ca">
                                                     <rect key="frame" x="5" y="2" width="364" height="472"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgTutorial2" translatesAutoresizingMaskIntoConstraints="NO" id="lZh-9D-okp">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgTutorial1" translatesAutoresizingMaskIntoConstraints="NO" id="lZh-9D-okp">
                                                             <rect key="frame" x="0.0" y="0.0" width="364" height="471"/>
                                                         </imageView>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ttd-yf-7FL">
@@ -379,7 +379,7 @@
         </view>
     </objects>
     <resources>
-        <image name="bgTutorial2" width="375" height="667"/>
+        <image name="bgTutorial1" width="375" height="667"/>
         <image name="bgTutorial3" width="319" height="469"/>
         <image name="bgTutorial4" width="317" height="527"/>
         <image name="bgTutorial5" width="640" height="1136"/>

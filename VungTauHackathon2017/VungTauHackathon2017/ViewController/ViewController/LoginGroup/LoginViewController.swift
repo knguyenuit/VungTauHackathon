@@ -10,11 +10,12 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var vBlur: UIView!
     @IBOutlet weak var tfPassword: UITextField!
     @IBOutlet weak var tfUserName: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 

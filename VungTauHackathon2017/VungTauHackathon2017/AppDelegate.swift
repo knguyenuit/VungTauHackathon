@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Override point for customization after application launch.
         //rootViewController = MainTutorialViewController()
-        rootViewController = PayNowViewController()
+        rootViewController = MainTutorialViewController()
         navigationController = UINavigationController(rootViewController: rootViewController!)
         navigationController?.isNavigationBarHidden = true
         window?.rootViewController = navigationController

@@ -54,7 +54,8 @@ class DetailHotelViewController: UIViewController, UICollectionViewDelegate, UIC
         vContent.addSubview(vc.view)
         
     }
-
+   
+    
     @IBAction func btnBackClick(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
@@ -66,6 +67,9 @@ class DetailHotelViewController: UIViewController, UICollectionViewDelegate, UIC
         return 3
     }
     
+    @IBAction func btnBookClick(_ sender: Any) {
+        navigationController?.pushViewController(PayNowViewController(), animated: true)
+    }
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }

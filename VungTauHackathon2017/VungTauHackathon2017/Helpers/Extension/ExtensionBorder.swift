@@ -15,6 +15,17 @@ extension UIView {
         self.layer.borderWidth = borderWidth
         self.layer.borderColor = color.cgColor
     }
+    
+    func addBlurEffect()
+    {
+        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.dark)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = self.bounds
+        
+        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        self.addSubview(blurEffectView)
+    }
+    
 }
 
 extension UIImageView {
