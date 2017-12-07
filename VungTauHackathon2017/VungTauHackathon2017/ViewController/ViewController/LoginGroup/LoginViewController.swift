@@ -27,6 +27,9 @@ class LoginViewController: UIViewController {
         (UIApplication.shared.delegate as! AppDelegate).navigationController?.popViewController(animated: true)
     }
     
+    @IBAction func btnSignInClick(_ sender: Any) {
+        navigationController?.pushViewController(SignUpViewController(), animated: true)
+    }
     @IBAction func btnLoginClick(_ sender: Any) {
 //        var loginRequest = APILoginRequest(email: tfUserName.text!, passWord: tfPassword.text!)
 //        ApplicationAssembler.sharedInstance.resolver.resolve(PAuthenticationService.self)?.login(loginRequest, showLoading: true).continueWith(continuation: { (task) -> Void in

@@ -18,6 +18,8 @@
 		2A002ECF1F51E56B0019B215 /* OverviewHotelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A002ECD1F51E56B0019B215 /* OverviewHotelViewController.xib */; };
 		2A002ED71F5258580019B215 /* ProfileUserGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A002ED51F5258580019B215 /* ProfileUserGroupViewController.swift */; };
 		2A002ED81F5258580019B215 /* ProfileUserGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A002ED61F5258580019B215 /* ProfileUserGroupViewController.xib */; };
+		8B290B351FD931F20072BD5F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B290B331FD931F20072BD5F /* SignUpViewController.swift */; };
+		8B290B361FD931F20072BD5F /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B290B341FD931F20072BD5F /* SignUpViewController.xib */; };
 		8B32431B1FD79DB500DD6B83 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B32431A1FD79DB500DD6B83 /* CustomView.swift */; };
 		8B32431D1FD79EB100DD6B83 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B32431C1FD79EB100DD6B83 /* ShadowView.swift */; };
 		8B3243201FD7A73B00DD6B83 /* ExtensionBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B32431F1FD7A73B00DD6B83 /* ExtensionBorder.swift */; };
@@ -141,6 +143,8 @@
 		2A002ECD1F51E56B0019B215 /* OverviewHotelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverviewHotelViewController.xib; sourceTree = "<group>"; };
 		2A002ED51F5258580019B215 /* ProfileUserGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileUserGroupViewController.swift; sourceTree = "<group>"; };
 		2A002ED61F5258580019B215 /* ProfileUserGroupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileUserGroupViewController.xib; sourceTree = "<group>"; };
+		8B290B331FD931F20072BD5F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		8B290B341FD931F20072BD5F /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		8B32431A1FD79DB500DD6B83 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		8B32431C1FD79EB100DD6B83 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		8B32431F1FD7A73B00DD6B83 /* ExtensionBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionBorder.swift; sourceTree = "<group>"; };
@@ -320,6 +324,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8B290B321FD931D00072BD5F /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				8B290B331FD931F20072BD5F /* SignUpViewController.swift */,
+				8B290B341FD931F20072BD5F /* SignUpViewController.xib */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
 		8B3243191FD7954E00DD6B83 /* ListHotel */ = {
 			isa = PBXGroup;
 			children = (
@@ -420,6 +433,7 @@
 		8BDBAF421F51268B00A41C85 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8B290B321FD931D00072BD5F /* SignUp */,
 				032686F41FD84C0700821F3E /* PayNow */,
 				8B32433F1FD7FD8700DD6B83 /* MyListing */,
 				8B32432A1FD7D5BA00DD6B83 /* Tutorial */,
@@ -867,6 +881,7 @@
 				030A5C5A1FD8D783000A038A /* MasterCardViewController.xib in Resources */,
 				8BDBB0111F52020100A41C85 /* ReviewViewController.xib in Resources */,
 				8BDBAF571F51295200A41C85 /* LoginViewController.xib in Resources */,
+				8B290B361FD931F20072BD5F /* SignUpViewController.xib in Resources */,
 				8BDBAFDD1F51977400A41C85 /* SiteDetailViewController.xib in Resources */,
 				8BDBAF621F512AF400A41C85 /* ListHotelViewController.xib in Resources */,
 				8B3243451FD7FDAB00DD6B83 /* MainListingViewController.xib in Resources */,
@@ -978,6 +993,7 @@
 				8BDBAF711F512FAC00A41C85 /* PCacheProvider.swift in Sources */,
 				8BDBAF901F5130D900A41C85 /* APILogoutRequest.swift in Sources */,
 				8BDBAFE11F519AAE00A41C85 /* MainScreenViewController.swift in Sources */,
+				8B290B351FD931F20072BD5F /* SignUpViewController.swift in Sources */,
 				8BDEF68A1F525969002E3C63 /* CreateServicesViewController.swift in Sources */,
 				8BDBAF8B1F51309A00A41C85 /* TextResponse.swift in Sources */,
 				8BDBAFF51F51B75900A41C85 /* APIResponseCreateServices.swift in Sources */,
